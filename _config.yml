@@ -1,0 +1,18 @@
+# GitHub Pages publishes every file in the repo unless it is listed here.
+# These are operator notes and build tooling, not part of the site: keep them
+# off the live domain. They stay readable in the public repo.
+#
+# Perth Tiling Specialists shipped without this file, so README.md,
+# LAUNCH_PLAYBOOK.md (also rendered as LAUNCH_PLAYBOOK.html), the build tooling
+# and notes describing the site as rank and rent were all reachable on the live
+# domain. `node bake.js --check` guard G10 fails while an entry is missing.
+#
+# config.js is deliberately NOT excluded: every page loads it.
+exclude:
+  - README.md
+  - PLAYBOOK.md
+  - CODE-SESSION-START.md
+  - TEMPLATE_SUMMARY.md
+  - New site prompt.txt
+  - bake.js
+  - build
