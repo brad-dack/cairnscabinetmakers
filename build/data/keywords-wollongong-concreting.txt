@@ -1,0 +1,57 @@
+# Wollongong concreting - page-level keyword research
+# One keyword per line. Blank lines and # comments ignored.
+
+# ---- HEAD ----
+concreting wollongong
+concreters wollongong
+concrete wollongong
+concrete contractors wollongong
+concreter near me
+concreters near me
+concreting near me
+
+# ---- SERVICE PAGES ----
+concrete driveway wollongong
+concrete driveways wollongong
+driveway concreting wollongong
+exposed aggregate driveway wollongong
+exposed aggregate concrete wollongong
+concrete slab wollongong
+concrete slabs wollongong
+house slab wollongong
+shed slab wollongong
+concrete patio wollongong
+concrete path wollongong
+concrete footpath wollongong
+concrete resurfacing wollongong
+concrete removal wollongong
+decorative concrete wollongong
+stamped concrete wollongong
+polished concrete wollongong
+concrete retaining wall wollongong
+concrete pool surround wollongong
+concrete crossover wollongong
+concrete cost wollongong
+concrete driveway cost wollongong
+how much does a concrete driveway cost
+
+# ---- NATIONAL / GENERIC CONTROLS ----
+concrete driveway
+concrete driveway cost
+exposed aggregate driveway
+concreter
+concreting
+
+# ---- AREA PAGE CANDIDATES (Illawarra) ----
+concreters shellharbour
+concreting shellharbour
+concreters kiama
+concreters dapto
+concreters albion park
+concreters figtree
+concreters corrimal
+concreters thirroul
+concreters shoalhaven
+concreters nowra
+concreters illawarra
+concreting illawarra

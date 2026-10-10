@@ -1,0 +1,63 @@
+# Cairns cabinet makers - page-level keyword research
+# One keyword per line. Blank lines and # comments ignored.
+
+# ---- HEAD ----
+cabinet makers cairns
+cabinet maker cairns
+cabinetmakers cairns
+cabinetmaker cairns
+joinery cairns
+joiners cairns
+custom cabinets cairns
+cabinet maker near me
+cabinet makers near me
+joinery near me
+
+# ---- SERVICE PAGES ----
+kitchens cairns
+kitchen cabinets cairns
+custom kitchens cairns
+kitchen makers cairns
+kitchen manufacturers cairns
+kitchen renovations cairns
+kitchen design cairns
+flat pack kitchens cairns
+outdoor kitchens cairns
+built in wardrobes cairns
+wardrobes cairns
+custom wardrobes cairns
+walk in wardrobe cairns
+bathroom vanities cairns
+custom vanities cairns
+laundry cabinets cairns
+entertainment units cairns
+shopfitting cairns
+shopfitters cairns
+commercial joinery cairns
+kitchen benchtops cairns
+stone benchtops cairns
+kitchen resurfacing cairns
+kitchen renovation cost cairns
+cost of new kitchen
+how much does a new kitchen cost
+custom kitchen cost
+
+# ---- NATIONAL / GENERIC CONTROLS ----
+cabinet maker
+cabinet makers
+custom cabinets
+kitchen renovations
+built in wardrobes
+
+# ---- AREA PAGE CANDIDATES (FNQ) ----
+cabinet makers port douglas
+cabinet makers atherton
+cabinet makers mareeba
+cabinet makers innisfail
+cabinet makers smithfield
+cabinet makers tablelands
+kitchens port douglas
+kitchens atherton
+kitchens tablelands
+joinery port douglas
+joinery atherton

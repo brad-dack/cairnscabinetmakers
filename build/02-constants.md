@@ -31,7 +31,16 @@ Tiling Specialists revisited a rejected domain twice in one session.
 
 | name | domain | ASIC | ABN Lookup | registrar | auDA eligibility | verdict and reason |
 |---|---|---|---|---|---|---|
-| [NEEDS INPUT: one row per candidate] | | | | | | |
+| Cairns Cabinets | cairnscabinets.com.au | not checked | not checked | taken (Brad, 11 Oct 2026); nameservers ns1/ns2.allcorp-dns.com.au, the same as cairnskitchens.com.au | n/a | REJECTED: registered, and likely held by Cairns Specialized Cabinets, a page-1 competitor |
+| Cairns Cabinetry, Cairns Cabinet Co, Cairns Custom Cabinets | cairnscabinetry / cairnscabinetco / cairnscustomcabinets .com.au | not checked | not checked | no NS record, 11 Oct 2026 | not assessed | REJECTED: too close to the trading names Cairns Cabinets and Cairns Specialized Cabinets |
+| Kitchens Cairns, Cairns Kitchen Co, Cairns Custom Kitchens | kitchenscairns / cairnskitchenco / cairnscustomkitchens .com.au | not checked | not checked | no NS record, 11 Oct 2026 | not assessed | REJECTED: too close to Cairns Kitchens (cairnskitchens.com.au, #1 for "kitchens cairns") |
+| any FNQ-prefixed name | fnqcabinetmakers / fnqcabinets .com.au | not checked | not checked | no NS record; fnqjoinery.com.au and fnqcabinetry.com are taken | not assessed | REJECTED: collides with FNQ Kitchens, the dominant competitor |
+| Cairns Cabinet Makers | cairnscabinetmakers.com.au | [NEEDS INPUT: T07] | [NEEDS INPUT: T07] | no NS record, 11 Oct 2026 (a hint, not availability) | [NEEDS INPUT: T07] | candidate, first pick: exact match for the head group |
+| Cabinet Maker Cairns | cabinetmakercairns.com.au / cabinetmakerscairns.com.au | [NEEDS INPUT: T07] | [NEEDS INPUT: T07] | no NS record for either .com.au; cabinetmakerscairns.com is taken | [NEEDS INPUT: T07] | candidate: exact match, reversed word order |
+| Cairns Cabinet Making | cairnscabinetmaking.com.au | [NEEDS INPUT: T07] | [NEEDS INPUT: T07] | no NS record, 11 Oct 2026 | [NEEDS INPUT: T07] | candidate: close match, reads as a business name |
+| Cairns Kitchen and Joinery | cairnskitchenandjoinery.com.au | [NEEDS INPUT: T07] | [NEEDS INPUT: T07] | no NS record, 11 Oct 2026 | [NEEDS INPUT: T07] | candidate: covers the kitchens page |
+| Cairns Joinery | cairnsjoinery.com.au | [NEEDS INPUT: T07] | [NEEDS INPUT: T07] | no NS record, 11 Oct 2026 | [NEEDS INPUT: T07] | candidate: short, but "joinery cairns" is 10 a month |
+| Far North Cabinetry | farnorthcabinetry.com.au / farnorthcabinets.com.au | [NEEDS INPUT: T07] | [NEEDS INPUT: T07] | no NS record, 11 Oct 2026 | [NEEDS INPUT: T07] | candidate: brandable, covers the Tablelands, no keyword match |
 
 ## Infrastructure
 
