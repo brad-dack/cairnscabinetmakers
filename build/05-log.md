@@ -19,6 +19,7 @@ Specialists.
 | 2026-10-11 | T00 | Repo created before T06, so research could live in `build/` | Brad | none | Brad made the folder; research moved in from `dfseo/*_notes.md`. `01-market.md` stays DRAFT until T06 |
 | 2026-10-11 | T02 | Bathroom vanities dropped, wardrobes demoted to a section on index.html | Code, accepted by Brad | none | T03 showed both SERPs held by retail |
 | 2026-10-11 | T02 | "kitchen renovations cairns" joins the kitchens page | Code, accepted by Brad | none | T03 showed cabinet makers own that SERP |
+| 2026-10-11 | T06 | GO on cabinet makers, Cairns, including the remote-execution verdict as proposed | Brad | none | `01-market.md` |
 
 ## Open items
 
@@ -33,7 +34,7 @@ closing evidence.**
 
 | item | blocks | surface | opened | closes when | closed | closing evidence |
 |---|---|---|---|---|---|---|
-| T06 go or no-go on `01-market.md` | T07 | Me | 2026-10-11 | `01-market.md` Status reads GO or NO-GO with Brad's date | | |
+| T06 go or no-go on `01-market.md` | T07 | Me | 2026-10-11 | `01-market.md` Status reads GO or NO-GO with Brad's date | 2026-10-11 | `01-market.md` line 3 reads Status GO, Brad, 11 October 2026 (Brad's GO given in the Code session) |
 | QBCC s53C: does a pre-rental site published by an unlicensed operator, worded as "enquiries go to a licensed local cabinet maker" (R11), have to carry an "Only work valued at $3,300 or less" statement? Source: qbcc.qld.gov.au/running-your-business/advertising, read 11 Oct 2026. Websites count as advertising | T21 | Me | 2026-10-11 | written legal advice (QLD) summarised here with its date | | |
 | Once rented, every page must show the renter's licensed name, "licensed under the QBCC Act" and the licence number (QBCC Act s54). The template has no field for this | launch | Code | 2026-10-11 | a config field renders those three items on every page, shown by `node bake.js` output and a grep of the baked pages; or a standing rule in PLAYBOOK Appendix A says otherwise | | |
 | First licensed-trade build in the portfolio: no standing rule covers licence display or s53C | T30 | Code | 2026-10-11 | a rule in the template's PLAYBOOK.md Appendix A, cited here by ID and template commit | | |

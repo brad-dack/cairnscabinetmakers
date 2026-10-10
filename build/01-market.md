@@ -1,6 +1,6 @@
 # 01 Market read
 
-Status: DRAFT | [NEEDS INPUT: set to GO or NO-GO with the date at T06]
+Status: GO | Brad, 11 October 2026
 
 Written by T01 to T06. Read by T07 and T17. See PLAYBOOK.md.
 
@@ -170,7 +170,7 @@ Pacific Kitchens. Count: 10 named.
 T01. Either the link phases can be executed from here, or the ceiling is
 accepted knowingly.
 
-Proposed, for Brad to accept at T06: the head term's bar (26 to 57 referring
+Accepted by Brad with the GO, 11 October 2026: the head term's bar (26 to 57 referring
 domains) and kitchen renovations' (26 to 35) are within reach of
 remotely-executable links such as citations, directories and content assets.
 "kitchens cairns" (35 to 89, with franchise domains in the 90 to 270 range) may
