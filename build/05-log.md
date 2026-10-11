@@ -20,6 +20,7 @@ Specialists.
 | 2026-10-11 | T02 | Bathroom vanities dropped, wardrobes demoted to a section on index.html | Code, accepted by Brad | none | T03 showed both SERPs held by retail |
 | 2026-10-11 | T02 | "kitchen renovations cairns" joins the kitchens page | Code, accepted by Brad | none | T03 showed cabinet makers own that SERP |
 | 2026-10-11 | T06 | GO on cabinet makers, Cairns, including the remote-execution verdict as proposed | Brad | none | `01-market.md` |
+| 2026-10-11 | T08 | Entity, ABN and published name as on the other portfolio sites: sole trader, ABN 78 538 005 810, first name only | Brad | none | portfolio convention (Perth Tiling Specialists, Canberra Tile Layers, Perth Brickwork) |
 | 2026-10-11 | T08 | Brand Cairns Cabinet Makers, domain cairnscabinetmakers.com.au | Code, accepted by Brad | none | clean on all four T07 checks; exact match for the head group. Shared "Cairns Cabinet" with CCW's registered name is accepted knowingly (`02-constants.md` Naming history) |
 
 ## Open items
@@ -40,7 +41,8 @@ closing evidence.**
 | Once rented, every page must show the renter's licensed name, "licensed under the QBCC Act" and the licence number (QBCC Act s54). The template has no field for this | launch | Code | 2026-10-11 | a config field renders those three items on every page, shown by `node bake.js` output and a grep of the baked pages; or a standing rule in PLAYBOOK Appendix A says otherwise | | |
 | First licensed-trade build in the portfolio: no standing rule covers licence display or s53C | T30 | Code | 2026-10-11 | a rule in the template's PLAYBOOK.md Appendix A, cited here by ID and template commit | | |
 | Renter must have a showroom or workshop address customers can visit; kitchen buyers expect one | none | Me | 2026-10-11 | named in `02-constants.md` Positioning at T16 | | |
-| Register the business name "Cairns Cabinet Makers" with ASIC on Brad's ABN, before the domain, so .com.au allocation rests on an exact match | T09 | Me | 2026-10-11 | the ASIC Business Names dataset or ABN Lookup shows "Cairns Cabinet Makers" registered against the ABN in `02-constants.md` | | |
+| Register the business name "Cairns Cabinet Makers" with ASIC on Brad's ABN, before the domain, so .com.au allocation rests on an exact match | T09 | Me | 2026-10-11 | the ASIC Business Names dataset or ABN Lookup shows "Cairns Cabinet Makers" registered against the ABN in `02-constants.md` | | Brad reported it registered, 11 Oct 2026. Checked the same day: ABN Lookup for 78 538 005 810 lists seven business names, latest Local Boards (21 Sep 2026), and not this one; a name search finds no exact match. Re-check, since ASIC to ABR sync can lag |
+| cairnscabinetmakers.com.au registered (T09) | T10 | Me | 2026-10-11 | registry RDAP returns 200 for the domain, and `02-constants.md` Infrastructure names the registrar | | Brad reported it purchased, 11 Oct 2026. Checked the same day: public DNS returns NXDOMAIN, and the .au RDAP service rate-limited the query (HTTP 429). Re-check |
 | Cairns kitchen cost source (R10). The only figure in hand is a Sydney benchmark ($15,000 to $40,000) | T21 | Code | 2026-10-11 | a Cairns or FNQ source in `03-plan.md` Cost figures, or cost copy dropped | | |
 
 ## QA

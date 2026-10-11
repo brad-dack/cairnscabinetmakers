@@ -17,9 +17,9 @@ written.
 |---|---|
 | brand | Cairns Cabinet Makers |
 | domain | https://cairnscabinetmakers.com.au |
-| entity | [NEEDS INPUT: trading structure] |
-| abn | [NEEDS INPUT: T08] |
-| published name | [NEEDS INPUT: the name that appears on About and Privacy] |
+| entity | Sole trader. Brad, trading as Cairns Cabinet Makers |
+| abn | 78 538 005 810 |
+| published name | Brad, first name only, on About and Privacy |
 | email | [NEEDS INPUT: or the literal word none until an inbox exists] |
 | phone e164 | [NEEDS INPUT: T11, e.g. +61890000000] |
 | phone display | [NEEDS INPUT: T11, e.g. (08) 9000 0000] |
