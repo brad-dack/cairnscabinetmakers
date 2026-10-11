@@ -66,7 +66,7 @@ T07 checks run 11 October 2026:
 |---|---|
 | registrar | GoDaddy (2-year registration, ordered 11 October 2026) |
 | hosting | [NEEDS INPUT: GitHub Pages or Cloudflare Workers] |
-| dns provider | [NEEDS INPUT: T09] |
+| dns provider | Cloudflare (nameservers damon.ns.cloudflare.com, gemma.ns.cloudflare.com, as delegated by the .au registry on 11 October 2026) |
 | proxy status | [NEEDS INPUT: proxied or DNS-only] |
 | workers_dev | [NEEDS INPUT: false, or n/a on GitHub Pages. See rule R5] |
 | dns verified | [NEEDS INPUT: T10, paste the nslookup output and the date] |
