@@ -15,8 +15,8 @@ written.
 
 | field | value |
 |---|---|
-| brand | [NEEDS INPUT: T08] |
-| domain | [NEEDS INPUT: T08, with https:// and no trailing slash] |
+| brand | Cairns Cabinet Makers |
+| domain | https://cairnscabinetmakers.com.au |
 | entity | [NEEDS INPUT: trading structure] |
 | abn | [NEEDS INPUT: T08] |
 | published name | [NEEDS INPUT: the name that appears on About and Privacy] |
@@ -53,7 +53,7 @@ T07 checks run 11 October 2026:
 | Cairns Cabinetry, Cairns Cabinet Co, Cairns Custom Cabinets | cairnscabinetry / cairnscabinetco / cairnscustomcabinets .com.au | not checked | not checked | no NS record, 11 Oct 2026 | not assessed | REJECTED: too close to the trading names Cairns Cabinets and Cairns Specialized Cabinets |
 | Kitchens Cairns, Cairns Kitchen Co, Cairns Custom Kitchens | kitchenscairns / cairnskitchenco / cairnscustomkitchens .com.au | not checked | not checked | no NS record, 11 Oct 2026 | not assessed | REJECTED: too close to Cairns Kitchens (cairnskitchens.com.au, #1 for "kitchens cairns") |
 | any FNQ-prefixed name | fnqcabinetmakers / fnqcabinets .com.au | not checked | not checked | no NS record; fnqjoinery.com.au and fnqcabinetry.com are taken | not assessed | REJECTED: collides with FNQ Kitchens, the dominant competitor |
-| Cairns Cabinet Makers | cairnscabinetmakers.com.au | clean: no registered name with those words, singular or plural | no identical name. Nearest: CAIRNS CABINET WORKS, also listed as "Cairns Cabinets and Joinery" (ABN 47 103 725 757, Cairns 4870, CCW Cabinet Works), and Cairns Specialized Cabinets | available (RDAP 404) | ok once "Cairns Cabinet Makers" is registered with ASIC on Brad's ABN | **RECOMMENDED for T08.** Clean on all four checks and an exact match for the head group (210 a month). Risk accepted knowingly: it shares "Cairns Cabinet" with CCW's registered name. The third word differs and both names are descriptive, unlike the near-identical "Tiling of Perth" that ruled out tilingperth.com.au |
+| Cairns Cabinet Makers | cairnscabinetmakers.com.au | clean: no registered name with those words, singular or plural | no identical name. Nearest: CAIRNS CABINET WORKS, also listed as "Cairns Cabinets and Joinery" (ABN 47 103 725 757, Cairns 4870, CCW Cabinet Works), and Cairns Specialized Cabinets | available (RDAP 404) | ok once "Cairns Cabinet Makers" is registered with ASIC on Brad's ABN | **CHOSEN at T08 by Brad, 11 October 2026.** Clean on all four checks and an exact match for the head group (210 a month). Risk accepted knowingly: it shares "Cairns Cabinet" with CCW's registered name. The third word differs and both names are descriptive, unlike the near-identical "Tiling of Perth" that ruled out tilingperth.com.au |
 | Cabinet Makers Cairns | cabinetmakerscairns.com.au (also cabinetmakercairns.com.au) | clean, singular and plural | no identical name; nearest results are generic "Cabinet Maker" trading names in other states | both available (RDAP 404); cabinetmakerscairns.com is registered | ok once "Cabinet Makers Cairns" is registered with ASIC | candidate, fallback: clean, the same keyword match, and further from CCW. Reads less like a business name |
 | Cairns Cabinet Making | cairnscabinetmaking.com.au | clean | no identical name; the same CCW proximity as Cairns Cabinet Makers | available (RDAP 404) | ok once registered with ASIC | candidate, not preferred: the same CCW proximity as the first pick, with a weaker keyword match |
 | Cairns Kitchen and Joinery | cairnskitchenandjoinery.com.au | clean: no identical name | collides with Cairns Kitchens (registered business name, ABN 93 164 831 565) and "Cairns Cabinets and Joinery" (CCW's other name, ABN 47 103 725 757) | available (RDAP 404) | not relied on | REJECTED: built from two competitors' names |
