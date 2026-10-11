@@ -65,11 +65,11 @@ T07 checks run 11 October 2026:
 | field | value |
 |---|---|
 | registrar | GoDaddy (2-year registration, ordered 11 October 2026) |
-| hosting | [NEEDS INPUT: GitHub Pages or Cloudflare Workers] |
-| dns provider | Cloudflare (nameservers damon.ns.cloudflare.com, gemma.ns.cloudflare.com, as delegated by the .au registry on 11 October 2026) |
-| proxy status | [NEEDS INPUT: proxied or DNS-only] |
-| workers_dev | [NEEDS INPUT: false, or n/a on GitHub Pages. See rule R5] |
-| dns verified | [NEEDS INPUT: T10, paste the nslookup output and the date] |
+| hosting | GitHub Pages, from brad-dack/cairnscabinetmakers, branch main |
+| dns provider | Cloudflare (nameservers evan.ns.cloudflare.com, thea.ns.cloudflare.com) |
+| proxy status | DNS-only |
+| workers_dev | n/a, this is a GitHub Pages build |
+| dns verified | 11 October 2026, 03:20 UTC, through 1.1.1.1 and 8.8.8.8 (identical): `nslookup -type=NS` gives evan.ns.cloudflare.com and thea.ns.cloudflare.com; `nslookup -type=A` on the apex gives 185.199.108.153, .109.153, .110.153, .111.153; `nslookup www.cairnscabinetmakers.com.au` gives alias to brad-dack.github.io, which resolves to the same four addresses. www to apex redirect not yet checked: that needs the Pages custom domain set (T26) |
 | ga4 measurement id | [NEEDS INPUT: T11, the G- one, used on the page] |
 | ga4 property id | [NEEDS INPUT: T11, the numeric one, used by the dashboard] |
 | turnstile site key | [NEEDS INPUT: T11, copied from the Cloudflare dashboard] |
