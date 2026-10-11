@@ -64,7 +64,7 @@ T07 checks run 11 October 2026:
 
 | field | value |
 |---|---|
-| registrar | [NEEDS INPUT: T09] |
+| registrar | GoDaddy (2-year registration, ordered 11 October 2026) |
 | hosting | [NEEDS INPUT: GitHub Pages or Cloudflare Workers] |
 | dns provider | [NEEDS INPUT: T09] |
 | proxy status | [NEEDS INPUT: proxied or DNS-only] |
