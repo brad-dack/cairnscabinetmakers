@@ -116,12 +116,14 @@ text carries the notice.
 **Form notice** (`contact.reassurance` in `config.js`, rendered above every
 form):
 
-[NEEDS INPUT: exact text, naming the trade, saying the trade pays, linking the privacy policy]
+No spam and no obligation. Your details go to a local cabinet maker so they can quote your job. The cabinet maker pays for the enquiry, you do not. We never sell your details or add you to a marketing list. [How we handle your information](privacy.html).
 
 **Voicemail greeting** (`sites.greeting_text` and the MP3 at
 `sites.greeting_audio_url`, both columns, same words):
 
-[NEEDS INPUT: exact text]
+Hi, thanks for calling Cairns Cabinet Makers. Leave your name, suburb and job details after the tone. We pass enquiries to a local cabinet maker who can quote the job, and the cabinet maker pays for the enquiry.
+
+Drafted 12 October 2026, awaiting Brad's approval before the MP3 is recorded (T13). Both say the same three things: the details go to a local cabinet maker, the cabinet maker pays for the enquiry, and (form only) the privacy link, which cannot be spoken. Neither says "licensed": that wording sits inside the open QBCC s53C question in `05-log.md`.
 
 | field | value |
 |---|---|
