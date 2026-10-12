@@ -186,50 +186,63 @@ T17 lists every safety, regulatory or standards claim and the primary source
 required. T20 resolves every row. Status is `sourced` or `dropped`, never
 `open`, before Evidence goes CLEAR. See PLAYBOOK.md rule R2.
 
+Researched 13 October 2026 by web search and page fetch. Where a row is narrowed, the
+claim column carries the narrowed wording, which is all the copy may say.
+
 | # | claim as it will appear | page | primary source required | status | source | edition | url | date checked |
 |---|---|---|---|---|---|---|---|---|
-| 1 | In Queensland, residential building work valued over a stated threshold needs a QBCC licence (the threshold figure and whether it applies to cabinetwork) | kitchens, About | QBCC Act and the QBCC's own guidance | open | | | | |
-| 2 | A written contract is required for domestic building work over the stated threshold, and a deposit is capped | kitchens | QBCC Act, domestic building contracts provisions | open | | | | |
-| 3 | Cabinet materials differ in how they cope with humidity, and edging and hardware matter in the tropics | kitchens | a board or hardware manufacturer's technical data, or Standards Australia for the board standard | open | | | | |
-| 4 | Warranty or insurance protection applies to work over the threshold | kitchens, About | QBCC home warranty scheme page | open | | | | |
-| 5 | A typical kitchen renovation sequence and how long each stage takes | kitchens, Home | a peak body or a named published source, not a competitor | open | | | | |
-| 6 | Any Cairns or Far North Queensland cost range for a kitchen | kitchens | a Cairns or FNQ source (R10); the Sydney $15,000 to $40,000 benchmark is not used | open | | | | |
-| 7 | The s53C advertising-statement requirement for a pre-rental site (whether "$3,300 or less" wording is needed) | all pages | written Queensland legal advice, not a web page | open | | | | |
+| 1 | In Queensland, building work valued over $3,300 needs a QBCC licence, and the Cabinet making licence class covers installing, refurbishing or repairing kitchen and other fitted cabinets on site | kitchens, About | QBCC Act and the QBCC's own guidance | sourced | QBCC, "Who must hold a QBCC licence" and "Cabinet making" licence page | licence page last reviewed 16 April 2026; cabinet making page last reviewed 30 August 2021 | https://www.qbcc.qld.gov.au/my/node/7081 ; https://www.qbcc.qld.gov.au/licences/apply-licence/available-licences/other-trade/cabinet-making | 13 October 2026 |
+| 2 | For domestic building work over $3,300 the QBCC says a written, dated and signed contract is essential and must include advice about a cooling-off period; the maximum deposit is 10% of the contract price from $3,301 to $19,999 and 5% above $20,000, with up to 20% allowed where more than half the price is made-to-measure work done off site, cabinetry being an example the QBCC gives | kitchens | QBCC Act, domestic building contracts provisions | sourced | QBCC, "Contracts and payments" and "Deposits and progress payments". The QBCC is the licensing authority. The Act itself was not read | contracts page last reviewed 14 May 2026; deposits page last reviewed 27 June 2025 | https://qbcc.qld.gov.au/node/1331 ; https://www.qbcc.qld.gov.au/home-owner-hub/build-renovate/contracts-payments/deposits-progress-payments | 13 October 2026 |
+| 3 | Practical advice only: ask what the cabinet carcass is made of, whether it is a moisture-resistant grade, and whether cut and drilled edges are sealed. **No standard, no board class and no climate-specific claim; the advice stays, the regulatory specific is dropped** | kitchens | a board or hardware manufacturer's technical data, or Standards Australia for the board standard | dropped | none usable. The Standards Australia store pages returned no readable text, and the reseller pages are not primary | n/a | n/a | 13 October 2026 |
+| 4 | Queensland Home Warranty insurance applies to residential building work valued over $3,300 including materials, labour and GST, and the QBCC lists replacing or refitting fixtures or fittings in a kitchen among it. The page does not name cabinetry, so the copy does not either | kitchens, About | QBCC home warranty scheme page | sourced | QBCC, "What work requires insurance" | last reviewed 1 August 2024 | https://www.qbcc.qld.gov.au/my/node/2886 | 13 October 2026 |
+| 5 | None. The copy says to ask for a written timeline and what the lead times are, with no durations | kitchens, Home | a peak body or a named published source, not a competitor | dropped | no Master Builders, HIA or government source found; every figure came from builder and cost-guide sites, one of them a New Zealand builder | n/a | n/a | 13 October 2026 |
+| 6 | None. No Cairns or Far North Queensland kitchen cost figure, and no national one stated as ours | kitchens | a Cairns or FNQ source (R10) | dropped | no Cairns source exists in what was found; the national guides disagree widely ($12,000 to $30,000 for the budget tier alone) | n/a | n/a | 13 October 2026 |
+| 7 | The s53C advertising-statement requirement for a pre-rental site (whether "$3,300 or less" wording is needed) | all pages | written Queensland legal advice, not a web page | open | the QBCC advertising page says unlicensed advertisers must state the value of work they can do, with the example "Cannot perform building work valued in excess of $3,300". It does not say whether a pre-rental referral site is such an advertiser, which is the legal question | QBCC advertising page last reviewed 30 August 2021, last published 30 June 2025 | https://www.qbcc.qld.gov.au/running-your-business/advertising | 13 October 2026 |
 
 ## Dropped claims
 
 T20. The claim text and why it went. A dropped claim is deleted from the copy,
 not just from this table.
 
-[NEEDS INPUT: or "none"]
+| claim | reason |
+|---|---|
+| Any standard, board class or climate-specific claim about cabinet materials in the tropics (register row 3) | No primary source could be read. The practical advice to ask about board grade and sealed edges stays |
+| Any kitchen renovation duration or stage timeline (row 5) | Only builder and cost-guide sources, one of them for New Zealand |
+| Any Cairns or FNQ kitchen cost (row 6) | No Cairns source; the national figures disagree too much to present |
 
 ## Traps found
 
-T20. Claims that search results assert but primary sources do not support. The
-Western Australian waterproofing licence is the worked example: every source
-asserting it traced back to training provider marketing, and the licence
-belongs to a different state.
+T20. Claims that search results assert but primary sources do not support.
 
-[NEEDS INPUT: or "none found"]
+- **The particleboard classes differ by edition.** One search summary describes
+  AS/NZS 1859.1 as three classes (standard, moisture resistant, high
+  performance), taken from the 2004 edition. Another describes the 2017 edition
+  as two service conditions, dry (STD) and moisture resistant (MR). A claim built
+  on the wrong edition would be wrong, and the Standards Australia pages could
+  not be read, so no class is named.
+- **"$3,300" has different bases on different QBCC pages.** The home warranty
+  page says it includes materials, labour and GST. The licence page does not say
+  what is counted. The copy states the figure only as the QBCC states it on each
+  page, with no valuation basis added to the licensing claim.
+- **A search result gave deposit rules from an older guide**, with a flat 20%
+  recommendation for small jobs. The QBCC's current deposits page (27 June 2025)
+  gives the three bands used in row 2.
+- **Search summaries are not sources.** Every figure above was re-read on the
+  QBCC page itself.
 
 ## Cost figures
 
-T20, where the build publishes figures. Reader-facing copy uses the publisher
-type, never the business name. Peak bodies may be named.
+T20. **None published.** No Cairns or Far North Queensland kitchen cost source
+was found (register row 6), and the national guides disagree too much to
+present as a range. Cost copy is dropped. If a source is found later, this
+section is filled before any figure is drafted.
 
-Method, in the words that will appear on the page:
+Method: not applicable.
 
-[NEEDS INPUT: the method paragraph]
+Gaps: a Cairns or FNQ kitchen cost source. The only figure in hand, a Sydney
+benchmark, is not used.
 
-| item | low | high | publisher type | source name | url | date |
-|---|---|---|---|---|---|---|
-| [NEEDS INPUT: one row per figure] | | | | | | |
-
-Convergence and disagreement: [NEEDS INPUT: what agrees, what diverges, why]
-
-Gaps: [NEEDS INPUT: figures wanted but not found]
-
-Review date: [NEEDS INPUT: 12 months from compilation]
+Review date: not applicable until a figure is published.
 
 ## Sign-off
 
