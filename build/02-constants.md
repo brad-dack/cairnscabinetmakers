@@ -127,7 +127,7 @@ Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: 
 
 | field | value |
 |---|---|
-| mp3 recorded | [NEEDS INPUT: T13, Y or N] |
+| mp3 recorded | Y, uploaded by Brad to the Greetings bucket; https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/Cairns%20Cabinet%20Makers.mp3 returns HTTP 200, audio/mpeg, 96,290 bytes, checked 13 October 2026. The words in it are not yet checked by ear: T28 does that on a real call |
 | greeting_audio_url set | [NEEDS INPUT: T14, Y or N] |
 | greeting_text set | [NEEDS INPUT: T14, Y or N] |
 | greeting heard on a real call | [NEEDS INPUT: T28, date] |
