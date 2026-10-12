@@ -215,9 +215,10 @@ home kitchen rather than a showroom or a render.
 > one cooktop, no duplicated or floating objects.
 
 **kitchen-cabinet-parts.svg** (Kitchens page): not a Gemini image. Drawn as SVG
-(T23 rule: a diagram wherever an image makes a factual claim). Labels only:
-carcass, door, edge, shelf, hinge, kickboard, benchtop. Code can draw it on
-request.
+on 13 October 2026 and committed at `images/kitchen-cabinet-parts.svg`, 1200 by
+800, under 4 KB. Labels only: benchtop, carcass, shelf, kickboard, hinge, door,
+edge. No performance or moisture claim. Has its own title and description
+inside the file; T24 writes the page alt text.
 
 Check each image before saving:
 
