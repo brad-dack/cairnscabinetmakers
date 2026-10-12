@@ -458,7 +458,8 @@ stock engine.
 ### Licence display (12 October 2026)
 
 `config.js` gains a `licence` block (`required`, `holder`, `number`). `bake.js`
-renders one line in the footer of every page and on 404.html, only when holder
-and number are both set, and adds guard G11 to `--check`. `css/styles.css` gains
+renders one line in the footer of every page and on 404.html: the licensee line
+when holder and number are both set, otherwise the pre-renter value statement
+(`licence.preRenterStatement`); and adds guard G11 to `--check`. `css/styles.css` gains
 `.footer-bottom .footer-licence`. Reason: QBCC Act s54 (see PLAYBOOK R14); the
 template had nowhere to put a licensee's name and number.

@@ -593,9 +593,12 @@ function headerHtml(file) {
    licence text. */
 const hasLicence = () => !!(cfg.licence && cfg.licence.holder && cfg.licence.number);
 function licenceHtml() {
-  if (!hasLicence()) return "";
-  return '<p class="footer-licence">' + esc(cfg.licence.holder) +
-    ", licensed under the QBCC Act. Licence number " + esc(cfg.licence.number) + ".</p>";
+  if (hasLicence()) {
+    return '<p class="footer-licence">' + esc(cfg.licence.holder) +
+      ", licensed under the QBCC Act. Licence number " + esc(cfg.licence.number) + ".</p>";
+  }
+  const pre = cfg.licence && cfg.licence.required && cfg.licence.preRenterStatement;
+  return pre ? '<p class="footer-licence">' + esc(pre) + "</p>" : "";
 }
 
 /* Baked so the footer's links to every service page are crawlable without
@@ -1337,7 +1340,8 @@ function g6Backport() {
 }
 
 /* G11. Trade licence display (QBCC Act s54). The licence line must appear
-   once a licensed renter is signed, and must not appear before. */
+   once a licensed renter is signed. Before that, the QBCC value statement
+   (licence.preRenterStatement) shows instead, and no licence number does. */
 function g11Licence() {
   const lic = cfg.licence;
   if (!lic || !lic.required) return [];
@@ -1346,6 +1350,15 @@ function g11Licence() {
   const signed = raw === null ? "" : (fieldMap(raw, ["Positioning"]).rentersigned || "");
   const rented = /^y/i.test(signed.trim());
   const holder = !!lic.holder, number = !!lic.number;
+  const pre = !!lic.preRenterStatement;
+  if (!rented && !holder && !pre) {
+    out.push("G11 config.js licence.preRenterStatement is empty and no renter is signed: " +
+      "the QBCC value statement must show on every page until a licensed renter is displayed");
+  }
+  if (rented && pre) {
+    out.push("G11 a renter is signed but config.js licence.preRenterStatement is still set: " +
+      "remove it when the licence line goes live");
+  }
   if (holder !== number) {
     out.push("G11 config.js licence has only one of holder and number set: " +
       "both are needed for the s54 line to render");

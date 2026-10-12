@@ -66,7 +66,11 @@ window.SITE_CONFIG = {
   licence: {
     required: true,
     holder: "",   // the renter's licensed name exactly as on the licence
-    number: ""    // the renter's QBCC licence number
+    number: "",   // the renter's QBCC licence number
+    /* Shown on every page while holder and number are empty (no renter yet),
+       and removed once they are filled. The unlicensed-advertiser value
+       statement the QBCC asks for: see build/03-plan.md claim register row 7. */
+    preRenterStatement: "Cairns Cabinet Makers cannot perform building work valued in excess of $3,300. For work above that value, discuss it with the cabinet maker who quotes your job."
   },
 
   /* Used for canonical URLs, schema, and OG tags. No trailing slash.

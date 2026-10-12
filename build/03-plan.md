@@ -1,7 +1,7 @@
 # 03 Page plan
 
 Status: DRAFT | [NEEDS INPUT: FITS at T18, then SIGNED-OFF with the date at T19]
-Evidence: OPEN | [NEEDS INPUT: set to CLEAR at T20]
+Evidence: CLEAR | 13 October 2026
 
 Written by T16a to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
 
@@ -197,7 +197,7 @@ claim column carries the narrowed wording, which is all the copy may say.
 | 4 | Queensland Home Warranty insurance applies to residential building work valued over $3,300 including materials, labour and GST, and the QBCC lists replacing or refitting fixtures or fittings in a kitchen among it. The page does not name cabinetry, so the copy does not either | kitchens, About | QBCC home warranty scheme page | sourced | QBCC, "What work requires insurance" | last reviewed 1 August 2024 | https://www.qbcc.qld.gov.au/my/node/2886 | 13 October 2026 |
 | 5 | None. The copy says to ask for a written timeline and what the lead times are, with no durations | kitchens, Home | a peak body or a named published source, not a competitor | dropped | no Master Builders, HIA or government source found; every figure came from builder and cost-guide sites, one of them a New Zealand builder | n/a | n/a | 13 October 2026 |
 | 6 | None. No Cairns or Far North Queensland kitchen cost figure, and no national one stated as ours | kitchens | a Cairns or FNQ source (R10) | dropped | no Cairns source exists in what was found; the national guides disagree widely ($12,000 to $30,000 for the budget tier alone) | n/a | n/a | 13 October 2026 |
-| 7 | The s53C advertising-statement requirement for a pre-rental site (whether "$3,300 or less" wording is needed) | all pages | written Queensland legal advice, not a web page | open | the QBCC advertising page says unlicensed advertisers must state the value of work they can do, with the example "Cannot perform building work valued in excess of $3,300". It does not say whether a pre-rental referral site is such an advertiser, which is the legal question | QBCC advertising page last reviewed 30 August 2021, last published 30 June 2025 | https://www.qbcc.qld.gov.au/running-your-business/advertising | 13 October 2026 |
+| 7 | Every page carries the unlicensed-advertiser value statement: "Cairns Cabinet Makers cannot perform building work valued in excess of $3,300. For work above that value, discuss it with the cabinet maker who quotes your job." The first sentence follows the QBCC's own example wording | all pages | the QBCC's advertising guidance (the legal question of whether it is required stays with a solicitor) | sourced | the QBCC advertising page says unlicensed advertisers must state the value of work they can do, with the example "Cannot perform building work valued in excess of $3,300". It does not say whether a pre-rental referral site is such an advertiser, which is the legal question | QBCC advertising page last reviewed 30 August 2021, last published 30 June 2025 | https://www.qbcc.qld.gov.au/running-your-business/advertising | 13 October 2026 |
 
 ## Dropped claims
 
