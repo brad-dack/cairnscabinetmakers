@@ -71,7 +71,7 @@ T07 checks run 11 October 2026:
 | workers_dev | n/a, this is a GitHub Pages build |
 | dns verified | 11 October 2026, 03:20 UTC, through 1.1.1.1 and 8.8.8.8 (identical): `nslookup -type=NS` gives evan.ns.cloudflare.com and thea.ns.cloudflare.com; `nslookup -type=A` on the apex gives 185.199.108.153, .109.153, .110.153, .111.153; `nslookup www.cairnscabinetmakers.com.au` gives alias to brad-dack.github.io, which resolves to the same four addresses. www to apex redirect not yet checked: that needs the Pages custom domain set (T26) |
 | ga4 measurement id | G-NLFZQK7WFQ (from Brad's gtag snippet, 12 October 2026) |
-| ga4 property id | [NEEDS INPUT: T11, the numeric one, used by the dashboard] |
+| ga4 property id | 558470374 (web stream id 16111385210, stream URL https://www.cairnscabinetmakers.com.au, per Brad's screenshot, 12 October 2026) |
 | turnstile site key | [NEEDS INPUT: T11, copied from the Cloudflare dashboard] |
 | turnstile hostname added | [NEEDS INPUT: Y or N] |
 | supabase site_id | [NEEDS INPUT: T14] |
