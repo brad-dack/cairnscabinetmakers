@@ -1,6 +1,6 @@
 # Home: /
 
-Status: DRAFT v1 | [NEEDS INPUT: APPROVED with Brad's date at T22]
+Status: APPROVED | v1, Brad, 13 October 2026
 
 ## Head
 
