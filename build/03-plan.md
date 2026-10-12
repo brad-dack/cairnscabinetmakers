@@ -3,7 +3,7 @@
 Status: DRAFT | [NEEDS INPUT: FITS at T18, then SIGNED-OFF with the date at T19]
 Evidence: OPEN | [NEEDS INPUT: set to CLEAR at T20]
 
-Written by T17 to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
+Written by T16a to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
 
 **G3 blocks `node bake.js` once real page copy exists and this file is not
 SIGNED-OFF, or its Head table disagrees with `config.js`.** G4 fails
@@ -11,6 +11,53 @@ SIGNED-OFF, or its Head table disagrees with `config.js`.** G4 fails
 
 Both tables below are keyed by the page's file name. Keep the column headings
 as written; G3 reads them.
+
+## Reference sites
+
+T16a. Fetched 13 October 2026 (home pages only, static HTML, no script run), from
+Brad's list of sites he thinks rank well in their markets. What the fetch
+shows, not why they rank: no rankings, links or Google Business Profiles were
+checked. 14 of 15 fetched; middletondesign.com.au returned HTTP 403.
+
+| site | market | home words | notable on the home page |
+|---|---|---|---|
+| tailoredinteriorsqld.com.au | Brisbane | 543 | services by room; testimonials; hours; footer carries ABN, QBCC number and Master Builders number |
+| atcabinetmakers.com.au | Brisbane south | 1,450 | suburb names in the H1; five-step process with "free in-home consultation"; reviews; awards; "over 40 years"; LocalBusiness schema with address, geo and opening hours |
+| northsidejoinery.au | Brisbane north | 686 | architectural and commercial joinery; named owner with years of experience; showroom or workshop wording |
+| huskandco.com.au | Sydney | 310 | awards and TV features; gallery |
+| myjoinery.com.au | Sydney | 685 | services by room; reviews |
+| middletondesign.com.au | not read | | blocked, HTTP 403 |
+| perfectfitinterior.com.au | Melbourne | 4,045 | long page; many services; process; free quote |
+| cosinteriors.com.au | Melbourne | 233 | trade clients (builders, architects); recent work only |
+| melbournecabinetmakers.com.au | Melbourne | 572 | process; FAQ; warranty |
+| customcabinets.com.au | not stated | 445 | room-by-room service blocks; workshop wording |
+| winterfields.com.au | Adelaide | 183 | "35+ years"; room-by-room services; testimonial |
+| spacecraftjoinery.com.au | Adelaide | 114 | gallery; finance offer |
+| precisioncabinets.com.au | Perth | 751 | benefits; process; testimonials; projects; free quote |
+| colraycabinets.com.au | Perth | 4,258 | awards; team; gallery; showroom; reviews; warranty |
+| willettoncabinets.com.au | Perth | 2,024 | process; reviews; featured work |
+
+| pattern | seen on | verdict | reason |
+|---|---|---|---|
+| Services shown by room (kitchens, bathrooms, laundry, wardrobes, commercial) | most | adopt, as sections of the two planned pages | matches the section plan in `01-market.md`; no extra pages, so no cannibalisation |
+| A step-by-step process | A&T, Perfect Fit, CNA, Precision, Willetton | adopt once sourced | no Cairns competitor describes process (Competitor gaps); a general sequence needs a real source under R10 |
+| FAQ block | CNA, others | adopt once sourced | answers the cost, timeline and humidity questions the market read found unanswered |
+| Suburb or region names for the service area | A&T (in the H1) | adopt, in copy only | the keyword table puts Atherton, Innisfail and Smithfield in service-area copy, no pages |
+| Licence number in the footer | Tailored Interiors | adopt once a renter is signed | PLAYBOOK R14 and G11: nothing licence-related before a renter |
+| Reviews and testimonials | most | cannot claim | the claim restriction list forbids invented reviews and we have none |
+| Awards, years in business, "over 40 years" | A&T, Colray, Husk, Winterfield | cannot claim | forbidden: years in business; the site does not do the work |
+| Gallery and recent work | most | cannot claim | no photos of work (claim restrictions); a gallery waits for the renter |
+| "Free in-home consultation" and "free quote" | A&T, Perfect Fit, Precision | cannot claim | forbidden: this site does not quote |
+| Showroom, workshop address, hours, LocalBusiness schema | A&T, Northside, Colray | cannot claim | forbidden before a renter has premises; `schema.type` stays Organization |
+| Finance offer | SpaceCraft, Precision | skip | not ours to offer |
+| Long home pages (over 2,000 words) against short ones (114 to 233) | both kinds | skip | the sample shows no link between length and the sites chosen; length is not a reason |
+
+What the sample suggests: most of what these sites lean on is trust that
+comes from an operating business, which this site cannot claim before a renter
+is signed. What is open to us is structure (rooms, process, FAQ, service area)
+and the answers no Cairns competitor gives (cost, timeline, tropical climate),
+each under R10. The three QLD sites read closely show no prices on the home
+page.
 
 ## Inventory
 

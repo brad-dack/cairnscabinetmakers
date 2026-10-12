@@ -32,7 +32,7 @@ All under `build/` in the site repo, committed as they are produced.
 |---|---|---|
 | `build/01-market.md` | T01 to T06 | T07, T17 |
 | `build/02-constants.md` | T07 to T16 | T12, T16, T21, T25, T27 |
-| `build/03-plan.md` | T17 to T20 | T21, T24, T25 |
+| `build/03-plan.md` | T16a to T20 | T21, T24, T25 |
 | `build/04-copy/<route>.md` | T21, T22 | T25 |
 | `build/05-log.md` | every task appends | every session reads first |
 
@@ -257,10 +257,28 @@ A gate stops every later task until its check passes.
 - **Gate:** blocks every page from baking.
 - **Rules:** R1.
 
+## T16a Reference-site review
+
+- **Surface:** Me supplies the list, Code reads it
+- **In:** Brad's list of example sites, up to about 15, with any note on why
+  each was chosen; `build/01-market.md` Competitor gaps
+- **Out:** `build/03-plan.md` Reference sites
+- **Done:** every URL on the list is fetched and its outcome recorded, a
+  blocked or empty fetch included. For each pattern worth considering the file
+  says what it is, how many sites show it, and one of `adopt`, `adopt once
+  sourced`, `cannot claim` (the claim restriction list forbids it) or `skip`,
+  with the reason. Structure and approach only: no copy is carried over.
+- **Check:** every listed URL has a row, and no pattern is marked `adopt` while
+  it contradicts `build/02-constants.md` Positioning.
+- **Rules:** R2, R10. A site ranking well elsewhere is not evidence that its
+  features are why. Record what the fetch showed, not a guess about rankings or
+  links.
+
 ## T17 Page plan
 
 - **Surface:** Code
-- **In:** `build/01-market.md`; `build/02-constants.md`
+- **In:** `build/01-market.md`; `build/02-constants.md`; `build/03-plan.md`
+  Reference sites
 - **Out:** `build/03-plan.md`, Status `DRAFT`
 - **Done:** inventory, head table with character counts, nav, cannibalisation
   map, internal link graph, image direction, the linkable asset with six named

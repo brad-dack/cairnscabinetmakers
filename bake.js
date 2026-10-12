@@ -1161,7 +1161,7 @@ function g3Plan() {
   const raw = readBuild("03-plan.md");
   if (raw === null) {
     return ["G3 build/03-plan.md is missing. Copy it from the template and " +
-      "fill it (PLAYBOOK.md T17 to T19)."];
+      "fill it (PLAYBOOK.md T16a to T19)."];
   }
   const st = statusWord(raw, "Status");
   if (st !== "SIGNED-OFF") {
