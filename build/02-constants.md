@@ -77,6 +77,8 @@ T07 checks run 11 October 2026:
 | supabase site_id | [NEEDS INPUT: T14] |
 | ingest url | [NEEDS INPUT: T14, the shared ingest-form function URL] |
 | ingest secret location | [NEEDS INPUT: where it is set, never the value] |
+| twilio voice webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-voice, POST, primary and backup both set to it. Seen on Brad's Twilio screenshot, 12 October 2026, region Australia (AU1) |
+| twilio status webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-status, POST. Same screenshot |
 | inbound email | [NEEDS INPUT: T11, and the Cloudflare routing rule it points at] |
 | forward from email | [NEEDS INPUT: T14, after the Resend domain is verified] |
 | storage regions | [NEEDS INPUT: Supabase and Cloudflare regions, named in privacy copy] |
