@@ -80,7 +80,7 @@ T07 checks run 11 October 2026:
 | ingest secret location | [NEEDS INPUT: where it is set, never the value] |
 | twilio voice webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-voice, POST, primary and backup both set to it. Seen on Brad's Twilio screenshot, 12 October 2026, region Australia (AU1) |
 | twilio status webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-status, POST. Same screenshot |
-| inbound email | [NEEDS INPUT: T11, and the Cloudflare routing rule it points at] |
+| inbound email | hello@cairnscabinetmakers.com.au, Cloudflare Email Routing rule Active, action is the Worker rank-and-rent-email-ingest (seen on Brad's screenshot, 12 October 2026). Catch-all is Disabled (Drop). Public check through 1.1.1.1 the same day: MX route1/2/3.mx.cloudflare.net, apex TXT v=spf1 include:_spf.mx.cloudflare.net ~all. Not yet tested by sending a message: that is the T14 and T28 check |
 | resend domain | cairnscabinetmakers.com.au, Verified in Resend (sending enabled, receiving off), 12 October 2026. Public check through 1.1.1.1 the same day: TXT resend._domainkey returns the DKIM key; CNAME rsend gives rsend-apne1.forge.rmta.net and send gives send.forge.rmta.net (both DNS only). Resend region is apne1 (Tokyo), to name in privacy copy. DMARC _dmarc (v=DMARC1; p=none;) is shown in Resend but is not in DNS yet: NXDOMAIN |
 | forward from email | [NEEDS INPUT: T14, after the Resend domain is verified] |
 | storage regions | [NEEDS INPUT: Supabase and Cloudflare regions, named in privacy copy] |
