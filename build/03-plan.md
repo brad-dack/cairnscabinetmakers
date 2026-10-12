@@ -177,9 +177,15 @@ Two kinds of image, approved by Brad on 13 October 2026:
 
 | file | image | shows | photo or diagram | alt text | width | height | KB | widths |
 |---|---|---|---|---|---|---|---|---|
-| index.html | images/home-hero-kitchen.jpg | a modern fitted kitchen with cabinetry and a benchtop, bright and warm, no people, no text | illustrative image (Gemini) | [NEEDS INPUT: T24] | | | | |
-| kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.jpg | a different modern kitchen from a different angle: cabinetry, benchtop, island, no people, no text | illustrative image (Gemini) | [NEEDS INPUT: T24] | | | | |
-| kitchen-renovations-cairns.html | images/kitchen-cabinet-parts.svg | the named parts of a kitchen base cabinet: carcass, door, edge, shelf, hinge, kickboard, benchtop. Labels only, no performance or moisture claim. Replaces the moisture-points diagram, which was tied to claim 3, now dropped | diagram | [NEEDS INPUT: T24] | | | | |
+| index.html | images/home-hero-kitchen.jpg | a modern fitted kitchen with cabinetry and a benchtop, bright and warm, no people, no text | illustrative image (Gemini) | An illustrated modern kitchen with white cabinetry, a timber island and open shelving | 1200 | 800 | 122 | 400, 560, 720, 960 |
+| kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.jpg | a different modern kitchen from a different angle: cabinetry, benchtop, island, no people, no text | illustrative image (Gemini) | An illustrated modern kitchen with timber and grey cabinetry and a stone-look island benchtop | 1200 | 800 | 146 | 400, 560, 720, 960 |
+| kitchen-renovations-cairns.html | images/kitchen-cabinet-parts.svg | the named parts of a kitchen base cabinet: carcass, door, edge, shelf, hinge, kickboard, benchtop. Labels only, no performance or moisture claim. Replaces the moisture-points diagram, which was tied to claim 3, now dropped | diagram | Diagram naming the parts of a kitchen base cabinet: benchtop, carcass, shelf, kickboard, hinge, door and edge | 1200 | 800 | 4 | none |
+
+T24, 13 October 2026. The two Gemini images arrived as `home.jpeg` and
+`kitchens.jpeg` (1264 by 848), were cropped to 3:2, resized to 1200 by 800 and
+saved as the file names above, with `-400`, `-560`, `-720` and `-960` variants.
+The originals are kept in `build/source-images/`, which `_config.yml` keeps off
+the live site. Wiring into `config.js` is part of T25.
 
 ### Gemini prompts for T23
 
