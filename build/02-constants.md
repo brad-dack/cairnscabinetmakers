@@ -147,6 +147,6 @@ Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: 
 | field | value |
 |---|---|
 | property verified | [NEEDS INPUT: T15, Y or N] |
-| method | [NEEDS INPUT: DNS TXT] |
+| method | DNS TXT, added through Cloudflare's automatic route from Search Console (Domain property). `nslookup -type=TXT cairnscabinetmakers.com.au 1.1.1.1` on 13 October 2026 returns google-site-verification=xFEvZ8lwiNdF_Q-Moteh2U_woraknz-JidTjkddb8P0 beside the SPF record |
 | date | [NEEDS INPUT: T15] |
 | gsc_site_url set on the site row | [NEEDS INPUT: T29, Y or N] |
