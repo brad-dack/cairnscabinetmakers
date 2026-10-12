@@ -75,14 +75,14 @@ T07 checks run 11 October 2026:
 | ga4 settings | 12 October 2026, per Brad: event data retention 14 months; internal-traffic filter set up (IP not recorded here); stream URL changed to https://cairnscabinetmakers.com.au (apex) |
 | turnstile site key | 0x4AAAAAAEHD1tLftcrbDXIx (sent by Brad twice, 12 October 2026; differs from a low-resolution screenshot of the widget list, so not yet proven against the dashboard. Proven when the T14 form test passes Turnstile) |
 | turnstile hostname added | Y, cairnscabinetmakers.com.au added to the shared "Rank and Rent forms" widget, per Brad, 12 October 2026 |
-| supabase site_id | [NEEDS INPUT: T14] |
-| ingest url | [NEEDS INPUT: T14, the shared ingest-form function URL] |
-| ingest secret location | [NEEDS INPUT: where it is set, never the value] |
+| supabase site_id | 00ee0b19-363b-4387-abfc-d04652f55346 (slug cairns-cabinet-makers), created by migration 029 in rank-and-rent-backend, commit 61773b8, applied 13 October 2026. `supabase db push --dry-run` showed only 029 pending first; `select` on the remote returns the row with twilio_number +61740284041, inbound_email and forward_from_email hello@cairnscabinetmakers.com.au, ga4_property_id 558470374 |
+| ingest url | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/ingest-form (the shared function, same form as the Perth Tiling Specialists config) |
+| ingest secret location | `sites.ingest_secret` on the Cairns row (32 hex characters, set by migration 029 in the backend repo). It is the form's hidden field, so it is also placed in `config.js` as `ingestSecret` at T16 |
 | twilio voice webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-voice, POST, primary and backup both set to it. Seen on Brad's Twilio screenshot, 12 October 2026, region Australia (AU1) |
 | twilio status webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-status, POST. Same screenshot |
 | inbound email | hello@cairnscabinetmakers.com.au, Cloudflare Email Routing rule Active, action is the Worker rank-and-rent-email-ingest (seen on Brad's screenshot, 12 October 2026). Catch-all is Disabled (Drop). Public check through 1.1.1.1 the same day: MX route1/2/3.mx.cloudflare.net, apex TXT v=spf1 include:_spf.mx.cloudflare.net ~all. Not yet tested by sending a message: that is the T14 and T28 check |
 | resend domain | cairnscabinetmakers.com.au, Verified in Resend (sending enabled, receiving off), 12 October 2026. Public check through 1.1.1.1 the same day: TXT resend._domainkey returns the DKIM key; CNAME rsend gives rsend-apne1.forge.rmta.net and send gives send.forge.rmta.net (both DNS only). Resend region is apne1 (Tokyo), to name in privacy copy. DMARC _dmarc (v=DMARC1; p=none;) is shown in Resend but is not in DNS yet: NXDOMAIN |
-| forward from email | [NEEDS INPUT: T14, after the Resend domain is verified] |
+| forward from email | hello@cairnscabinetmakers.com.au, set on the site row by migration 029 |
 | storage regions | [NEEDS INPUT: Supabase and Cloudflare regions, named in privacy copy] |
 | retention rule | [NEEDS INPUT: what is deleted, after how long, and by what] |
 
@@ -128,8 +128,8 @@ Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: 
 | field | value |
 |---|---|
 | mp3 recorded | Y, uploaded by Brad to the Greetings bucket; https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/Cairns%20Cabinet%20Makers.mp3 returns HTTP 200, audio/mpeg, 96,290 bytes, checked 13 October 2026. The words in it are not yet checked by ear: T28 does that on a real call |
-| greeting_audio_url set | [NEEDS INPUT: T14, Y or N] |
-| greeting_text set | [NEEDS INPUT: T14, Y or N] |
+| greeting_audio_url set | Y, on the site row, 13 October 2026 |
+| greeting_text set | Y, on the site row, the approved T12 words |
 | greeting heard on a real call | [NEEDS INPUT: T28, date] |
 
 ## Search Console
