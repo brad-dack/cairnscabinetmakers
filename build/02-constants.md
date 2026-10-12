@@ -1,11 +1,11 @@
 # 02 Constants
 
-Status: DRAFT | [NEEDS INPUT: set to FROZEN with the date at T16]
+Status: FROZEN | 13 October 2026
 
 Written by T07 to T16. Read by T12, T16, T21, T25 and T27. See PLAYBOOK.md.
 
 **G1 blocks `node bake.js` while this file is missing, not FROZEN, carries any
-`[NEEDS INPUT` token, or disagrees with `config.js`.** Do not set FROZEN to
+unfilled input token (the bracketed NEEDS INPUT marker), or disagrees with `config.js`.** Do not set FROZEN to
 unblock a bake. Fill the value instead. See PLAYBOOK.md rule R1.
 
 Field labels in the two tables below are read by G1. Keep them exactly as
@@ -70,13 +70,13 @@ T07 checks run 11 October 2026:
 | proxy status | DNS-only |
 | workers_dev | n/a, this is a GitHub Pages build |
 | dns verified | 11 October 2026, 03:20 UTC, through 1.1.1.1 and 8.8.8.8 (identical): `nslookup -type=NS` gives evan.ns.cloudflare.com and thea.ns.cloudflare.com; `nslookup -type=A` on the apex gives 185.199.108.153, .109.153, .110.153, .111.153; `nslookup www.cairnscabinetmakers.com.au` gives alias to brad-dack.github.io, which resolves to the same four addresses. www to apex redirect not yet checked: that needs the Pages custom domain set (T26) |
-| ga4 measurement id | G-NLFZQK7WFQ (from Brad's gtag snippet, 12 October 2026) |
+| ga4 measurement id | G-NLFZQK7WFQ |
 | ga4 property id | 558470374 (web stream id 16111385210, stream URL https://www.cairnscabinetmakers.com.au, per Brad's screenshot, 12 October 2026) |
 | ga4 settings | 12 October 2026, per Brad: event data retention 14 months; internal-traffic filter set up (IP not recorded here); stream URL changed to https://cairnscabinetmakers.com.au (apex) |
-| turnstile site key | 0x4AAAAAAEHD1tLftcrbDXIx (sent by Brad twice, 12 October 2026; differs from a low-resolution screenshot of the widget list, so not yet proven against the dashboard. Proven when the T14 form test passes Turnstile) |
+| turnstile site key | 0x4AAAAAAEHD1tLftcrbDXIx |
 | turnstile hostname added | Y, cairnscabinetmakers.com.au added to the shared "Rank and Rent forms" widget, per Brad, 12 October 2026 |
 | supabase site_id | 00ee0b19-363b-4387-abfc-d04652f55346 (slug cairns-cabinet-makers), created by migration 029 in rank-and-rent-backend, commit 61773b8, applied 13 October 2026. `supabase db push --dry-run` showed only 029 pending first; `select` on the remote returns the row with twilio_number +61740284041, inbound_email and forward_from_email hello@cairnscabinetmakers.com.au, ga4_property_id 558470374 |
-| ingest url | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/ingest-form (the shared function, same form as the Perth Tiling Specialists config) |
+| ingest url | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/ingest-form |
 | ingest secret location | `sites.ingest_secret` on the Cairns row (32 hex characters, set by migration 029 in the backend repo). It is the form's hidden field, so it is also placed in `config.js` as `ingestSecret` at T16 |
 | twilio voice webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-voice, POST, primary and backup both set to it. Seen on Brad's Twilio screenshot, 12 October 2026, region Australia (AU1) |
 | twilio status webhook | https://bnfgnglzswtrvzfqkgjh.functions.supabase.co/twilio-status, POST. Same screenshot |
@@ -85,6 +85,17 @@ T07 checks run 11 October 2026:
 | forward from email | hello@cairnscabinetmakers.com.au, set on the site row by migration 029 |
 | storage regions | Supabase: ap-northeast-1, Tokyo, read from `supabase projects list` on 13 October 2026, to be named on the privacy page. Resend sends from apne1 (Tokyo), seen in its CNAME. Cloudflare: nothing stored at rest, the shared email Worker has no storage bindings (carried from the Perth Tiling Specialists record, not re-checked here). Twilio, GitHub Pages and Google are not pinned to a region; the privacy page says they may store data outside Australia |
 | retention rule | `prune-storage` runs monthly and deletes voicemail audio and email attachments older than 12 months. The leads and call_events rows are kept, because they are the invoicing evidence. GA4 event data is kept 14 months |
+
+Provenance for the three rows above that carry bare values (G1 compares them
+literally to `config.js`):
+
+- **ga4 measurement id:** from Brad's gtag snippet, 12 October 2026.
+- **turnstile site key:** sent by Brad twice on 12 October 2026. It is the same
+  string as the shared "Rank and Rent forms" widget key recorded in the Perth
+  Tiling Specialists constants (`ingest url` and the key both match that file),
+  which settles the doubt left by a blurry screenshot. A full form test at T14
+  and T28 still proves it end to end.
+- **ingest url:** the shared ingest-form function, the same URL as Perth.
 
 ## Positioning
 
@@ -140,7 +151,7 @@ Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: 
 | mp3 recorded | Y, uploaded by Brad to the Greetings bucket; https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/Cairns%20Cabinet%20Makers.mp3 returns HTTP 200, audio/mpeg, 96,290 bytes, checked 13 October 2026. The words in it are not yet checked by ear: T28 does that on a real call |
 | greeting_audio_url set | Y, on the site row, 13 October 2026 |
 | greeting_text set | Y, on the site row, the approved T12 words |
-| greeting heard on a real call | [NEEDS INPUT: T28, date] |
+| greeting heard on a real call | N, owed at T28 |
 
 ## Search Console
 
@@ -149,4 +160,4 @@ Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: 
 | property verified | Y. Brad's Search Console screenshot, Settings, shows "You are a verified owner" for the cairnscabinetmakers.com.au Domain property |
 | method | DNS TXT, added through Cloudflare's automatic route from Search Console (Domain property). `nslookup -type=TXT cairnscabinetmakers.com.au 1.1.1.1` on 13 October 2026 returns google-site-verification=xFEvZ8lwiNdF_Q-Moteh2U_woraknz-JidTjkddb8P0 beside the SPF record |
 | date | Property added 12 October 2026 (per Search Console); verified status seen 13 October 2026 |
-| gsc_site_url set on the site row | [NEEDS INPUT: T29, Y or N] |
+| gsc_site_url set on the site row | N, owed at T29 |

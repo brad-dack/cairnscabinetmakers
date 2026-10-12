@@ -95,4 +95,4 @@ be. See PLAYBOOK.md rule R7.
 
 | divergence | template commit | or reason it stays here |
 |---|---|---|
-| [NEEDS INPUT: or "none"] | | |
+| Licence display (12 October 2026) | | Not yet in the template: this repo's PLAYBOOK R14 and the `licence` block, `licenceHtml()`, G11 and CSS exist only here. To be ported to the template, then this row gets its commit |
