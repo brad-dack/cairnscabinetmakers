@@ -20,7 +20,7 @@ written.
 | entity | Sole trader. Brad, trading as Cairns Cabinet Makers |
 | abn | 78 538 005 810 |
 | published name | Brad, first name only, on About and Privacy |
-| email | [NEEDS INPUT: or the literal word none until an inbox exists] |
+| email | hello@cairnscabinetmakers.com.au |
 | phone e164 | +61740284041 |
 | phone display | (07) 4028 4041 |
 
@@ -83,20 +83,30 @@ T07 checks run 11 October 2026:
 | inbound email | hello@cairnscabinetmakers.com.au, Cloudflare Email Routing rule Active, action is the Worker rank-and-rent-email-ingest (seen on Brad's screenshot, 12 October 2026). Catch-all is Disabled (Drop). Public check through 1.1.1.1 the same day: MX route1/2/3.mx.cloudflare.net, apex TXT v=spf1 include:_spf.mx.cloudflare.net ~all. Not yet tested by sending a message: that is the T14 and T28 check |
 | resend domain | cairnscabinetmakers.com.au, Verified in Resend (sending enabled, receiving off), 12 October 2026. Public check through 1.1.1.1 the same day: TXT resend._domainkey returns the DKIM key; CNAME rsend gives rsend-apne1.forge.rmta.net and send gives send.forge.rmta.net (both DNS only). Resend region is apne1 (Tokyo), to name in privacy copy. DMARC _dmarc (v=DMARC1; p=none;) is shown in Resend but is not in DNS yet: NXDOMAIN |
 | forward from email | hello@cairnscabinetmakers.com.au, set on the site row by migration 029 |
-| storage regions | [NEEDS INPUT: Supabase and Cloudflare regions, named in privacy copy] |
-| retention rule | [NEEDS INPUT: what is deleted, after how long, and by what] |
+| storage regions | Supabase: ap-northeast-1, Tokyo, read from `supabase projects list` on 13 October 2026, to be named on the privacy page. Resend sends from apne1 (Tokyo), seen in its CNAME. Cloudflare: nothing stored at rest, the shared email Worker has no storage bindings (carried from the Perth Tiling Specialists record, not re-checked here). Twilio, GitHub Pages and Google are not pinned to a region; the privacy page says they may store data outside Australia |
+| retention rule | `prune-storage` runs monthly and deletes voicemail audio and email attachments older than 12 months. The leads and call_events rows are kept, because they are the invoicing evidence. GA4 event data is kept 14 months |
 
 ## Positioning
 
 | field | value |
 |---|---|
-| level | [NEEDS INPUT: 1, 2 or 3] |
-| voice rule | [NEEDS INPUT: including the named-individual decision] |
-| renter signed | [NEEDS INPUT: Y or N] |
+| level | 2 |
+| voice rule | "We" for the business throughout. First person singular for Brad's own section on About. Naming the individual is allowed, as on Perth Tiling Specialists, Canberra Tile Layers and Perth Limestone Group, and matches "Brad, first name only" in Identity |
+| renter signed | N |
 
 Claim restriction list, written out in full rather than referenced:
 
-[NEEDS INPUT: what may not be said at this level]
+- No claim that we do the work. The site takes enquiries and passes them on.
+- No invented reviews, star ratings, photos of work, years in business or job counts.
+- No licence number and no "licensed" wording before a renter is signed (PLAYBOOK R14, and the open QBCC s53C item in `05-log.md`).
+- No response-time promise.
+- No pricing presented as ours. A Cairns cost source is still open (R10), so no cost figures until one is in `03-plan.md`. The Sydney benchmark is not used.
+- No "free quote". This site does not quote, and no draft says the cabinet maker's quote is free.
+- No showroom, workshop or street address, and no "visit us".
+- Commercial disclosure on About: the cabinet maker pays, we do not take a cut.
+- `schema.type` stays `Organization`. No premises, no hours, no reviews.
+
+Approved by Brad, 13 October 2026.
 
 ## Privacy position
 
