@@ -74,7 +74,7 @@ T07 checks run 11 October 2026:
 | ga4 property id | 558470374 (web stream id 16111385210, stream URL https://www.cairnscabinetmakers.com.au, per Brad's screenshot, 12 October 2026) |
 | ga4 settings | 12 October 2026, per Brad: event data retention 14 months; internal-traffic filter set up (IP not recorded here); stream URL changed to https://cairnscabinetmakers.com.au (apex) |
 | turnstile site key | [NEEDS INPUT: T11, copied from the Cloudflare dashboard] |
-| turnstile hostname added | [NEEDS INPUT: Y or N] |
+| turnstile hostname added | Y, cairnscabinetmakers.com.au added to the shared "Rank and Rent forms" widget, per Brad, 12 October 2026 |
 | supabase site_id | [NEEDS INPUT: T14] |
 | ingest url | [NEEDS INPUT: T14, the shared ingest-form function URL] |
 | ingest secret location | [NEEDS INPUT: where it is set, never the value] |
