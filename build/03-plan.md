@@ -1,6 +1,6 @@
 # 03 Page plan
 
-Status: DRAFT | [NEEDS INPUT: FITS at T18, then SIGNED-OFF with the date at T19]
+Status: SIGNED-OFF | Brad, 13 October 2026
 Evidence: CLEAR | 13 October 2026
 
 Written by T16a to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
@@ -162,15 +162,24 @@ nav except Privacy, which is in the footer on every page.
 ## Image direction
 
 T17 writes what each image must show; T24 fills the measured columns. No
-captions. Positioning forbids photos of work, so these are drawn illustrations
-or diagrams, never a near-miss photo of a finished job. A diagram that makes a
-factual claim is tied to a Claim register row.
+captions.
+
+Two kinds of image, approved by Brad on 13 October 2026:
+
+- **Illustrative images**, generated with Gemini at T23 to make the site look
+  appealing. They are never presented as our work or a renter's work: no
+  caption, no "our projects" or "recent work" wording, no before and after, no
+  readable business name or logo in the frame, and alt text that says what is
+  illustrated ("an illustrated modern kitchen"), not what was done. R10 applies.
+- **Diagrams**, drawn as SVG, wherever an image would make a factual claim. A
+  diagram that makes a factual claim is tied to a Claim register row; one with
+  no sourced row is not drawn.
 
 | file | image | shows | photo or diagram | alt text | width | height | KB | widths |
 |---|---|---|---|---|---|---|---|---|
-| index.html | images/home-hero-cabinetry.svg | a line illustration of fitted kitchen and wardrobe cabinetry | illustration | [NEEDS INPUT: T24] | | | | |
-| kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.svg | a line illustration of a kitchen layout with cabinets and benchtop | illustration | [NEEDS INPUT: T24] | | | | |
-| kitchen-renovations-cairns.html | images/cabinet-moisture-points.svg | where moisture reaches kitchen cabinets: under the sink, the dishwasher edge, the floor line (tied to claim 3, drawn only if sourced) | diagram | [NEEDS INPUT: T24] | | | | |
+| index.html | images/home-hero-kitchen.jpg | a modern fitted kitchen with cabinetry and a benchtop, bright and warm, no people, no text | illustrative image (Gemini) | [NEEDS INPUT: T24] | | | | |
+| kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.jpg | a different modern kitchen from a different angle: cabinetry, benchtop, island, no people, no text | illustrative image (Gemini) | [NEEDS INPUT: T24] | | | | |
+| kitchen-renovations-cairns.html | images/kitchen-cabinet-parts.svg | the named parts of a kitchen base cabinet: carcass, door, edge, shelf, hinge, kickboard, benchtop. Labels only, no performance or moisture claim. Replaces the moisture-points diagram, which was tied to claim 3, now dropped | diagram | [NEEDS INPUT: T24] | | | | |
 
 ## Linkable asset
 
@@ -248,4 +257,9 @@ Review date: not applicable until a figure is published.
 
 T19. H1 map and nav signed off by Brad in this file, not in a message.
 
-[NEEDS INPUT: date]
+13 October 2026. Brad approved the plan in the Code session: the inventory, the Head table
+(titles, metas and H1s as written), the nav (Home, Kitchens, About; Privacy in the footer),
+the cannibalisation map and the link graph. Two things he added: the QBCC value statement
+on every page until a renter is signed (claim row 7), and generated illustrative images,
+recorded under Image direction. The plan is the record; a later change to a title, meta,
+H1 or the nav needs this section re-signed.

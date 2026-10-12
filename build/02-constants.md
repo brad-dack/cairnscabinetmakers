@@ -108,7 +108,7 @@ literally to `config.js`):
 Claim restriction list, written out in full rather than referenced:
 
 - No claim that we do the work. The site takes enquiries and passes them on.
-- No invented reviews, star ratings, photos of work, years in business or job counts.
+- No invented reviews, star ratings, photos of work, years in business or job counts. Generated illustrative images are allowed (Brad, 13 October 2026) as long as nothing presents them as our work or a renter's work: no caption, no "our projects" wording, alt text that describes the illustration (see `03-plan.md` Image direction).
 - No licence number and no "licensed" wording before a renter is signed (PLAYBOOK R14). Instead, every page carries the QBCC value statement: "Cairns Cabinet Makers cannot perform building work valued in excess of $3,300. For work above that value, discuss it with the cabinet maker who quotes your job." Adopted by Brad, 13 October 2026, as the conservative answer to the open QBCC s53C item in `05-log.md`.
 - No response-time promise.
 - No pricing presented as ours. A Cairns cost source is still open (R10), so no cost figures until one is in `03-plan.md`. The Sydney benchmark is not used.
