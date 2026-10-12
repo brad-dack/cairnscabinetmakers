@@ -21,8 +21,8 @@ written.
 | abn | 78 538 005 810 |
 | published name | Brad, first name only, on About and Privacy |
 | email | [NEEDS INPUT: or the literal word none until an inbox exists] |
-| phone e164 | [NEEDS INPUT: T11, e.g. +61890000000] |
-| phone display | [NEEDS INPUT: T11, e.g. (08) 9000 0000] |
+| phone e164 | +61740284041 |
+| phone display | (07) 4028 4041 |
 
 ## Naming history
 
