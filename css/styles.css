@@ -1240,6 +1240,7 @@ html[data-style="sharp"] .cta-band { background: var(--brand); }
   font-size: 0.95rem;
 }
 .footer-bottom p { margin: 0; }
+.footer-bottom .footer-licence { margin-top: 8px; }
 
 /* ---------- motion -------------------------------------------------------
    Gated twice: the media query (user preference) AND html.anim, which

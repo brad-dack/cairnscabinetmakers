@@ -667,6 +667,28 @@ by re-reading and re-judging the previous session's summary; the six page
 drafts and the handover that drove the build now exist nowhere on disk. The
 sequence was followed. The record was not kept.
 
+## R14 Licensed trades: licence display
+
+Applies to any build for a trade that needs a licence. First written for
+Cairns Cabinet Makers (QLD, QBCC), 12 October 2026.
+
+1. Before a licensed renter is signed, **nothing licence-related appears on
+   any page.** No licence number, no "licensed" wording, no placeholder.
+   `config.js` `licence.holder` and `licence.number` stay empty, and the bake
+   renders nothing.
+2. Once a licensed renter is signed (`02-constants.md` Positioning "renter
+   signed" is Y), both values are filled and every page, including 404, carries
+   the licensee's name, the statement that they are licensed under the
+   relevant Act, and the licence number. For QLD that is the QBCC Act s54,
+   read from qbcc.qld.gov.au/running-your-business/advertising on 11 October
+   2026. The wording is a legal point: confirm it with the state's legal advice
+   before launch.
+3. `--check` G11 enforces both halves: it fails if the renter is signed and
+   the values are empty, if only one of the two is set, or if they are filled
+   before a renter is signed.
+4. Whether pre-rental wording needs a price-limit statement (QLD s53C) is a
+   separate open question, settled by written legal advice, not by this rule.
+
 ---
 
 # Appendix B: why this order

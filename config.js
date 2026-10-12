@@ -53,6 +53,22 @@ window.SITE_CONFIG = {
     hours: ""          // e.g. "Mon–Sat, 7am–7pm" — only once a renter has real hours
   },
 
+  /* --- Trade licence display (licensed trades only) -----------------------
+     QLD: QBCC Act s54 needs the licensee's name, the words "licensed under
+     the QBCC Act" and the licence number on all advertising, and the QBCC
+     counts websites. Leave holder and number EMPTY until a licensed renter
+     is signed: with both empty nothing is rendered, so a pre-renter site
+     shows no licence line at all. Once both are filled, the footer on every
+     page carries them. Set required:true for a licensed trade; --check (G11)
+     then fails if build/02-constants.md says the renter is signed and either
+     value is missing, and fails if only one is filled or if a value is filled
+     before a renter is signed. */
+  licence: {
+    required: true,
+    holder: "",   // the renter's licensed name exactly as on the licence
+    number: ""    // the renter's QBCC licence number
+  },
+
   /* Used for canonical URLs, schema, and OG tags. No trailing slash.
      bake.js derives CNAME, robots.txt, and sitemap.xml from this — you
      never edit those files by hand. */

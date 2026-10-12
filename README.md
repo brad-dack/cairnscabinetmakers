@@ -134,6 +134,7 @@ stay off while `config.js` is still the unpopulated template.
 | G8 | `contact.reassurance` does not say the contractor pays or does not link privacy, or `02-constants.md` does not carry that exact text | `--check` |
 | G9 | an image referenced by `config.js` is on disk but not tracked by git | `--check` |
 | G10 | `_config.yml` does not exclude the operator files, or a Workers build has not set `workers_dev` to false | `--check` |
+| G11 | a licensed trade's renter is signed but the licence holder and number are empty, only one is set, or they are filled before a renter is signed (R14) | `--check` |
 
 G1 and G3 refuse to bake rather than warn, because both failures shipped: a
 commit called "freeze the constants" left the ingest endpoint, its secret and
@@ -453,3 +454,11 @@ README under a "Divergence from the template" heading. It's the fastest way
 to re-apply your changes if this template is ever regenerated, and the
 fastest way for the next person to know your build isn't running the
 stock engine.
+
+### Licence display (12 October 2026)
+
+`config.js` gains a `licence` block (`required`, `holder`, `number`). `bake.js`
+renders one line in the footer of every page and on 404.html, only when holder
+and number are both set, and adds guard G11 to `--check`. `css/styles.css` gains
+`.footer-bottom .footer-licence`. Reason: QBCC Act s54 (see PLAYBOOK R14); the
+template had nowhere to put a licensee's name and number.

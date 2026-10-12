@@ -588,6 +588,16 @@ function headerHtml(file) {
     "</div>";
 }
 
+/* Licence line (QBCC Act s54): only when a licensed renter's name and number
+   are both set. Empty config renders nothing, so a pre-renter site shows no
+   licence text. */
+const hasLicence = () => !!(cfg.licence && cfg.licence.holder && cfg.licence.number);
+function licenceHtml() {
+  if (!hasLicence()) return "";
+  return '<p class="footer-licence">' + esc(cfg.licence.holder) +
+    ", licensed under the QBCC Act. Licence number " + esc(cfg.licence.number) + ".</p>";
+}
+
 /* Baked so the footer's links to every service page are crawlable without
    JS — on a small site that internal link block is a meaningful share of the
    internal linking. */
@@ -619,6 +629,7 @@ function footerHtml() {
       "<p>&copy; " + new Date().getFullYear() + " " + esc(cfg.business.name) +
       (cfg.business.city ? ". Serving " + esc(cfg.business.city) + ", " + esc(cfg.business.state) + "." : ".") +
       "</p>" +
+      licenceHtml() +
     "</div>";
 }
 
@@ -919,6 +930,7 @@ const notFoundContent = () => `<!DOCTYPE html>
     <p>That page doesn&#8217;t exist or has moved &mdash; but we&#8217;re still easy to reach.</p>
     <p><span class="brand">${esc(cfg.business.name)}</span>${cfg.business.phone ? "<br>\n       Call " +
       '<a class="tel" href="tel:' + cfg.business.phone + '">' + esc(cfg.business.phoneDisplay) + "</a>" : ""}</p>
+    ${licenceHtml()}
     <a class="btn" href="/">Back to homepage</a>
   </div>
 </body>
@@ -981,14 +993,14 @@ function bake() {
   console.log("Before launch, run:  node bake.js --check");
 }
 
-/* ---------- build/ artefact guards (G1 to G10) -----------------------------
+/* ---------- build/ artefact guards (G1 to G11) ----------------------------
    The five artefacts under build/ are the build's record: what was decided,
    what is owed, and what has been proved. PLAYBOOK.md gives each task a gate;
    these guards make the mechanical half of those gates enforceable, so a gate
    cannot be passed by saying it was passed.
 
    G1 (constants frozen) and G3 (page plan signed off) block `node bake.js`.
-   The other eight are reported by --check.
+   The others are reported by --check.
 
    Every guard stays OFF while config.js is still the unpopulated template,
    because there is no build behind it to check.
@@ -1324,6 +1336,30 @@ function g6Backport() {
   return out;
 }
 
+/* G11. Trade licence display (QBCC Act s54). The licence line must appear
+   once a licensed renter is signed, and must not appear before. */
+function g11Licence() {
+  const lic = cfg.licence;
+  if (!lic || !lic.required) return [];
+  const out = [];
+  const raw = readBuild("02-constants.md");
+  const signed = raw === null ? "" : (fieldMap(raw, ["Positioning"]).rentersigned || "");
+  const rented = /^y/i.test(signed.trim());
+  const holder = !!lic.holder, number = !!lic.number;
+  if (holder !== number) {
+    out.push("G11 config.js licence has only one of holder and number set: " +
+      "both are needed for the s54 line to render");
+  } else if (rented && !holder) {
+    out.push("G11 build/02-constants.md says the renter is signed but config.js " +
+      "licence.holder and licence.number are empty: s54 needs the licensed name, " +
+      "the QBCC Act statement and the licence number on every page");
+  } else if (!rented && holder) {
+    out.push("G11 config.js licence is filled but build/02-constants.md Positioning " +
+      "\"renter signed\" is not Y: nothing licence-related may show before a renter");
+  }
+  return out;
+}
+
 /* G7. Launch readiness: nothing blocking is still open, and a QA pass is a
    pass on evidence rather than on assertion. */
 function g7Launch() {
@@ -1488,7 +1524,7 @@ function buildGuards() {
   return {
     errors: [
       ...g1Constants(), ...g2Market(), ...g3Plan(), ...g4Evidence(), ...g5Copy(),
-      ...g6Backport(), ...launch.errors, ...notices.errors, ...g9Images(), ...g10Exposure()
+      ...g6Backport(), ...launch.errors, ...notices.errors, ...g9Images(), ...g10Exposure(), ...g11Licence()
     ],
     warnings: [...launch.warnings, ...notices.warnings],
     skipped: false
@@ -1838,7 +1874,7 @@ function runCheck() {
   }
 
 
-  /* -- 11. build/ artefact guards (G1 to G10) ----------------------------
+  /* -- 11. build/ artefact guards (G1 to G11) ---------------------------
      PLAYBOOK.md gives each task a gate; these check the mechanical half of
      them against the five artefacts under build/. Off for the unpopulated
      template. */
