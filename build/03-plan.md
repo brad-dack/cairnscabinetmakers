@@ -181,6 +181,56 @@ Two kinds of image, approved by Brad on 13 October 2026:
 | kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.jpg | a different modern kitchen from a different angle: cabinetry, benchtop, island, no people, no text | illustrative image (Gemini) | [NEEDS INPUT: T24] | | | | |
 | kitchen-renovations-cairns.html | images/kitchen-cabinet-parts.svg | the named parts of a kitchen base cabinet: carcass, door, edge, shelf, hinge, kickboard, benchtop. Labels only, no performance or moisture claim. Replaces the moisture-points diagram, which was tied to claim 3, now dropped | diagram | [NEEDS INPUT: T24] | | | | |
 
+### Gemini prompts for T23
+
+Drafted 13 October 2026. Brad runs these in Gemini and saves the chosen image
+into `images/` under the file name shown. Landscape 3:2 (about 1200 by 800 after
+T24), the subject centred because the hero crops differently on phones.
+
+Shared rules, repeated in each prompt because Gemini forgets: no people, no text
+or lettering anywhere, no logos or brand names on appliances, no street or
+landmark that identifies a place, no before and after, and a realistic finished
+home kitchen rather than a showroom or a render.
+
+**home-hero-kitchen.jpg** (Home)
+
+> A photorealistic photograph of a modern fitted home kitchen in warm natural
+> daylight. White and light timber-look cabinetry, a stone-look benchtop, a
+> built-in shelving and storage wall at one side. A bright, calm, lived-in feel
+> for a coastal Queensland home, with a soft green leafy view through a window.
+> Shot at eye level, 3:2 landscape, subject centred. No people, no text or
+> lettering, no logos or brand names, no signage, no pets, no food clutter.
+> Realistic proportions: straight cabinet lines, one tap, one sink, handles
+> that match.
+
+**kitchen-renovations-cairns.jpg** (Kitchens page)
+
+> A photorealistic photograph of a different modern kitchen, seen from a
+> three-quarter angle across a kitchen island. Mid-tone timber-look and soft
+> grey cabinetry, a pale stone-look benchtop with a clean waterfall edge,
+> overhead cabinets and a tiled splashback, bright natural daylight from the
+> side. A tropical, airy feel without palm trees in frame. 3:2 landscape,
+> subject centred. No people, no text or lettering, no logos or brand names, no
+> signage. Realistic proportions: straight lines, matching handles, one sink,
+> one cooktop, no duplicated or floating objects.
+
+**kitchen-cabinet-parts.svg** (Kitchens page): not a Gemini image. Drawn as SVG
+(T23 rule: a diagram wherever an image makes a factual claim). Labels only:
+carcass, door, edge, shelf, hinge, kickboard, benchtop. Code can draw it on
+request.
+
+Check each image before saving:
+
+- Hands, handles, taps and appliances are not warped, doubled or fused
+- Cabinet lines are straight and doors meet cleanly
+- No readable text on any surface, and no brand shapes on appliances
+- Nothing in the frame looks like a specific named place or business
+- It reads as a plausible kitchen, not a luxury showroom the renter could not
+  build
+
+Gemini's output terms and any generated-image labelling are Brad's to confirm
+for his own account. Nothing on the site calls these images work we did.
+
 ## Linkable asset
 
 T17. `conversion asset only`. The one page worth linking to would be a Cairns
