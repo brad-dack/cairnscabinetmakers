@@ -65,10 +65,10 @@ T17, with the Template fit column filled at T18.
 
 | file | route | config key | priority | primary keyword | secondary keywords | template fit |
 |---|---|---|---|---|---|---|
-| index.html | / | pages.home | 1, built first | cabinet makers cairns | cabinet maker cairns, cabinetmakers cairns, joinery cairns, cabinet maker near me, custom cabinets | [NEEDS INPUT: T18] |
-| kitchen-renovations-cairns.html | /kitchen-renovations-cairns | services[0] | 1 on volume | kitchen renovations cairns | kitchens cairns, kitchen cabinets cairns, kitchen makers cairns, kitchen design cairns, flat pack kitchens cairns, kitchen benchtops cairns, stone benchtops cairns | [NEEDS INPUT: T18] |
-| about.html | /about | pages.about | 3 | n/a | cabinet maker quote cairns | [NEEDS INPUT: T18] |
-| privacy.html | /privacy | pages.privacy | 3 | n/a | n/a | [NEEDS INPUT: T18] |
+| index.html | / | pages.home | 1, built first | cabinet makers cairns | cabinet maker cairns, cabinetmakers cairns, joinery cairns, cabinet maker near me, custom cabinets | engine change: Home renders from `pages.home.blocks`. The stock Home is a services grid, the generic how-it-works steps, testimonials and an FAQ preview, with no place for the planned wardrobe and joinery sections, the job outline or the disclosure. Perth Tiling Specialists has this change |
+| kitchen-renovations-cairns.html | /kitchen-renovations-cairns | services[0] | 1 on volume | kitchen renovations cairns | kitchens cairns, kitchen cabinets cairns, kitchen makers cairns, kitchen design cairns, flat pack kitchens cairns, kitchen benchtops cairns, stone benchtops cairns | fits: `services[0]` takes the block copy, a `form` block with `presetService` puts the enquiry form on the page, a `faqs` block feeds FAQPage schema, and the `Service` schema names the provider as Organization. The SVG images need no `widths`. The page-end call-to-action band and how-it-works section are the engine changes listed below |
+| about.html | /about | pages.about | 3 | n/a | cabinet maker quote cairns | engine change: About renders from `pages.about.blocks`, so it can carry headed sections (what we do and do not do, how it is paid for, service area) as well as the contact section and form. Stock About is a run of paragraphs, auto-built contact lines and the form |
+| privacy.html | /privacy | pages.privacy | 3 | n/a | n/a | engine change: Privacy renders from `pages.privacy.blocks`. The stock privacy text describes a three-field form and says calls are not recorded, which is the wrong data flow here (voicemail recorded and stored, Supabase in Tokyo, Resend, Twilio, 12-month retention) |
 
 Two money pages, as `01-market.md` planned: the home page owns the head group
 and the kitchens page owns the kitchen terms. Everything else is a section on
@@ -87,6 +87,33 @@ Home, the kitchens page and About, as on Perth Tiling Specialists.
 
 Template fit is `fits`, `engine change: <reason>`, or `dropped`. A page whose
 fit is unknown does not get drafted.
+
+**Template fit, T18, 13 October 2026.** Read against this repo's `bake.js` and
+`config.js` (the template as of d257368). Engine changes outside a page row,
+each to be logged under README "Divergence from the template" and in the
+Backport table when made at T25:
+
+1. **Header nav.** `headerHtml` hard-codes Home, Services and Contact. The plan
+   is Home, Kitchens, About. The footer's "About & Contact" label follows.
+2. **Call-to-action band.** `ctaBand` says "request your free quote online" on
+   every Home and service page. "No free quote" is a Positioning claim
+   restriction, so the line changes.
+3. **How-it-works section.** `howItWorksSection` renders unconditionally on Home
+   and service pages, with the stock steps: "within 24 hours" (a response-time
+   promise, banned) and "Get it done" (we do not do the work). It is dropped, as
+   on Canberra Tile Layers and Perth Tiling Specialists.
+4. **Job-type picker.** The picker lists `services[].name` plus "other", so
+   Home and About would offer "Kitchen Renovations" and "Other" only.
+   Wardrobes and joinery have no option. Perth reads `contact.jobTypes`
+   instead.
+5. **Not needed:** no new schema type (Service with an Organization provider is
+   what the engine emits), no new image handling (SVG without `widths` works),
+   no area pages, no separate Contact page, no 404 change.
+
+Perth Tiling Specialists made these changes in its own `bake.js` (sixteen
+logged there, none backported to the template). Copying them here is a second
+unbackported divergence unless the same change goes into the template. T30
+decides; flagged now so it is a choice, not a surprise.
 
 ## Head
 
