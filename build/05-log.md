@@ -84,11 +84,15 @@ T29.
 | field | value |
 |---|---|
 | sitemap submitted | 2026-10-14, per Brad's Search Console screenshot (Sitemaps report, Submitted Oct 14, 2026). Status there reads "Couldn't fetch", Last read blank, 0 discovered pages. The sitemap itself is sound at the same time: `curl -I` 200 application/xml with no redirect, also 200 to a Googlebot user agent, well-formed XML listing the four apex URLs, robots.txt allows all and names it, and there is no X-Robots-Tag. A new property commonly shows this for a day or two; recheck before resubmitting |
-| sitemap last read | [NEEDS INPUT: date Search Console reports] |
-| pages requested | [NEEDS INPUT] |
-| review dates set | [NEEDS INPUT: what, and when it falls due] |
-| link inventory | [NEEDS INPUT: the named pre-renter linkable assets] |
-| outreach targets and status | [NEEDS INPUT] |
+| sitemap last read | Not yet. Search Console showed Last read blank on 14 October 2026. Recheck on or after 16 October 2026 |
+| pages requested | Indexing requested for https://cairnscabinetmakers.com.au/ and https://cairnscabinetmakers.com.au/kitchen-renovations-cairns, reported done by Brad on 14 October 2026. Not seen by Code: Search Console has no API access from here yet |
+| review dates set | Proposed by Code on 14 October 2026, Brad to change if wrong. QBCC claims (plan rows 1, 2 and 4: the $3,300 threshold, contract and deposit limits, home warranty) re-checked against the QBCC pages by 13 April 2027 and again before launch when a renter is signed. QLD legal advice on s53C: before launch. ASIC business name renewal: 11 October 2027. Domain renewal: 11 October 2028 (2 years from 11 October 2026). Internal-traffic IP rechecked at each maintenance review. Privacy page "Last updated" and the retention rule: re-read at each review, or when a renter is signed |
+| ga4 internal traffic filter | Switched from Testing to Active, reported done by Brad on 14 October 2026 |
+| ga4 key event | `click_to_call` marked as a key event, reported done by Brad on 14 October 2026 |
+| ga4 to search console link | Linked to the Search Console property on 14 October 2026, reported by Brad. The Search Console collection was published in Reports > Library the same day. Check: GA4 Reports shows a Search Console section with Queries and Google organic search traffic, which can take a day or two to fill |
+| gsc_site_url | Not yet set on the site row (it is null on 14 October 2026). Setting it before the service account has access would make the daily digest report a 403, so it waits for Brad to grant the service account Restricted access to the sc-domain:cairnscabinetmakers.com.au property, and Viewer on GA4 property 558470374 |
+| link inventory | None. The plan's Linkable asset is "conversion asset only": the one page worth linking to would be a Cairns kitchen cost and process guide, and no Cairns cost source exists (`build/03-plan.md`) |
+| outreach targets and status | None named, because there is no link asset. Revisit if a Cairns cost source is found, when six targets must be named before drafting |
 
 ## Backport
 
