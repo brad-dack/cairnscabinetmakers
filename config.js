@@ -78,6 +78,11 @@ window.SITE_CONFIG = {
      never edit those files by hand. */
   domain: "https://cairnscabinetmakers.com.au",
 
+  /* Build options (README "Build options"): this site uses extensionless routes
+     and a nav built from services[]. */
+  cleanUrls: true,
+  navFromServices: true,
+
   /* --- Brand ----------------------------------------------------------- */
   brand: {
     color: "#8b5a2b",         // primary accent (buttons, links, highlights)
@@ -814,6 +819,9 @@ window.SITE_CONFIG = {
      `extraField` and override `placeholders` for its own page. */
   contact: {
     formHeadline: "Send an enquiry",
+    /* The call-to-action band says this, not "request your free quote online":
+       this site does not quote. */
+    ctaBandAction: "send an enquiry online",
     /* Job-type picker options. `services` lists pages, not jobs, so the
        picker reads these (the headings of Home's "What we can get quoted"). */
     jobTypes: [

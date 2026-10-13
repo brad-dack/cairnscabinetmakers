@@ -218,6 +218,12 @@ A gate stops every later task until its check passes.
 - **Out:** the MP3, path recorded in the same section
 - **Done:** the recording says the words in the Collection notices section.
 - **Check:** T28 hears it on a real call.
+- **Note:** the file name is final. A replacement recording goes under a new
+  file name and a migration repoints `greeting_audio_url`; if any word differs,
+  `greeting_text` and the Collection notices change in the same commit. On
+  Cairns Cabinet Makers a re-recording replaced the file the migration pointed
+  at, the URL returned 400, and the dashboard edit that followed changed one
+  word of `greeting_text` outside any migration.
 - **Rules:** R4.
 
 ## T14 Backend site row
@@ -227,11 +233,17 @@ A gate stops every later task until its check passes.
 - **Out:** a numbered migration in `rank-and-rent-backend`, committed and
   applied; `build/02-constants.md` site_id and ingest rows
 - **Done:** the row exists with `greeting_text` and `greeting_audio_url` both
-  set and both carrying the notice, `ingest_secret` generated and set, and
-  `inbound_email`, `forward_from_email` and `ga4_property_id` set.
+  set and both carrying the notice, `ingest_secret` generated and set,
+  `inbound_email`, `forward_from_email` and `ga4_property_id` set, and
+  `timezone` set explicitly to the site's own zone (Australia/Brisbane for
+  Queensland, Australia/Perth for WA, Australia/Sydney for NSW and the ACT).
+  The column default is Perth: it decides which day and month a lead counts
+  in and the time shown in the lead email, so a Cairns row left on the
+  default is two hours out.
 - **Check:** `supabase migration list --linked` shows the migration applied on
   the remote, and the migration file is committed. A row created by hand in
-  the SQL editor is not done, because it leaves no record.
+  the SQL editor is not done, because it leaves no record. `select timezone
+  from sites where slug = '...'` returns the site's own zone.
 - **Gate:** blocks T16.
 - **Rules:** R4, R13.
 
@@ -391,10 +403,16 @@ A gate stops every later task until its check passes.
 - **Out:** the live site; `build/05-log.md` QA rows for hostname and exposure
 - **Done:** pushed, Pages source set with the custom domain or `wrangler
   deploy` with `workers_dev` already false, HTTPS enforced, and operator files
-  excluded from what is served.
+  excluded from what is served, and the Turnstile widget on the live hostname
+  renders with no console error.
 - **Check:** `curl -sI https://<username>.github.io/<repo>/` returns a 301 to
   the domain, or the `*.workers.dev` hostname does not resolve; and
-  `curl -sI https://<domain>/PLAYBOOK.md` returns 404.
+  `curl -sI https://<domain>/PLAYBOOK.md` returns 404; and
+  `curl -sI http://<domain>/` returns a 301 to https (it can lag a few
+  minutes after Enforce HTTPS is ticked); and the live form, opened in a
+  browser, logs no Turnstile error. Error 110200 means the hostname is not on
+  the shared widget's list, even when T11 was reported done: on Cairns Cabinet
+  Makers the form had no token until the list was fixed.
 - **Gate:** blocks T29.
 - **Rules:** R5.
 
@@ -417,8 +435,10 @@ A gate stops every later task until its check passes.
 - **Out:** the same rows, Status `PASS`
 - **Done:** a real form submission lands as a row against the right `site_id`;
   a real call routes, logs, and the greeting heard carries the notice, with
-  `greeting_audio_url` and `greeting_text` both checked; GA4 realtime shows a
-  pageview and a `click_to_call`; the real test enquiry's lead row shows the
+  `greeting_audio_url` and `greeting_text` both checked (`curl -I` on the URL
+  returns 200 audio/mpeg, and `greeting_text` is the words on the recording);
+  the Turnstile widget renders and issues a token on the live hostname; GA4
+  realtime shows a pageview and a `click_to_call`; the real test enquiry's lead row shows the
   correct Sent from, Landed on and Came from (the form's `_page`, `_landing`
   and `_referrer`).
 - **Check:** G7 fails while Status is `PASS` with any required row missing its
@@ -442,6 +462,11 @@ A gate stops every later task until its check passes.
 - **Check:** Search Console shows a Last read date on the sitemap, the review
   dates are in the file, and GA4 Reports shows a Search Console section with
   Queries and Google organic search traffic.
+- **Note:** a new Search Console property can show "Couldn't fetch" on a
+  freshly submitted sitemap for a day or two even when the file is sound.
+  Confirm the file serves (200, application/xml, no redirect, robots allows
+  it), request indexing from URL Inspection, and recheck. Do not delete and
+  resubmit the sitemap.
 - **Note:** home IPs change. Re-check the internal traffic rule against the
   current public IP at each maintenance review and after any outage, and
   update the IP and date in `build/02-constants.md`.

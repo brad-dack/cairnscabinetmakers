@@ -457,28 +457,18 @@ stock engine.
 
 ### Licence display (12 October 2026)
 
-`config.js` gains a `licence` block (`required`, `holder`, `number`). `bake.js`
-renders one line in the footer of every page and on 404.html: the licensee line
-when holder and number are both set, otherwise the pre-renter value statement
-(`licence.preRenterStatement`); and adds guard G11 to `--check`. `css/styles.css` gains
-`.footer-bottom .footer-licence`. Reason: QBCC Act s54 (see PLAYBOOK R14); the
-template had nowhere to put a licensee's name and number.
+Backported to the template in commit c06f4b9 (13 October 2026) as the `licence` block,
+`licenceHtml()`, guard G11, rule R14 and `.footer-licence`. This site now runs the
+template's engine unchanged, with `licence.required: true`. Reason it was built:
+QBCC Act s54, and the template had nowhere to put a licensee's name and number.
 
 ### Engine changes for the page plan (13 October 2026)
 
-Ported from Perth Tiling Specialists' `bake.js` as a patch against the template at
-d257368, with the one hunk that would have removed the template's lead-attribution
-guard left out. The page plan (`build/03-plan.md`, T18) needed them. None is
-backported to the template yet.
-
-| Change | Where | Why |
-|---|---|---|
-| Home, About and Privacy render from `pages.X.blocks`; Home's services grid, how-it-works strip and FAQ preview, and About's auto contact lines, are gone | `bake.js` | The signed plan has headed sections the stock pages cannot hold, and the stock privacy text described a different data flow |
-| Nav is Home, each `services[]` page, About; the footer is one Pages column plus Privacy | `bake.js` | Plan nav: Home, Kitchens, About, with Privacy in the footer |
-| `pathFor` and extensionless URLs in canonicals, sitemap, schema and internal links | `bake.js` | Plan routes are `/kitchen-renovations-cairns`, `/about` and so on; GitHub Pages serves the `.html` file at that path |
-| `form` block inside `#quote`, with `contact.reassurance` above it; `pageHasForm` and `quoteHref`; `validateForms` | `bake.js` | R4: the collection notice goes with every form. About keeps the engine's own quote section |
-| `contact.jobTypes` drives the job picker; `textarea` field type | `bake.js`, `css/styles.css` | `services[]` lists pages, not jobs, and the form collects "anything you tell us about the job" |
-| CTA band no longer says "free quote"; the noscript line names the form; no em dashes in engine output; the how-it-works section is not rendered | `bake.js` | "No free quote" and the response-time ban are Positioning claim restrictions |
-| Header nav collapses below 1024px, with the mobile contact bar and no-JS nav rule moved to match | `css/styles.css`, `bake.js` | Ported with the nav change; the contact bar's quote link follows `#quote` in `js/main.js` |
-| Job-type picker options are equal height, centred, and an odd last option spans the row | `css/styles.css` | Five options in two columns looked ragged: one option wrapped to two lines and left its neighbour shorter, and "Something else" sat alone (13 October 2026) |
-| GA4 reports only on the live hostname | `js/main.js` | Local previews otherwise count as real visits; first found on Perth |
+Backported to the template in commit c06f4b9 (13 October 2026), made optional there:
+block-rendered Home, About and Privacy, `cleanUrls`, `navFromServices`,
+`contact.jobTypes`, `contact.ctaBandAction`, `textarea` fields, the form block inside
+`#quote`, the no-em-dash engine text, the no-JS nav, the 1024px nav breakpoint, the
+GA4 live-hostname guard and the equal-height job picker. This site runs the
+template's `bake.js`, `js/main.js` and `css/styles.css` unchanged, and switches the
+options on in `config.js`. Baking this site with the template engine gives the same
+pages as before the backport.

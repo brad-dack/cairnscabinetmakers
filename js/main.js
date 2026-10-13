@@ -177,10 +177,9 @@
   function renderContactBar() {
     var parts = [];
     if (hasPhone()) parts.push('<a class="contact-bar-item" href="' + telHref() + '">' + UI.callLabel + "</a>");
-    /* This page's own #quote when it has a form, else the About form.
-       Extensionless to match the baked CTAs (see pathFor in bake.js). */
+    /* This page's own #quote when it has a form, else the About form. */
     parts.push('<a class="contact-bar-item contact-bar-primary" href="' +
-      (document.getElementById("quote") ? "#quote" : "/about#quote") + '">' + UI.quoteShort + "</a>");
+      (document.getElementById("quote") ? "#quote" : (cfg.cleanUrls ? "/about" : "about.html") + "#quote") + '">' + UI.quoteShort + "</a>");
     if (hasEmail()) parts.push('<a class="contact-bar-item" href="mailto:' + esc(cfg.business.email) + '">' + UI.emailLabel + "</a>");
     if (parts.length < 2) return; // just the quote link isn't worth a bar
 
