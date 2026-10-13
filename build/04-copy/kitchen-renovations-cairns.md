@@ -103,6 +103,10 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
 - Titles, meta and H1 match `build/03-plan.md`. The meta still says "how cabinets cope with tropical humidity", which the page answers as questions to ask. If Brad prefers the meta to match the page more closely, a rewrite is a change that needs re-approval at T22 and a re-sign of the plan's Head table.
 - The diagram is `kitchen-cabinet-parts.svg`, which replaced the moisture-points diagram on 13 October 2026.
 
+## T25 transcription notes
+
+The form block carries no `heading`, because the "Get a kitchen quote" H2 and the sentence under it already sit directly above it. 13 October 2026.
+
 ## Markers outstanding
 
 None.

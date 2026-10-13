@@ -57,6 +57,10 @@ Status: APPROVED | v1, Brad, 13 October 2026
 
 - Titles, meta and H1 match `build/03-plan.md`.
 
+## T25 transcription notes
+
+The engine renders About's own quote section (heading from `contact.formHeadline`, the collection notice, then the form) after the blocks, and `validateForms` forbids a form block on About. So blocks 18 to 20 are not transcribed as blocks: the heading is "Send an enquiry" via `contact.formHeadline`, and the lead-in sentence "Tell us the room, roughly how big it is, and what you want built." is not shown. The form's own "Tell us about the job" field carries the same prompt. 13 October 2026.
+
 ## Markers outstanding
 
 None.

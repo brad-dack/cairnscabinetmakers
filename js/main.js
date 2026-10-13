@@ -61,6 +61,13 @@
   function injectGA4() {
     var id = cfg.ga4Id;
     if (!id || id.indexOf("XXXX") !== -1 || !/^G-[A-Z0-9]+$/.test(id)) return;
+    /* Only the live hostname reports. A local preview (localhost, a LAN IP,
+       a file:// open) would otherwise count as a real visit: on Perth Tiling
+       Specialists five of the 37 users in the first month were previews. */
+    var liveHost;
+    try { liveHost = new URL(cfg.domain).hostname; } catch (e) { return; }
+    var here = window.location.hostname;
+    if (here !== liveHost && here !== "www." + liveHost) return;
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
@@ -170,7 +177,10 @@
   function renderContactBar() {
     var parts = [];
     if (hasPhone()) parts.push('<a class="contact-bar-item" href="' + telHref() + '">' + UI.callLabel + "</a>");
-    parts.push('<a class="contact-bar-item contact-bar-primary" href="about.html#quote">' + UI.quoteShort + "</a>");
+    /* This page's own #quote when it has a form, else the About form.
+       Extensionless to match the baked CTAs (see pathFor in bake.js). */
+    parts.push('<a class="contact-bar-item contact-bar-primary" href="' +
+      (document.getElementById("quote") ? "#quote" : "/about#quote") + '">' + UI.quoteShort + "</a>");
     if (hasEmail()) parts.push('<a class="contact-bar-item" href="mailto:' + esc(cfg.business.email) + '">' + UI.emailLabel + "</a>");
     if (parts.length < 2) return; // just the quote link isn't worth a bar
 

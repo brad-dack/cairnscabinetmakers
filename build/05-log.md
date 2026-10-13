@@ -96,3 +96,4 @@ be. See PLAYBOOK.md rule R7.
 | divergence | template commit | or reason it stays here |
 |---|---|---|
 | Licence display (12 October 2026) | | Not yet in the template: this repo's PLAYBOOK R14 and the `licence` block, `licenceHtml()`, G11 and CSS exist only here. To be ported to the template, then this row gets its commit |
+| Engine changes for the page plan (13 October 2026) | | Not yet in the template: ported from Perth Tiling Specialists, which has not backported them either. Two builds now share block-rendered pages, `jobTypes`, extensionless URLs and the CTA wording, so they are good template candidates. T30 decides |

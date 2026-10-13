@@ -133,7 +133,9 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 
 body:has(.contact-bar) { padding-bottom: 54px; }
-@media (min-width: 800px) {
+/* 1024px, not the template's 800px: the header nav collapse point, the
+   mobile contact bar and this padding move together. See .site-nav below. */
+@media (min-width: 1024px) {
   body:has(.contact-bar) { padding-bottom: 0; }
 }
 
@@ -356,7 +358,12 @@ html[data-style="elegant"] .logo::before { border-radius: 50%; width: 9px; heigh
 
 .nav-phone { white-space: nowrap; }
 
-@media (min-width: 800px) {
+/* If this breakpoint moves, move NOSCRIPT_NAV_CSS in bake.js with it: it
+   expands the mobile nav for visitors without JavaScript below this width.
+   Desktop nav from 1024px rather than the template's 800px. This build's
+   nav has five links plus the call button, which needs roughly 1010px in one
+   row; at 820px it wrapped to two rows and overflowed the page sideways. */
+@media (min-width: 1024px) {
   .nav-toggle { display: none; }
   .header-inner { flex-wrap: nowrap; }
   .site-nav {
@@ -1071,7 +1078,8 @@ html[data-style="sharp"] .cta-band { background: var(--brand); }
   font-weight: 700;
   margin-bottom: 6px;
 }
-.form-field input {
+.form-field input,
+.form-field textarea {
   width: 100%;
   padding: 13px 14px;
   font: inherit;
@@ -1080,7 +1088,9 @@ html[data-style="sharp"] .cta-band { background: var(--brand); }
   background: var(--bg);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-.form-field input:focus {
+.form-field textarea { resize: vertical; }
+.form-field input:focus,
+.form-field textarea:focus {
   border-color: var(--brand);
   box-shadow: 0 0 0 4px var(--brand-glow-soft);
   outline: none;
@@ -1191,7 +1201,7 @@ html[data-style="sharp"] .cta-band { background: var(--brand); }
 }
 .contact-bar-hidden { transform: translateY(100%); }
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .contact-bar { display: none; }
 }
 
