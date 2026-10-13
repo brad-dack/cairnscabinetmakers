@@ -60,21 +60,21 @@ Status: [NEEDS INPUT: PASS or FAIL at T28]
 
 | check | result | evidence | date |
 |---|---|---|---|
-| no-js crawl | [NEEDS INPUT] | word count per page, with the command | |
-| console errors | [NEEDS INPUT] | | |
-| layout | [NEEDS INPUT] | mobile, tablet, desktop | |
-| pagespeed | [NEEDS INPUT] | the two heaviest pages | |
-| internal links | [NEEDS INPUT] | no orphans | |
-| sitemap | [NEEDS INPUT] | matches disk | |
-| notice above form | [NEEDS INPUT] | rendered, on every page with a form | |
-| preflight on deployed commit | [NEEDS INPUT] | `node bake.js --check` output | |
+| no-js crawl | PASS | `python` fetch of each live URL, scripts, styles and noscript removed, then header, footer and nav removed to count body words: `/` 842, `/kitchen-renovations-cairns` 1,110, `/about` 505, `/privacy` 878. Each returns HTTP 200 with its own H1 in the served HTML. The nav (`/`, `/kitchen-renovations-cairns`, `/about`) and the footer with the Privacy link are in the served HTML on all four | 2026-10-13 |
+| console errors | PASS | Browser pane, fresh tab, https://cairnscabinetmakers.com.au/, `/kitchen-renovations-cairns`, `/about`, `/privacy` loaded at 375, 768 and 1280 wide: `read_console_messages` returns only one entry, a 404 for the deliberate request to `/nonexistent-page` that tested the 404 page. No site errors. The Turnstile 110200 error present earlier on 13 October cleared when Brad fixed the hostname list | 2026-10-13 |
+| layout | PASS | Browser pane emulation, `document.documentElement.scrollWidth` against `innerWidth`: 375 wide, 375 on all four pages and the 404 page, no horizontal scroll; 768 wide, 753 on all four (the scrollbar), nav toggle shown; 1280 wide, 1265 on all four (the scrollbar), nav toggle hidden. Home hero image loads (450 px wide at desktop), the cabinet-parts diagram renders at 720 by 480. Viewed in the pane: home at desktop and mobile, the diagram, and the form step with the Turnstile widget. Not tested: Safari and Firefox | 2026-10-13 |
+| pagespeed | PASS | pagespeed.web.dev, mobile, Lighthouse 13.5.0, 13 Oct 2026 16:16 to 16:17 AWST. Home: Performance 99, Accessibility 100, Best Practices 100, SEO 100; FCP 0.8 s, LCP 2.0 s, TBT 30 ms, CLS 0. Kitchens (the heaviest page, 1,110 words and two images): Performance 93, Accessibility 100, Best Practices 100, SEO 100; FCP 0.8 s, LCP 3.0 s, TBT 120 ms, CLS 0. The kitchens LCP is above the 2.5 s good threshold. Desktop was not run: the keyless PageSpeed API returned 429 (quota), so these came from the web UI | 2026-10-13 |
+| internal links | PASS | Every `href` on the four live pages: `/`, `/about`, `/kitchen-renovations-cairns` and `/privacy` all return 200; none broken. One external link, https://www.oaic.gov.au, not fetched. Each page has inbound links from the other three, so no orphans | 2026-10-13 |
+| sitemap | PASS | `https://cairnscabinetmakers.com.au/sitemap.xml` lists `/`, `/kitchen-renovations-cairns`, `/about`, `/privacy`. The `.html` files on disk, excluding `404.html`, are `index`, `kitchen-renovations-cairns`, `about` and `privacy`. They match one to one. robots.txt serves and points at the sitemap | 2026-10-13 |
+| notice above form | PASS | Served HTML on `/`, `/kitchen-renovations-cairns` and `/about`: one `<form id="quote-form">` each, and the `reassurance` paragraph carrying "Your details go to a local cabinet maker so they can quote your job, and the cabinet maker pays for the enquiry" sits 256 characters before it. `/privacy` has no form | 2026-10-13 |
+| preflight on deployed commit | PASS | `gh api .../pages/builds/latest` commit 821d0ea81ce4dd3ec245dea8955c5195f0a26be0 equals `git rev-parse HEAD`. A fresh `git clone` of GitHub at that commit, `node bake.js --check`: "Preflight passed with 1 warning(s)", the warning being that this QA Status is not PASS yet | 2026-10-13 |
 | form end to end | [NEEDS INPUT] | row landed against the right site_id | |
 | call routes and logs | [NEEDS INPUT] | call_events row | |
 | greeting_audio_url | [NEEDS INPUT] | heard on the call | |
 | greeting_text | [NEEDS INPUT] | column set, same words | |
 | ga4 realtime | [NEEDS INPUT] | pageview and click_to_call | |
-| single indexable hostname | [NEEDS INPUT] | platform hostname fetched directly | |
-| operator files not served | [NEEDS INPUT] | 404 on PLAYBOOK.md and README.md | |
+| single indexable hostname | PASS | `curl -I`: https://brad-dack.github.io/cairnscabinetmakers/ returns 301 to https://cairnscabinetmakers.com.au/; https://www.cairnscabinetmakers.com.au/ returns 301 to the apex; http://cairnscabinetmakers.com.au/ returns 301 to https. Canonical on `/about` and `/kitchen-renovations-cairns` is the extensionless apex URL. `/about.html` also returns 200 (GitHub Pages serves both) with that canonical | 2026-10-13 |
+| operator files not served | PASS | `curl -s -o /dev/null -w %{http_code}` on the apex: PLAYBOOK.md, README.md, bake.js, CODE-SESSION-START.md, TEMPLATE_SUMMARY.md, `New site prompt.txt`, build/02-constants.md and _config.yml all 404 | 2026-10-13 |
 
 ## Index log
 
