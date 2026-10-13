@@ -143,16 +143,16 @@ No spam and no obligation. Your details go to a local cabinet maker so they can 
 **Voicemail greeting** (`sites.greeting_text` and the MP3 at
 `sites.greeting_audio_url`, both columns, same words):
 
-Hi, thanks for calling Cairns Cabinet Makers. Leave your name, suburb and job details after the tone. We will pass your enquiry on to a local cabinet maker who can quote the job, and the cabinet maker pays for the enquiry.
+Hi, thanks for calling Cairns Cabinet Makers. Leave your name, location and job details after the tone. We will pass your enquiry on to a local cabinet maker who can quote the job, and the cabinet maker pays for the enquiry.
 
-Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: "We will pass your enquiry on", and "we never sell your details" dropped. The clause that the cabinet maker pays for the enquiry stays in both, as R3, R4, R11 and G8 require. The form text carries the privacy link, which cannot be spoken. Neither says "licensed": that wording sits inside the open QBCC s53C question in `05-log.md`. The MP3 (T13) must say the greeting words exactly.
+Wording approved by Brad, 13 October 2026, in the Code session. One word changed the same day: "suburb" became "location", because the re-recorded MP3 says "location"; Brad confirmed it, and the sites row was set to match by migration 031 (backend commit 6c309d1). The form notice is unchanged. His edits kept: "We will pass your enquiry on", and "we never sell your details" dropped. The clause that the cabinet maker pays for the enquiry stays in both, as R3, R4, R11 and G8 require. The form text carries the privacy link, which cannot be spoken. Neither says "licensed": that wording sits inside the open QBCC s53C question in `05-log.md`. The MP3 (T13) must say the greeting words exactly.
 
 | field | value |
 |---|---|
 | mp3 recorded | Y, uploaded by Brad to the Greetings bucket; https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/Cairns%20Cabinet%20Makers.mp3 returns HTTP 200, audio/mpeg, 96,290 bytes, checked 13 October 2026. The words in it are not yet checked by ear: T28 does that on a real call |
 | greeting_audio_url set | Y. Brad re-recorded the greeting on 13 October 2026 (same words, clearer), so the file is now https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/CairnsCabinetMakers.mp3 (230,486 bytes, audio/mpeg), set by migration 030 in the backend repo, commit 3dfa56a. The first file, `Cairns Cabinet Makers.mp3`, was replaced and its URL returned 400 until 030. The new recording is not yet heard on a call: the test calls on 13 October played the first file |
-| greeting_text set | Y, on the site row, the approved T12 words |
-| greeting heard on a real call | N, owed at T28 |
+| greeting_text set | Y, on the site row, the T12 words with "location" for "suburb" (migration 031) |
+| greeting heard on a real call | Y. Brad rang (07) 4028 4041 on 13 October 2026 and heard the re-recorded greeting; `call_events` shows ringing at 08:51:37 UTC, completed after 24 s, and a 6 s recording event. Brad confirmed the recording says "location" |
 
 ## Search Console
 
