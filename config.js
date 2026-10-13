@@ -80,8 +80,8 @@ window.SITE_CONFIG = {
 
   /* --- Brand ----------------------------------------------------------- */
   brand: {
-    color: "#0b6e4f",         // primary accent (buttons, links, highlights)
-    colorDark: "#08523b",     // hover/darker shade of the accent
+    color: "#8b5a2b",         // primary accent (buttons, links, highlights)
+    colorDark: "#6b4421",     // hover/darker shade of the accent
     colorContrast: "#ffffff", // text color used ON the accent color
 
     /* Visual theme — pick a different combination per deployment so every
