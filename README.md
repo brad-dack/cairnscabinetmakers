@@ -480,4 +480,5 @@ backported to the template yet.
 | `contact.jobTypes` drives the job picker; `textarea` field type | `bake.js`, `css/styles.css` | `services[]` lists pages, not jobs, and the form collects "anything you tell us about the job" |
 | CTA band no longer says "free quote"; the noscript line names the form; no em dashes in engine output; the how-it-works section is not rendered | `bake.js` | "No free quote" and the response-time ban are Positioning claim restrictions |
 | Header nav collapses below 1024px, with the mobile contact bar and no-JS nav rule moved to match | `css/styles.css`, `bake.js` | Ported with the nav change; the contact bar's quote link follows `#quote` in `js/main.js` |
+| Job-type picker options are equal height, centred, and an odd last option spans the row | `css/styles.css` | Five options in two columns looked ragged: one option wrapped to two lines and left its neighbour shorter, and "Something else" sat alone (13 October 2026) |
 | GA4 reports only on the live hostname | `js/main.js` | Local previews otherwise count as real visits; first found on Perth |

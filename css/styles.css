@@ -1042,15 +1042,24 @@ html[data-style="sharp"] .cta-band { background: var(--brand); }
 }
 
 .service-option {
-  display: block;
+  display: flex;
   cursor: pointer;
+}
+/* An odd last option spans the row instead of sitting alone in one column. */
+@media (min-width: 560px) {
+  .service-option:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 .service-option input {
   position: absolute;
   opacity: 0;
 }
 .service-option span {
-  display: block;
+  /* Fill the grid cell so every option in a row is the same height, and
+     centre the label however many lines it wraps to. */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 13px 16px;
   border: 2px solid var(--border);
   border-radius: var(--radius);
