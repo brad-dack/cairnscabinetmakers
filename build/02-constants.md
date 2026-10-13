@@ -150,7 +150,7 @@ Wording approved by Brad, 13 October 2026, in the Code session. His edits kept: 
 | field | value |
 |---|---|
 | mp3 recorded | Y, uploaded by Brad to the Greetings bucket; https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/Cairns%20Cabinet%20Makers.mp3 returns HTTP 200, audio/mpeg, 96,290 bytes, checked 13 October 2026. The words in it are not yet checked by ear: T28 does that on a real call |
-| greeting_audio_url set | Y, on the site row, 13 October 2026 |
+| greeting_audio_url set | Y. Brad re-recorded the greeting on 13 October 2026 (same words, clearer), so the file is now https://bnfgnglzswtrvzfqkgjh.supabase.co/storage/v1/object/public/Greetings/CairnsCabinetMakers.mp3 (230,486 bytes, audio/mpeg), set by migration 030 in the backend repo, commit 3dfa56a. The first file, `Cairns Cabinet Makers.mp3`, was replaced and its URL returned 400 until 030. The new recording is not yet heard on a call: the test calls on 13 October played the first file |
 | greeting_text set | Y, on the site row, the approved T12 words |
 | greeting heard on a real call | N, owed at T28 |
 
