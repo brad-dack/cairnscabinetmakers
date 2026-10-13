@@ -83,7 +83,7 @@ T29.
 
 | field | value |
 |---|---|
-| sitemap submitted | [NEEDS INPUT: date] |
+| sitemap submitted | 2026-10-14, per Brad's Search Console screenshot (Sitemaps report, Submitted Oct 14, 2026). Status there reads "Couldn't fetch", Last read blank, 0 discovered pages. The sitemap itself is sound at the same time: `curl -I` 200 application/xml with no redirect, also 200 to a Googlebot user agent, well-formed XML listing the four apex URLs, robots.txt allows all and names it, and there is no X-Robots-Tag. A new property commonly shows this for a day or two; recheck before resubmitting |
 | sitemap last read | [NEEDS INPUT: date Search Console reports] |
 | pages requested | [NEEDS INPUT] |
 | review dates set | [NEEDS INPUT: what, and when it falls due] |
