@@ -150,8 +150,8 @@ window.SITE_CONFIG = {
          "free" wording. */
       metaTitle: "Cabinet Makers Cairns | Kitchens, Wardrobes, Joinery",
       metaDescription: "Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it.",
-      headline: "Find a Cabinet Maker in Cairns for Kitchens, Wardrobes and Joinery",
-      subheadline: "Tell us what you want built, and we pass your enquiry to a local cabinet maker who can quote the job.",
+      headline: "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery",
+      subheadline: "Tell us what you want built, and we pass it to a cabinet maker who can quote the job.",
       ctaText: "Get a cabinet quote",
       image: {
         "src": "images/home-hero-kitchen.jpg",

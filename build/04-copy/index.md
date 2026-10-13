@@ -1,6 +1,6 @@
 # Home: /
 
-Status: APPROVED | v1, Brad, 13 October 2026
+Status: APPROVED | v1.1, Brad, 13 October 2026. v1 approved the same day
 
 ## Head
 
@@ -9,13 +9,13 @@ Status: APPROVED | v1, Brad, 13 October 2026
 | file | index.html |
 | title | Cabinet Makers Cairns \| Kitchens, Wardrobes, Joinery |
 | meta | Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it. |
-| h1 | Find a Cabinet Maker in Cairns for Kitchens, Wardrobes and Joinery |
+| h1 | Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery |
 
 ## Blocks
 
 Hero sub-headline (`pages.home.subheadline`):
 
-Tell us what you want built, and we pass your enquiry to a local cabinet maker who can quote the job.
+Tell us what you want built, and we pass it to a cabinet maker who can quote the job.
 
 Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at T24 and describes an illustrated kitchen, not work we did.
 
@@ -92,6 +92,8 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 Collection notice above the form is `contact.reassurance`, held in `build/02-constants.md`. It is not repeated here.
 
 ## Changes from plan
+
+- H1 and hero sub-headline changed by Brad on 13 October 2026, after v1 was approved. H1 was "Find a Cabinet Maker in Cairns for Kitchens, Wardrobes and Joinery", now "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery" (plural, so it reads as a directory and not as a claim that we do the work). Sub-headline was "...we pass your enquiry to a local cabinet maker who can quote the job.", now "...we pass it to a cabinet maker who can quote the job." (present tense kept, R11). The plan's Head table is updated and re-signed to match.
 
 - The plan's cannibalisation map gives Home "a short outline of how a cabinet job runs". That outline is not written. Its source claim, the typical sequence and timing of a kitchen job (register row 5), was dropped at T20 because no peak body or government source exists. In its place Home carries "What a good quote covers", which is advice and states no sequence or duration. The kitchens page does the same.
 - Titles, meta and H1 match `build/03-plan.md`.

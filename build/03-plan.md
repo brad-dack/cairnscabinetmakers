@@ -124,7 +124,7 @@ response time (Positioning claim restrictions, R11).
 
 | file | title | chars | meta | chars | h1 |
 |---|---|---|---|---|---|
-| index.html | Cabinet Makers Cairns \| Kitchens, Wardrobes, Joinery | 52 | Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it. | 153 | Find a Cabinet Maker in Cairns for Kitchens, Wardrobes and Joinery |
+| index.html | Cabinet Makers Cairns \| Kitchens, Wardrobes, Joinery | 52 | Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it. | 153 | Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery |
 | kitchen-renovations-cairns.html | Kitchen Renovations Cairns \| Custom Kitchen Cabinets | 52 | Kitchen renovations in Cairns: what a custom kitchen involves, how cabinets cope with tropical humidity, and how to get a Cairns cabinet maker to quote. | 152 | Kitchen Renovations in Cairns: Cabinets, Benchtops and Design |
 | about.html | About Cairns Cabinet Makers \| How This Site Works | 49 | What Cairns Cabinet Makers is, the area we cover, what happens when you enquire, how the service is paid for, and how to get in touch. | 134 | About Cairns Cabinet Makers |
 | privacy.html | Privacy Policy \| Cairns Cabinet Makers | 38 | What Cairns Cabinet Makers collects when you make an enquiry or call, who your details go to, how long they are kept, and how to have them removed. | 147 | Privacy Policy |
@@ -318,5 +318,5 @@ T19. H1 map and nav signed off by Brad in this file, not in a message.
 (titles, metas and H1s as written), the nav (Home, Kitchens, About; Privacy in the footer),
 the cannibalisation map and the link graph. Two things he added: the QBCC value statement
 on every page until a renter is signed (claim row 7), and generated illustrative images,
-recorded under Image direction. The plan is the record; a later change to a title, meta,
+recorded under Image direction. Re-signed the same day for one change: the Home H1 became "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery" (plural, so it reads as a directory and not as a claim that we do the work). The plan is the record; a later change to a title, meta,
 H1 or the nav needs this section re-signed.
