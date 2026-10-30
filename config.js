@@ -153,7 +153,7 @@ window.SITE_CONFIG = {
          pages, no suburb list. Every claim is advice or one of the sourced
          QBCC rows in build/03-plan.md. No duration, price, "licensed" or
          "free" wording. */
-      metaTitle: "Cabinet Makers Cairns | Kitchens, Wardrobes, Joinery",
+      metaTitle: "Cabinet Makers Cairns QLD | Kitchens, Wardrobes, Joinery",
       metaDescription: "Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it.",
       headline: "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery",
       subheadline: "Tell us what you want built, and we pass it to a cabinet maker who can quote the job.",
@@ -290,6 +290,10 @@ window.SITE_CONFIG = {
             {
               "q": "Does the cabinet maker need a licence?",
               "a": "In Queensland, building work valued over $3,300 needs a QBCC licence. Ask for the licence number before you agree to anything, and check it with the QBCC. The details are on the [kitchen renovations](kitchen-renovations-cairns.html) page."
+            },
+            {
+              "q": "What is the difference between a cabinet maker and a carpenter?",
+              "a": "A cabinet maker makes and fits cabinets and joinery such as kitchens, wardrobes and laundries. The QBCC has a Cabinet making licence class covering installing, refurbishing, restoring or repairing kitchen, bathroom, laundry and other fitted cabinets on site. Ask for the licence number before you agree to anything."
             },
             {
               "q": "Do you publish prices?",
@@ -615,7 +619,7 @@ window.SITE_CONFIG = {
       blocks: [
         {
           "type": "lead",
-          "text": "A kitchen renovation is mostly a set of decisions: the layout, what the cabinets are made of, what the benchtop is, and who does each part. This page sets out those decisions and the questions worth asking, so that the quotes you collect are quotes for the same job."
+          "text": "A kitchen renovation in Cairns is mostly a set of decisions: the layout, what the cabinets are made of, what the benchtop is, and who does each part. This page sets out those decisions and the questions worth asking, so that the quotes you collect are quotes for the same job."
         },
         {
           "type": "h2",
@@ -631,7 +635,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "h2",
-          "text": "Custom or flat-pack"
+          "text": "Custom or flat-pack kitchens in Cairns"
         },
         {
           "type": "p",
@@ -648,6 +652,14 @@ window.SITE_CONFIG = {
         {
           "type": "p",
           "text": "The benchtop is a decision of its own: the material, the thickness, the edge, and the cut-outs for the sink and cooktop. Ask whether the quote includes the benchtop at all, and who is supplying and fitting it. Quotes that look different on price are sometimes the same job with the benchtop in one and out of the other."
+        },
+        {
+          "type": "h2",
+          "text": "Refresh, renovate or replace"
+        },
+        {
+          "type": "p",
+          "text": "Not every kitchen needs replacing. A refresh can mean new doors and drawer fronts on cabinet boxes that are still sound, a new benchtop, or new hardware. A full renovation replaces the cabinets and often changes the layout. A kitchen makeover, refurbishment or upgrade can be any of these, so say which you want when you enquire. The cabinet maker can tell you from the room whether the existing cabinets are worth keeping."
         },
         {
           "type": "h2",
@@ -740,8 +752,8 @@ window.SITE_CONFIG = {
           "type": "faqs",
           "items": [
             {
-              "q": "What does a kitchen renovation cost in Cairns?",
-              "a": "This page does not give a figure. A Cairns price depends on the size of the room, the layout, the materials and the benchtop, and the figures published nationally disagree widely and are not for Cairns. A cabinet maker prices it once they have seen the room."
+              "q": "What does a kitchen renovation cost in Cairns, and what changes the price?",
+              "a": "This page does not give a figure. A Cairns price depends on the size of the room, the layout, the materials and the benchtop, and the figures published nationally disagree widely and are not for Cairns. What moves a kitchen quote is the layout (moving the sink, cooktop or fridge means more trades and more work behind the walls), what the cabinets are made of, the benchtop, and whether removing the old kitchen and supplying appliances are included. A cabinet maker prices it once they have seen the room."
             },
             {
               "q": "Does the quote include the benchtop and installation?",
@@ -764,6 +776,10 @@ window.SITE_CONFIG = {
         {
           "type": "p",
           "text": "Tell us the room, roughly how big it is, and what you want done. We will pass it to a local cabinet maker who can quote it."
+        },
+        {
+          "type": "p",
+          "text": "Looking for wardrobes, a laundry or other joinery? See [cabinet makers in Cairns](index.html)."
         },
         {
           "type": "form",

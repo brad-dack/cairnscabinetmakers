@@ -7,7 +7,7 @@ Status: APPROVED | v1.1, Brad, 13 October 2026. v1 approved the same day
 | field | value |
 |---|---|
 | file | index.html |
-| title | Cabinet Makers Cairns \| Kitchens, Wardrobes, Joinery |
+| title | Cabinet Makers Cairns QLD \| Kitchens, Wardrobes, Joinery |
 | meta | Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it. |
 | h1 | Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery |
 
