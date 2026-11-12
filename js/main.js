@@ -58,6 +58,35 @@
      The brand palette and the theme attributes on <html> are baked into every
      page by bake.js, so nothing here needs to re-derive them. */
 
+  /* Per-browser internal-traffic opt-out. Visiting any page with ?internal=1
+     sets a localStorage flag, ?internal=0 clears it, and the parameter is then
+     stripped from the address bar. While the flag is set, GA4 is configured with
+     traffic_type "internal" (matched by the GA4 Internal Traffic data filter) and
+     enquiry payloads carry internal: true. Every storage access is wrapped: in a
+     private window or with storage blocked the flag is simply unset. */
+  var isInternal = false;
+  function readInternalFlag() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var v = params.get("internal");
+      if (v === "1") {
+        try { localStorage.setItem("internal_traffic", "1"); } catch (e) { /* blocked */ }
+        isInternal = true;
+      } else if (v === "0") {
+        try { localStorage.removeItem("internal_traffic"); } catch (e) { /* blocked */ }
+        isInternal = false;
+      } else {
+        try { isInternal = localStorage.getItem("internal_traffic") === "1"; } catch (e) { isInternal = false; }
+      }
+      if (v !== null) {
+        params.delete("internal");
+        var qs = params.toString();
+        history.replaceState(history.state, "",
+          window.location.pathname + (qs ? "?" + qs : "") + window.location.hash);
+      }
+    } catch (e) { /* leave isInternal as it is */ }
+  }
+
   function injectGA4() {
     var id = cfg.ga4Id;
     if (!id || id.indexOf("XXXX") !== -1 || !/^G-[A-Z0-9]+$/.test(id)) return;
@@ -71,7 +100,8 @@
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag("js", new Date());
-    window.gtag("config", id);
+    if (isInternal) window.gtag("config", id, { traffic_type: "internal" });
+    else window.gtag("config", id);
     /* gtag.js is ~170KB and ~250ms of script evaluation. It's fetched only
        after the load event AND the browser's first largest-contentful-paint
        report: on a fast connection "load" can fire before the first paint, and
@@ -352,6 +382,7 @@
       payload._page = location.pathname;
       payload._landing = attribution().landing;
       payload._referrer = attribution().referrer;
+      if (isInternal) payload.internal = true;
       payload["cf-turnstile-response"] = turnstileResponse ? turnstileResponse.value : "";
 
       fetch(ingestUrl, {
@@ -437,6 +468,7 @@
 
   /* ---------- boot --------------------------------------------------------- */
 
+  readInternalFlag();
   injectGA4();
   attribution();
   trackPhoneClicks();

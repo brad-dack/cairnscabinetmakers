@@ -106,3 +106,4 @@ be. See PLAYBOOK.md rule R7.
 |---|---|---|
 | Licence display (12 October 2026) | c06f4b9 | In the template: the `licence` block (off unless `licence.required`), `licenceHtml()`, guard G11, rule R14 and `.footer-licence`. This site runs the template engine unchanged. Backported 13 October 2026 |
 | Engine changes for the page plan (13 October 2026) | c06f4b9 | In the template, made optional (cleanUrls, navFromServices, blocks, jobTypes, ctaBandAction, licence). This site runs the template engine unchanged. Backported 13 October 2026 |
+| Internal traffic opt-out (12 November 2026) | none yet | Per-browser `?internal=1` / `?internal=0` flag in `js/main.js`. Stays here until backported to the template engine as an optional default-on behaviour |

@@ -445,6 +445,11 @@ accident:
 
 Because content is baked, **copy changes need `node bake.js`** to show up.
 
+## Internal traffic opt-out
+
+Open any page with `?internal=1` once per browser to tag that browser's GA4 hits as `traffic_type: internal` (and enquiries with `internal: true`); the flag persists in localStorage.
+Open any page with `?internal=0` to clear it.
+
 ## Divergence from the template
 
 If you change `bake.js`, `js/main.js`, `css/styles.css`, or the page-shell
@@ -472,3 +477,9 @@ GA4 live-hostname guard and the equal-height job picker. This site runs the
 template's `bake.js`, `js/main.js` and `css/styles.css` unchanged, and switches the
 options on in `config.js`. Baking this site with the template engine gives the same
 pages as before the backport.
+
+### Internal traffic opt-out (12 November 2026)
+
+`js/main.js` gains `readInternalFlag()`, the `traffic_type: "internal"` config option and
+`payload.internal`. Reason: the owner's home IP changes and they browse on mobile data, so
+the GA4 IP-based internal filter alone misses their visits. Not yet in the template.
