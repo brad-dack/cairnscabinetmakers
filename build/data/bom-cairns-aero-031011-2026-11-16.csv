@@ -1,0 +1,17 @@
+month,mean_9am_relative_humidity_pct,mean_3pm_relative_humidity_pct,mean_rainfall_mm,mean_days_rain_1mm_or_more,mean_max_temp_c
+Jan,75,66,404.8,15.8,31.5
+Feb,78,69,436.1,16.1,31.3
+Mar,78,67,424.3,16.1,30.7
+Apr,78,65,201.7,14.6,29.4
+May,76,64,91.6,10.5,27.7
+Jun,74,61,45.7,7.0,26.2
+Jul,72,58,33.2,5.7,25.9
+Aug,70,56,26.9,4.9,26.7
+Sep,66,55,34.8,5.0,28.2
+Oct,65,57,47.5,5.7,29.7
+Nov,68,60,87.9,7.8,30.8
+Dec,70,62,193.8,10.7,31.5
+Annual,72,62,2019.1,119.9,29.1
+# Source: Bureau of Meteorology, Climate statistics for Australian locations, CAIRNS AERO, site 031011 (16.87 S, 145.75 E, elevation 2 m), all years of record.
+# URL: https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml  Product IDCJCM0027, prepared Sat 14 Nov 2026 03:13:22 AM AEDT. Read 16 November 2026 in the browser (automated fetch returned HTTP 403).
+# Periods: relative humidity 1942-2010 (60 years); rainfall and rain days 1942-2026 (83 and 84 years); maximum temperature 1942-2026 (84 years).

@@ -97,6 +97,7 @@ Raw file: `build/data/serp-cairns-2026-10-11.csv`.
 | kitchen renovations cairns | 0 | Kitchens by CCJS; FNQ Kitchens; EK Design Kitchens | no | fnqkitchens.com.au, facebook.com (FNQ Kitchens), pro-flatpacks.com.au | 26, n/a, 35 | the trade itself (cabinet makers), with hipages, Localsearch and 4 Facebook threads | yes: cabinet makers own it, weak results below them |
 | wardrobes cairns | 0 | Wardrobe World Cairns; Cairns Custom Wardrobes; Roll Edge | no | bunnings.com.au, localsearch.com.au, bunnings.com.au | not pulled | another trade: retail and DIY | no, section only |
 | bathroom vanities cairns | 0 | Highgrove Bathrooms; Cairns Hardware; Tradelink Cairns | no | burdensbathrooms.com.au, wellsons.com.au, royalvanities.com.au | not pulled | another trade: retail bathroomware | no, dropped |
+| custom wardrobes cairns | not read (16 November 2026 scan reads ads and the map pack for the head term only) | not read | not read | homeadvice.com.au, yellowpages.com.au, instagram.com | 73 (a listings site), directory, directory | directories | no by the test (no small specialist); Brad chose to plan a page on 16 November 2026 because page 1 is all directories. Source: build/data/niche-scan-cairns-2026-11-16.csv |
 
 Referring-domain counts are raw totals from the bulk endpoint, not filtered for
 quality. hipages.com.au and localsearch.com.au are directory-scale and excluded
@@ -128,23 +129,23 @@ month. Top 3 counts are referring main domains.
 | cabinet makers cairns / cabinet makers cairns qld | 210 | ccwcabinetworks.com.au 91, pro-fitcabinetmaking.com.au 50, independentcabinetmaker.com.au 46 | yes, all three | 0 | yes | index.html |
 | kitchen renovations cairns | 90 | brianlongcabinets.com.au 117, lazaruscc.com.au 60, dreamdoorskitchens.com.au 292 | yes (lazaruscc 60) | 0 | yes | kitchen-renovations-cairns.html |
 | kitchens cairns / kitchens cairns qld | 70 | cairnskitchens.com.au 54, pro-flatpacks.com.au 45, kilfoycabinets.com.au 96 | yes, all three | 0 | yes | kitchen-renovations-cairns.html |
-| cairns custom wardrobes / custom wardrobes cairns | 80 | homeadvice.com.au 73, Yellow Pages, Instagram | yes (homeadvice 73) | 0 | yes [VERIFY: October's SERP read named a local business "Cairns Custom Wardrobes" in the map pack, so part of this 80 may be people searching for that business by name] | candidate new wardrobes page; Brad to decide |
+| custom wardrobes cairns / cairns custom wardrobes | 80 | homeadvice.com.au 73, Yellow Pages, Instagram | no: homeadvice.com.au is a listings site ("Find Joinery & Cabinet Makers", editorial "Top 10" lists of other businesses, read 16 November 2026), not a specialist, so all three are directories. The scan counted it as a business | 0 | no (b) [an all-directory page 1 can be an opening; Brad chose to plan a page on 16 November 2026] [VERIFY: October's SERP read named a local business "Cairns Custom Wardrobes" in the map pack, so part of this 80 may be people searching for that business by name] | built-in-wardrobes-cairns.html (Brad, 16 November 2026) |
 | bathroom vanities cairns | 50 | eaglesplumbing.com.au 237, kilfoycabinets.com.au 96, idealbathroomcentre.com.au 240 | yes (kilfoy 96) | 0 | yes, narrowly; two of three are bathroomware retailers, so most of these searchers may want a vanity off the shelf | no page yet; Brad to decide |
 | kitchen benchtops cairns | 20 | customstonesurfaces.com.au 36, marbleandgranitefitters.com.au 60, nqacrylicandstone.com.au 100 | yes; all stonemasons | 0 | yes | section on kitchen-renovations-cairns.html (stonemason segment) |
 | stone benchtops cairns | 20 | marbleandgranitefitters.com.au 60, nqacrylicandstone.com.au 100, cdkstone.com.au 742 | yes; stonemasons | 0 | yes | section on kitchen-renovations-cairns.html (stonemason segment) |
-| wardrobes cairns | 90 | Localsearch, AussieWeb, Pinterest | no, directories only | 0 | no (b) [an all-directory page 1 can be an opening; Brad to judge] | candidate wardrobes page, as above |
+| wardrobes cairns | 90 | Localsearch, AussieWeb, Pinterest | no, directories only | 0 | no (b) [an all-directory page 1 can be an opening; Brad chose to plan a page on 16 November 2026] | built-in-wardrobes-cairns.html |
 | kitchen cabinets cairns | 40 | Yelp, Instagram, hipages | no, directories only | 0 | no (b) [an all-directory page 1 can be an opening; Brad to judge] | kitchen-renovations-cairns.html |
 | flat pack kitchens cairns | 20 | MapQuest, Localsearch, MapQuest | no, directories only | 0 | no (b) | section on kitchen-renovations-cairns.html (DIY intent) |
 | cabinets cairns | 20 | not read | not read | 36 | no (c) | index.html |
 | benchtops cairns | 20 | not read (scan limit of 12 page 1 reads) | not read | 0 | no: not read, counted as no until read | section on kitchen-renovations-cairns.html |
-| wardrobe doors cairns | 20 | not read (scan limit) | not read | 11 | no: not read, counted as no until read | candidate wardrobes page |
+| wardrobe doors cairns | 20 | not read (scan limit) | not read | 11 | no: not read, counted as no until read | built-in-wardrobes-cairns.html |
 | kitchen warehouse cairns | 70 | Facebook, a restaurant storefront, MapQuest | passes the test | 12 | no: a cookware shop's name, not a job | no page |
 | pacific kitchens cairns | 50 | kilfoycabinets.com.au 96, cabinetdesignsolutions.com.au 48, MapQuest | passes the test | 0 | no: a business's name, not a job | no page |
 | robins kitchen cairns central | 50 | a place-listing site, Localsearch, Facebook | passes the test | 0 | no: a cookware shop's name, not a job | no page |
 | distinction joinery cairns, ek kitchens cairns | 20 each | not read | not read | 14 / not shown | no: business names, not jobs | no page |
 | 31 jobs at 10 a month (built in wardrobes, joinery, entertainment units, shopfitting, kitchen designs, granite and laminate benchtops, cabinet makers atherton, kitchen makers, and business names such as ccw kitchens, kilfoy kitchens, lazarus cabinets) | 10 each | not read | not read | 0 to 42 | no (a) | no page; sections where the October table already places them |
 
-Totals: Winnable jobs: 7. Searches a month: 540 (210 + 90 + 70 + 80 + 50 + 20 + 20). Estimated monthly value: $3,780,000 (540 searches x $7,000 job value from the Niches tab; a ceiling that assumes every search is a job, for comparison between sites only, not a forecast). The scan's own count was 10 jobs and 710 searches; the three shop and business names above are taken out by hand. Of the 7, two (wardrobes 80, vanities 50) carry an intent question for Brad, and two (benchtops) belong to stonemasons, so the cabinet-maker core is 3 jobs and 370 searches, all three already with a page.
+Totals: Winnable jobs: 6. Searches a month: 460 (210 + 90 + 70 + 50 + 20 + 20). Estimated monthly value: $3,220,000 (460 searches x $7,000 job value from the Niches tab; a ceiling that assumes every search is a job, for comparison between sites only, not a forecast). The scan's own count was 10 jobs and 710 searches: three shop and business names are taken out by hand, and custom wardrobes cairns (80) is taken out because its top result, homeadvice.com.au, is a listings site the scan counted as a business (corrected 16 November 2026; first written as 7 jobs and 540). Of the 6, vanities (50) carries an intent question and gets no page, and two (benchtops) belong to stonemasons, so the cabinet-maker core is 3 jobs and 370 searches, all three already with a page. Wardrobes passes no test on its own: its two searches (custom wardrobes cairns 80, wardrobes cairns 90) both have all-directory page 1s, which Brad chose to treat as an opening on 16 November 2026.
 
 ## Winnability reference
 
@@ -156,7 +157,7 @@ existing sites. Copied from the template's reference table of 14 November
 |---|---|---|
 | Perth Limestone | 10+ (backtest) | avg position 24.9, 8 leads a month (day 102) |
 | Perth Brickwork | 10+ (backtest) | avg position 48.6, 5 leads a month (day 103) |
-| Cairns Cabinet Makers | about 5 (backtest, narrow pass); 7 by this scan | avg position 69.3, no leads yet (day 32) |
+| Cairns Cabinet Makers | about 5 (backtest, narrow pass); 6 by the 16 November 2026 scan | avg position 69.3, no leads yet (day 32) |
 | Gold Coast Cabinet Makers | fails on the head term, passes on suburb and kitchen terms | avg position 66.7, no leads yet (day 20) |
 | Perth Tiling Specialists | head terms held by directories | avg position 74.4, no leads (day 63) |
 | Canberra Tile Layers | head terms held by directories; volumes mostly 10 or fewer | avg position 70.9, no leads (day 75) |

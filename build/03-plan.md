@@ -1,6 +1,6 @@
 # 03 Page plan
 
-Status: SIGNED-OFF | Brad, 13 October 2026
+Status: DRAFT | wardrobes page added 16 November 2026, awaiting Brad's re-sign (signed off 13 October 2026 for the first four pages)
 Evidence: CLEAR | 13 October 2026
 
 Written by T16a to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
@@ -67,6 +67,7 @@ T17, with the Template fit column filled at T18.
 |---|---|---|---|---|---|---|
 | index.html | / | pages.home | 1, built first | cabinet makers cairns | cabinet maker cairns, cabinetmakers cairns, joinery cairns, cabinet maker near me, custom cabinets | engine change: Home renders from `pages.home.blocks`. The stock Home is a services grid, the generic how-it-works steps, testimonials and an FAQ preview, with no place for the planned wardrobe and joinery sections, the job outline or the disclosure. Perth Tiling Specialists has this change |
 | kitchen-renovations-cairns.html | /kitchen-renovations-cairns | services[0] | 1 on volume | kitchen renovations cairns | kitchens cairns, kitchen cabinets cairns, kitchen makers cairns, kitchen design cairns, flat pack kitchens cairns, kitchen benchtops cairns, stone benchtops cairns | fits: `services[0]` takes the block copy, a `form` block with `presetService` puts the enquiry form on the page, a `faqs` block feeds FAQPage schema, and the `Service` schema names the provider as Organization. The SVG images need no `widths`. The page-end call-to-action band and how-it-works section are the engine changes listed below |
+| custom-wardrobes-cairns.html | /custom-wardrobes-cairns | services[1] | 2, added 16 November 2026 | custom wardrobes cairns / cairns custom wardrobes | wardrobes cairns, built in wardrobes cairns, wardrobe doors cairns, sliding wardrobe doors cairns, walk in wardrobe cairns | fits: a second `services[]` entry. `navFromServices` is true, so the nav and footer pick it up by themselves; the kitchens page's blocks, `form` block with `presetService`, `faqs` block and `Service` schema with an Organization provider all apply. `contact.jobTypes` already has "Wardrobes and built-in storage". The local data table is a `table` block if the engine has one, otherwise an engine change at T25 [VERIFY at T25: check `bake.js` for a table block] |
 | about.html | /about | pages.about | 3 | n/a | cabinet maker quote cairns | engine change: About renders from `pages.about.blocks`, so it can carry headed sections (what we do and do not do, how it is paid for, service area) as well as the contact section and form. Stock About is a run of paragraphs, auto-built contact lines and the form |
 | privacy.html | /privacy | pages.privacy | 3 | n/a | n/a | engine change: Privacy renders from `pages.privacy.blocks`. The stock privacy text describes a three-field form and says calls are not recorded, which is the wrong data flow here (voicemail recorded and stored, Supabase in Tokyo, Resend, Twilio, 12-month retention) |
 
@@ -81,6 +82,27 @@ Atherton, Innisfail and Smithfield appear only in service-area copy.
 The kitchens page takes "kitchen renovations cairns" (110 a month, held by
 cabinet makers) as primary and "kitchens cairns" (90, held by specialists with
 a higher link bar) as secondary, so the slower term rides on the winnable one.
+
+**Change, 16 November 2026 (stage 3 re-run after the Winnability scan).** Wardrobes
+move from a Home section to their own page, `custom-wardrobes-cairns.html`. Brad's decision,
+16 November 2026. R12 (reworded 14 November) gives a searched job in a winnable
+SERP its own page, and the two wardrobe searches, custom wardrobes cairns (80 a
+month) and wardrobes cairns (90), both have page 1s held only by directories and
+listings sites (`01-market.md` Winnability). Neither passes the winnability test as
+written, so this page is a judgement on an opening, not a measured pass. [VERIFY:
+part of the 80 may be people searching for the business "Cairns Custom Wardrobes" by
+name; Search Console will show it within 90 days of the page going live.]
+
+The rest of the October split stands, checked against the 16 November scan:
+cabinet makers cairns stays on Home; kitchen renovations cairns and kitchens cairns
+stay on the kitchens page; joinery stays a Home section (10 a month); benchtops and
+stone benchtops stay a section on the kitchens page, because their page 1s are held
+by stonemasons, another segment; vanities get no page (they pass the test narrowly,
+but two of the three top results are bathroomware retailers; not chosen by Brad on
+16 November 2026, when the recommendation was to leave them out). Every winnable job
+now has a page or a written reason. That is three ranking pages, under the five to
+nine T17 expects: the Cairns market has three cabinet-maker jobs with real volume,
+and adding pages for 10-a-month searches would be pages with no measurable search.
 
 Contact is not a page. It is a section inside About, with the enquiry form on
 Home, the kitchens page and About, as on Perth Tiling Specialists.
@@ -126,12 +148,14 @@ response time (Positioning claim restrictions, R11).
 |---|---|---|---|---|---|
 | index.html | Cabinet Makers Cairns QLD \| Kitchens, Wardrobes, Joinery | 56 | Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it. | 153 | Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery |
 | kitchen-renovations-cairns.html | Kitchen Renovations Cairns \| Custom Kitchen Cabinets | 52 | Kitchen renovations in Cairns: what a custom kitchen involves, how cabinets cope with tropical humidity, and how to get a Cairns cabinet maker to quote. | 152 | Kitchen Renovations in Cairns: Cabinets, Benchtops and Design |
+| custom-wardrobes-cairns.html | Custom Wardrobes Cairns \| Built-In Wardrobes and Storage | 56 | Custom and built-in wardrobes in Cairns: doors, layout and internal fit-out, what to ask a cabinet maker, and how to get your wardrobe job quoted. | 146 | Custom and Built-In Wardrobes in Cairns |
 | about.html | About Cairns Cabinet Makers \| How This Site Works | 49 | What Cairns Cabinet Makers is, the area we cover, what happens when you enquire, how the service is paid for, and how to get in touch. | 134 | About Cairns Cabinet Makers |
 | privacy.html | Privacy Policy \| Cairns Cabinet Makers | 38 | What Cairns Cabinet Makers collects when you make an enquiry or call, who your details go to, how long they are kept, and how to have them removed. | 147 | Privacy Policy |
 
 ## Nav
 
-T17. Ordered: Home, Kitchens, About. No Services item and no dropdown. The call
+T17. Ordered: Home, Kitchens, Wardrobes, About (Wardrobes added 16 November 2026,
+awaiting re-sign; the label is `services[1].name`). No Services item and no dropdown. The call
 button sits beside them. Footer-only: Privacy. The footer mirrors the nav plus
 Privacy, and carries the s54 licence line only once a renter is signed (R14).
 
@@ -141,8 +165,9 @@ T17. See PLAYBOOK.md rule R12.
 
 | page | owns | must not expand into | sends readers to |
 |---|---|---|---|
-| index.html | routing the reader, how the site works, a short outline of how a cabinet job runs, wardrobes and joinery as sections, commercial disclosure in brief | any cost figure, kitchen detail beyond a summary, benchtop or design detail | kitchens page, About |
+| index.html | routing the reader, how the site works, a short outline of how a cabinet job runs, joinery as a section, wardrobes as a short summary with a link (since 16 November 2026), commercial disclosure in brief | any cost figure, kitchen or wardrobe detail beyond a summary, benchtop or design detail | kitchens page, wardrobes page, About |
 | kitchen-renovations-cairns.html | kitchen cabinets, layout and design, benchtops and stone benchtops, flat pack against custom, what holds up in tropical humidity, how a kitchen job runs and how long it takes (each only once sourced) | wardrobes, vanities, shopfitting, any Cairns cost figure until a source is in "Cost figures" | Home for other rooms, About |
+| custom-wardrobes-cairns.html | custom, built-in and walk-in wardrobes; wardrobe doors (hinged and sliding); internal fit-out; what to ask a cabinet maker about a wardrobe job; the Cairns humidity and rain table (Local data asset) | kitchens, vanities, laundries and other joinery, any cost figure, any claim that humidity damages wardrobes (claim row 9) | Home for other rooms, kitchens page, About |
 | about.html | who runs this, what the business does and does not do, the service area (Cairns, with Atherton, Innisfail and Smithfield named in copy only), how it is paid for, contact | service detail, prices | Home, kitchens page |
 | privacy.html | collection, disclosure, retention, access | commercial explanation beyond what disclosure needs | About |
 
@@ -154,8 +179,9 @@ nav except Privacy, which is in the footer on every page.
 
 | page | inbound anchors | outbound anchors |
 |---|---|---|
-| index.html | every page's logo and nav "Home" | "kitchen renovations in Cairns" to the kitchens page; "about this site" to About |
-| kitchen-renovations-cairns.html | nav "Kitchens"; the kitchens block on Home | "other rooms and joinery" to Home; "how this site works" to About |
+| index.html | every page's logo and nav "Home" | "kitchen renovations in Cairns" to the kitchens page; "built-in wardrobes in Cairns" to the wardrobes page, from the "You want storage built to fit a room" block; "about this site" to About |
+| kitchen-renovations-cairns.html | nav "Kitchens"; the kitchens block on Home; "kitchen renovations in Cairns" on the wardrobes page | "other rooms and joinery" to Home; "Cairns humidity and rain by month" to the wardrobes page, from the "Cabinets in a humid climate" section; "how this site works" to About |
+| custom-wardrobes-cairns.html | nav "Wardrobes"; "built-in wardrobes in Cairns" on Home; "Cairns humidity and rain by month" on the kitchens page | "kitchen renovations in Cairns" to the kitchens page; "other rooms and joinery" to Home; "how this site works" to About |
 | about.html | nav "About"; the call-to-action band | "Cairns kitchens" to the kitchens page; "home" to Home |
 | privacy.html | footer, every page; the form notice link | "about this site" to About |
 
@@ -180,6 +206,7 @@ Two kinds of image, approved by Brad on 13 October 2026:
 | index.html | images/home-hero-kitchen.jpg | a modern fitted kitchen with cabinetry and a benchtop, bright and warm, no people, no text | illustrative image (Gemini) | An illustrated modern kitchen with white cabinetry, a timber island and open shelving | 1200 | 800 | 122 | 400, 560, 720, 960 |
 | kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.jpg | a different modern kitchen from a different angle: cabinetry, benchtop, island, no people, no text | illustrative image (Gemini) | An illustrated modern kitchen with timber and grey cabinetry and a stone-look island benchtop | 1200 | 800 | 146 | 400, 560, 720, 960 |
 | kitchen-renovations-cairns.html | images/kitchen-cabinet-parts.svg | the named parts of a kitchen base cabinet: carcass, door, edge, shelf, hinge, kickboard, benchtop. Labels only, no performance or moisture claim. Replaces the moisture-points diagram, which was tied to claim 3, now dropped | diagram | Diagram naming the parts of a kitchen base cabinet: benchtop, carcass, shelf, kickboard, hinge, door and edge | 1200 | 800 | 4 | none |
+| custom-wardrobes-cairns.html | images/custom-wardrobes-cairns.jpg | a built-in bedroom wardrobe with doors part open, showing hanging rails, shelves and drawers, bright and calm, no people, no text | illustrative image (Gemini) | An illustrated built-in bedroom wardrobe with timber-look doors, hanging rails, shelves and drawers | | | | |
 
 T24, 13 October 2026. The two Gemini images arrived as `home.jpeg` and
 `kitchens.jpeg` (1264 by 848), were cropped to 3:2, resized to 1200 by 800 and
@@ -220,6 +247,18 @@ home kitchen rather than a showroom or a render.
 > signage. Realistic proportions: straight lines, matching handles, one sink,
 > one cooktop, no duplicated or floating objects.
 
+**custom-wardrobes-cairns.jpg** (Wardrobes page), added 16 November 2026
+
+> A photorealistic photograph of a built-in floor-to-ceiling bedroom wardrobe in a
+> bright, airy Queensland home, soft natural daylight. Two of the doors are open,
+> showing a hanging rail with a few plain garments, adjustable shelves and a bank
+> of drawers; the other doors are closed, in a light timber-look finish with slim
+> handles. A ceiling fan and a louvred window at the edge of frame. Shot at eye
+> level, 3:2 landscape, subject centred. No people, no text or lettering, no logos
+> or brand names, no labels on clothing, no signage, no pets. Realistic
+> proportions: straight door lines, doors that meet cleanly, matching handles, no
+> duplicated or floating objects.
+
 **kitchen-cabinet-parts.svg** (Kitchens page): not a Gemini image. Drawn as SVG
 on 13 October 2026 and committed at `images/kitchen-cabinet-parts.svg`, 1200 by
 800, under 4 KB. Labels only: benchtop, carcass, shelf, kickboard, hinge, door,
@@ -238,13 +277,47 @@ Check each image before saving:
 Gemini's output terms and any generated-image labelling are Brad's to confirm
 for his own account. Nothing on the site calls these images work we did.
 
-## Linkable asset
+## Local data asset
 
-T17. `conversion asset only`. The one page worth linking to would be a Cairns
-kitchen cost and process guide, but there is no Cairns cost source yet (R10, the
-open item in `05-log.md`), so no asset is nominated and no outreach targets are
-named. If a source is found, nominate the kitchens page here and name six
-targets before drafting.
+T17, added 16 November 2026; replaces the Linkable asset section (template, 14 November
+2026). Was: `conversion asset only`, because no Cairns kitchen cost source exists (claim
+row 6); that still holds, so the asset is not a cost table.
+
+Cairns humidity and rain by month, the Bureau of Meteorology's long-term averages for
+Cairns Aero (site 031011), all years of record. Primary source; facts only, with no
+claim about what the humidity does to cabinets or wardrobes (claim rows 3 and 9 are
+dropped). Product IDCJCM0027, prepared 14 November 2026. Humidity averages cover 1942
+to 2010; rainfall and rain days 1942 to 2026. Read in the browser on 16 November 2026
+(an automated fetch returned HTTP 403) and saved as
+`build/data/bom-cairns-aero-031011-2026-11-16.csv`.
+
+| row (council, suburb, rule) | value | source url | date checked |
+|---|---|---|---|
+| Cairns Aero, January | humidity 75% at 9am, 66% at 3pm; rain 404.8 mm on 15.8 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, February | humidity 78% at 9am, 69% at 3pm; rain 436.1 mm on 16.1 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, March | humidity 78% at 9am, 67% at 3pm; rain 424.3 mm on 16.1 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, April | humidity 78% at 9am, 65% at 3pm; rain 201.7 mm on 14.6 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, May | humidity 76% at 9am, 64% at 3pm; rain 91.6 mm on 10.5 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, June | humidity 74% at 9am, 61% at 3pm; rain 45.7 mm on 7.0 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, July | humidity 72% at 9am, 58% at 3pm; rain 33.2 mm on 5.7 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, August | humidity 70% at 9am, 56% at 3pm; rain 26.9 mm on 4.9 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, September | humidity 66% at 9am, 55% at 3pm; rain 34.8 mm on 5.0 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, October | humidity 65% at 9am, 57% at 3pm; rain 47.5 mm on 5.7 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, November | humidity 68% at 9am, 60% at 3pm; rain 87.9 mm on 7.8 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, December | humidity 70% at 9am, 62% at 3pm; rain 193.8 mm on 10.7 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| Cairns Aero, Year | humidity 72% at 9am, 62% at 3pm; rain 2019.1 mm on 119.9 days of 1 mm or more | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+
+Page that carries it: custom-wardrobes-cairns.html, linked from the kitchens page's "Cabinets in a humid
+climate" section. Review by: 16 November 2027.
+
+[VERIFY: that no top-3 competitor publishes it. The wardrobe page 1s are directories
+(homeadvice.com.au, Yellow Pages, Instagram, Localsearch, AussieWeb, Pinterest), which
+carry no climate data; the cabinet makers on the kitchens and head-term page 1s
+(ccwcabinetworks.com.au, pro-fitcabinetmaking.com.au, independentcabinetmaker.com.au,
+cairnskitchens.com.au, pro-flatpacks.com.au, kilfoycabinets.com.au) have not been read
+for it yet. Check at T20.]
+
+No link outreach: nothing is promoted before a renter is signed.
 
 ## Claim register
 
@@ -257,13 +330,15 @@ claim column carries the narrowed wording, which is all the copy may say.
 
 | # | claim as it will appear | page | primary source required | status | source | edition | url | date checked |
 |---|---|---|---|---|---|---|---|---|
-| 1 | In Queensland, building work valued over $3,300 needs a QBCC licence, and the Cabinet making licence class covers installing, refurbishing or repairing kitchen and other fitted cabinets on site | kitchens, About | QBCC Act and the QBCC's own guidance | sourced | QBCC, "Who must hold a QBCC licence" and "Cabinet making" licence page | licence page last reviewed 16 April 2026; cabinet making page last reviewed 30 August 2021 | https://www.qbcc.qld.gov.au/my/node/7081 ; https://www.qbcc.qld.gov.au/licences/apply-licence/available-licences/other-trade/cabinet-making | 13 October 2026 |
-| 2 | For domestic building work over $3,300 the QBCC says a written, dated and signed contract is essential and must include advice about a cooling-off period; the maximum deposit is 10% of the contract price from $3,301 to $19,999 and 5% above $20,000, with up to 20% allowed where more than half the price is made-to-measure work done off site, cabinetry being an example the QBCC gives | kitchens | QBCC Act, domestic building contracts provisions | sourced | QBCC, "Contracts and payments" and "Deposits and progress payments". The QBCC is the licensing authority. The Act itself was not read | contracts page last reviewed 14 May 2026; deposits page last reviewed 27 June 2025 | https://qbcc.qld.gov.au/node/1331 ; https://www.qbcc.qld.gov.au/home-owner-hub/build-renovate/contracts-payments/deposits-progress-payments | 13 October 2026 |
+| 1 | In Queensland, building work valued over $3,300 needs a QBCC licence, and the Cabinet making licence class covers installing, refurbishing or repairing kitchen and other fitted cabinets on site | kitchens, wardrobes (as worded: the QBCC page names kitchen, bathroom and laundry cabinets and "other fitted cabinets and fitments", not wardrobes; [VERIFY] the full page at T20), About | QBCC Act and the QBCC's own guidance | sourced | QBCC, "Who must hold a QBCC licence" and "Cabinet making" licence page | licence page last reviewed 16 April 2026; cabinet making page last reviewed 30 August 2021 | https://www.qbcc.qld.gov.au/my/node/7081 ; https://www.qbcc.qld.gov.au/licences/apply-licence/available-licences/other-trade/cabinet-making | 13 October 2026 |
+| 2 | For domestic building work over $3,300 the QBCC says a written, dated and signed contract is essential and must include advice about a cooling-off period; the maximum deposit is 10% of the contract price from $3,301 to $19,999 and 5% above $20,000, with up to 20% allowed where more than half the price is made-to-measure work done off site, cabinetry being an example the QBCC gives | kitchens, wardrobes (as worded, cabinetry being the QBCC's example) | QBCC Act, domestic building contracts provisions | sourced | QBCC, "Contracts and payments" and "Deposits and progress payments". The QBCC is the licensing authority. The Act itself was not read | contracts page last reviewed 14 May 2026; deposits page last reviewed 27 June 2025 | https://qbcc.qld.gov.au/node/1331 ; https://www.qbcc.qld.gov.au/home-owner-hub/build-renovate/contracts-payments/deposits-progress-payments | 13 October 2026 |
 | 3 | Practical advice only: ask what the cabinet carcass is made of, whether it is a moisture-resistant grade, and whether cut and drilled edges are sealed. **No standard, no board class and no climate-specific claim; the advice stays, the regulatory specific is dropped** | kitchens | a board or hardware manufacturer's technical data, or Standards Australia for the board standard | dropped | none usable. The Standards Australia store pages returned no readable text, and the reseller pages are not primary | n/a | n/a | 13 October 2026 |
 | 4 | Queensland Home Warranty insurance applies to residential building work valued over $3,300 including materials, labour and GST, and the QBCC lists replacing or refitting fixtures or fittings in a kitchen among it. The page does not name cabinetry, so the copy does not either | kitchens, About | QBCC home warranty scheme page | sourced | QBCC, "What work requires insurance" | last reviewed 1 August 2024 | https://www.qbcc.qld.gov.au/my/node/2886 | 13 October 2026 |
 | 5 | None. The copy says to ask for a written timeline and what the lead times are, with no durations | kitchens, Home | a peak body or a named published source, not a competitor | dropped | no Master Builders, HIA or government source found; every figure came from builder and cost-guide sites, one of them a New Zealand builder | n/a | n/a | 13 October 2026 |
 | 6 | None. No Cairns or Far North Queensland kitchen cost figure, and no national one stated as ours | kitchens | a Cairns or FNQ source (R10) | dropped | no Cairns source exists in what was found; the national guides disagree widely ($12,000 to $30,000 for the budget tier alone) | n/a | n/a | 13 October 2026 |
 | 7 | Every page carries the unlicensed-advertiser value statement: "Cairns Cabinet Makers cannot perform building work valued in excess of $3,300. For work above that value, discuss it with the cabinet maker who quotes your job." The first sentence follows the QBCC's own example wording | all pages | the QBCC's advertising guidance (the legal question of whether it is required stays with a solicitor) | sourced | the QBCC advertising page says unlicensed advertisers must state the value of work they can do, with the example "Cannot perform building work valued in excess of $3,300". It does not say whether a pre-rental referral site is such an advertiser, which is the legal question | QBCC advertising page last reviewed 30 August 2021, last published 30 June 2025 | https://www.qbcc.qld.gov.au/running-your-business/advertising | 13 October 2026 |
+| 8 | Cairns Aero's long-term monthly averages for 9am and 3pm relative humidity, rainfall and rain days, as the Bureau of Meteorology publishes them, with the station, the period of record and the date read | wardrobes | Bureau of Meteorology climate statistics | sourced | Bureau of Meteorology, Climate statistics for Australian locations, Cairns Aero 031011 | product IDCJCM0027 prepared 14 November 2026; humidity 1942-2010, rainfall 1942-2026 | https://www.bom.gov.au/climate/averages/tables/cw_031011.shtml | 16 November 2026 |
+| 9 | None. No claim that Cairns humidity causes mould, swelling or damage in wardrobes, and no ventilation or material advice presented as a rule or standard. The page may suggest questions to ask a cabinet maker | wardrobes, kitchens | Queensland Health, a standards body or a manufacturer's technical data | dropped | not searched for on 16 November 2026; re-open with a primary source before any such sentence is drafted | n/a | n/a | 16 November 2026 |
 
 ## Dropped claims
 
@@ -275,6 +350,8 @@ not just from this table.
 | Any standard, board class or climate-specific claim about cabinet materials in the tropics (register row 3) | No primary source could be read. The practical advice to ask about board grade and sealed edges stays |
 | Any kitchen renovation duration or stage timeline (row 5) | Only builder and cost-guide sources, one of them for New Zealand |
 | Any Cairns or FNQ kitchen cost (row 6) | No Cairns source; the national figures disagree too much to present |
+| Any claim that humidity damages wardrobes, or that a wardrobe needs ventilation or a material grade (row 9) | No primary source read yet |
+| Queensland Home Warranty insurance on the wardrobes page (row 4) | The QBCC page names replacing or refitting kitchen fixtures and fittings, not wardrobes, so the claim stays on the kitchens page and About only |
 
 ## Traps found
 
@@ -320,3 +397,9 @@ the cannibalisation map and the link graph. Two things he added: the QBCC value 
 on every page until a renter is signed (claim row 7), and generated illustrative images,
 recorded under Image direction. Re-signed the same day for one change: the Home H1 became "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery" (plural, so it reads as a directory and not as a claim that we do the work). The plan is the record; a later change to a title, meta,
 H1 or the nav needs this section re-signed.
+
+16 November 2026, awaiting re-sign. Changes since 13 October: the wardrobes page
+(custom-wardrobes-cairns.html) in the Inventory, Head, Nav, one-page-per-search map, link graph,
+Image direction and claim register (rows 1, 2 page columns; rows 8 and 9 new); the
+Local data asset in place of Linkable asset. Brad: approve or change in this file, then
+set Status to SIGNED-OFF with the date.
