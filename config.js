@@ -194,7 +194,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "Built-in wardrobes, a laundry, shelving or an entertainment unit. These are made to the size of the space, so the cabinet maker will want to measure before quoting."
+          "text": "Built-in wardrobes, a laundry, shelving or an entertainment unit. These are made to the size of the space, so the cabinet maker will want to measure before quoting. More on [built-in wardrobes in Cairns](custom-wardrobes-cairns.html)."
         },
         {
           "type": "h3",
@@ -683,6 +683,10 @@ window.SITE_CONFIG = {
           "text": "Each of these is a question, not a rule. A good answer names a material and a method, and a vague answer is worth noticing."
         },
         {
+          "type": "p",
+          "text": "The Bureau of Meteorology's month-by-month figures for the city are on the wardrobes page: [Cairns humidity and rain by month](custom-wardrobes-cairns.html)."
+        },
+        {
           "type": "h2",
           "text": "The parts of a cabinet"
         },
@@ -784,6 +788,285 @@ window.SITE_CONFIG = {
         {
           "type": "form",
           "presetService": "Kitchens"
+        }
+      ]
+    },
+    {
+      /* TODO (Brad): copy is build/04-copy/custom-wardrobes-cairns.md, approved 16 Nov
+         2026. The humidity table is the Bureau of Meteorology's figures only (claim
+         row 8): do not add that humidity causes mould or damage, or that a wardrobe
+         needs ventilation, until claim row 9 has a primary source. No home warranty
+         sentence here: the QBCC page names kitchen fixtures, not wardrobes. The QBCC
+         points rest on QBCC pages (rows 1 and 2), not the Act: re-check before launch.
+         Re-read the BoM page by 16 Nov 2027. No cost figure until a Cairns source.
+         Hero image: images/custom-wardrobes-cairns.jpg is not made yet (T23, Gemini
+         prompt in build/03-plan.md); add the image entry at T24. */
+      page: "custom-wardrobes-cairns.html",
+      name: "Wardrobes",
+      shortDescription: "Built-in and walk-in wardrobes made to fit Cairns bedrooms",
+      metaTitle: "Custom Wardrobes Cairns | Built-In Wardrobes and Storage",
+      metaDescription: "Custom and built-in wardrobes in Cairns: doors, layout and internal fit-out, what to ask a cabinet maker, and how to get your wardrobe job quoted.",
+      headline: "Custom and Built-In Wardrobes in Cairns",
+      subheadline: "The choices behind a built-in wardrobe, and what to tell a Cairns cabinet maker so the quote matches the room.",
+      ctaText: "Get a wardrobe quote",
+      blocks: [
+        {
+          "type": "lead",
+          "text": "A custom wardrobe is built for one wall in one room, which is why two quotes for \"a built-in robe\" can describe quite different pieces of work. Before asking for prices, it helps to settle four things: the type of wardrobe, the doors, the layout inside, and how the space will be measured."
+        },
+        {
+          "type": "h2",
+          "text": "Built-in, walk-in or a new fit-out"
+        },
+        {
+          "type": "p",
+          "text": "A built-in wardrobe fills a recess or runs along a wall from floor to ceiling, with doors across the front. A walk-in wardrobe is a small room lined with hanging space, shelves and drawers, usually with no doors on the inside fittings at all. A fit-out keeps the existing wardrobe shell and doors and replaces only what is inside."
+        },
+        {
+          "type": "p",
+          "text": "If the bedroom already has a robe recess, say in your enquiry whether you want it rebuilt, refitted inside, or left alone with the new wardrobe on another wall."
+        },
+        {
+          "type": "h2",
+          "text": "Hinged or sliding doors"
+        },
+        {
+          "type": "p",
+          "text": "Hinged doors open the whole width of the wardrobe at once, but need clear floor in front of them to swing. Sliding doors take no floor space when open, run on a top or bottom track, and only ever show part of the inside at one time. Sliding panels can be timber-look, painted or mirrored."
+        },
+        {
+          "type": "p",
+          "text": "If the room has a bed, a door or a window close to the wardrobe, measure how much space there is in front of it before deciding. That one measurement often settles the question."
+        },
+        {
+          "type": "h2",
+          "text": "Planning the inside"
+        },
+        {
+          "type": "p",
+          "text": "The inside layout is where a custom wardrobe earns its price. Start from what you own rather than from a picture: how much hangs long, how much hangs short, how much folds, and how many pairs of shoes there are. Then ask for a drawing that shows where each of those goes."
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Long hanging for dresses and coats, and double hanging rails for shirts and trousers",
+            "Adjustable shelves, and how far apart they can be set",
+            "Drawers, and whether they are inside the doors or on show",
+            "Shoe racks, a tie or belt rail, and space for luggage up high",
+            "Lighting inside, which brings in an electrician as well as the cabinet maker"
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Measuring the space"
+        },
+        {
+          "type": "p",
+          "text": "Walls and ceilings are rarely square, and a wardrobe built to the inch has to allow for that. A cabinet maker will measure the space themselves before giving a firm price, and will want to know about skirting boards, cornices, power points, light switches and air-conditioning vents on the wall the wardrobe will cover."
+        },
+        {
+          "type": "h2",
+          "text": "Cairns humidity and rain by month"
+        },
+        {
+          "type": "p",
+          "text": "A wardrobe is a closed box of clothes against a wall, often an outside one. These are the Bureau of Meteorology's long-term averages for its Cairns Aero station, so you can see when the air is at its wettest."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Month",
+            "Humidity at 9am",
+            "Humidity at 3pm",
+            "Rain (mm)",
+            "Days with 1 mm or more of rain"
+          ],
+          "rows": [
+            [
+              "January",
+              "75%",
+              "66%",
+              "404.8",
+              "15.8"
+            ],
+            [
+              "February",
+              "78%",
+              "69%",
+              "436.1",
+              "16.1"
+            ],
+            [
+              "March",
+              "78%",
+              "67%",
+              "424.3",
+              "16.1"
+            ],
+            [
+              "April",
+              "78%",
+              "65%",
+              "201.7",
+              "14.6"
+            ],
+            [
+              "May",
+              "76%",
+              "64%",
+              "91.6",
+              "10.5"
+            ],
+            [
+              "June",
+              "74%",
+              "61%",
+              "45.7",
+              "7.0"
+            ],
+            [
+              "July",
+              "72%",
+              "58%",
+              "33.2",
+              "5.7"
+            ],
+            [
+              "August",
+              "70%",
+              "56%",
+              "26.9",
+              "4.9"
+            ],
+            [
+              "September",
+              "66%",
+              "55%",
+              "34.8",
+              "5.0"
+            ],
+            [
+              "October",
+              "65%",
+              "57%",
+              "47.5",
+              "5.7"
+            ],
+            [
+              "November",
+              "68%",
+              "60%",
+              "87.9",
+              "7.8"
+            ],
+            [
+              "December",
+              "70%",
+              "62%",
+              "193.8",
+              "10.7"
+            ],
+            [
+              "Year",
+              "72%",
+              "62%",
+              "2019.1",
+              "119.9"
+            ]
+          ]
+        },
+        {
+          "type": "credit",
+          "text": "Source: Bureau of Meteorology, Climate statistics for Australian locations, Cairns Aero (site 031011), all years of record, prepared 14 November 2026 and read 16 November 2026 at bom.gov.au. Humidity averages cover 1942 to 2010; rainfall and rain days cover 1942 to 2026. Averages, not a forecast for any year."
+        },
+        {
+          "type": "p",
+          "text": "What those months mean for a wardrobe is a question for the cabinet maker, not a rule this page can give you. Questions worth asking:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Will the wardrobe sit against an outside wall, and does that change how you build it?",
+            "Is there any gap or airflow behind the back panel or through the doors?",
+            "What are the carcass and shelves made of, and what finish goes on the inside faces?",
+            "What are the sliding tracks or hinges made of?"
+          ]
+        },
+        {
+          "type": "h2",
+          "text": "Before you agree to a price"
+        },
+        {
+          "type": "p",
+          "text": "Queensland's building regulator, the QBCC, says building work valued over $3,300 needs a QBCC licence, and it has a Cabinet making licence class for installing and repairing fitted cabinets on site. Ask for the licence number before you agree to a job over that value."
+        },
+        {
+          "type": "p",
+          "text": "For domestic work over $3,300 the QBCC also says a written, dated and signed contract is essential. The usual deposit limits have an exception of up to 20% where more than half the price is made-to-measure work done away from your home, and the example the QBCC gives is cabinetry. The bands and the rest of the detail are on the [kitchen renovations in Cairns](kitchen-renovations-cairns.html) page."
+        },
+        {
+          "type": "credit",
+          "text": "Sources: the QBCC pages \"Who must hold a QBCC licence\" (reviewed 16 April 2026), \"Cabinet making\" (licence class), \"Contracts and payments\" (reviewed 14 May 2026) and \"Deposits and progress payments\" (reviewed 27 June 2025), at qbcc.qld.gov.au. Check the QBCC for the current position before you sign."
+        },
+        {
+          "type": "h2",
+          "text": "What to include when you enquire"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Which room, and the width and height of the wall or recess, roughly",
+            "Built-in, walk-in, or a new fit-out of an existing robe",
+            "Hinged or sliding doors, mirrored or not, if you know",
+            "What will go in it: long hanging, folded clothes, shoes, linen",
+            "Whether an old wardrobe has to come out first",
+            "The suburb, and when you would like it done"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Rough numbers are fine. The cabinet maker measures properly before the quote is final."
+        },
+        {
+          "type": "h2",
+          "text": "Common questions"
+        },
+        {
+          "type": "faqs",
+          "items": [
+            {
+              "q": "How much does a built-in wardrobe cost in Cairns?",
+              "a": "This page does not give a figure, because there is no Cairns source for one. The price turns on the width, the doors, how much is inside and what it is made of, and a cabinet maker can price it once they have measured."
+            },
+            {
+              "q": "Can you just replace the doors on my existing wardrobe?",
+              "a": "Often, if the shell is sound and the opening is a standard shape. Say so in your enquiry, with a photo if you can, and the cabinet maker can tell you whether doors alone will do."
+            },
+            {
+              "q": "Is a sliding door or a hinged door better?",
+              "a": "Neither in every room. Sliding doors suit tight spaces in front of the wardrobe; hinged doors show everything at once. The space in front of the wardrobe usually decides it."
+            },
+            {
+              "q": "Do I need to empty the room for the measure?",
+              "a": "No. The cabinet maker needs to reach the wall, the floor and the ceiling where the wardrobe will go, so clearing that strip is enough."
+            }
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Planning a laundry, shelving or another piece instead? Start with [other rooms and joinery](index.html). To see what happens to an enquiry and who pays for it, read [how this site works](about.html)."
+        },
+        {
+          "type": "h2",
+          "text": "Get a wardrobe quote"
+        },
+        {
+          "type": "p",
+          "text": "Tell us the room, the rough size of the space and the kind of wardrobe you have in mind. We pass your enquiry to a local cabinet maker who can quote it, and that cabinet maker pays for the enquiry."
+        },
+        {
+          "type": "form",
+          "presetService": "Wardrobes and built-in storage"
         }
       ]
     }

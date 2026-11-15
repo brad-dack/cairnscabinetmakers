@@ -1,6 +1,6 @@
 # Kitchen renovations: /kitchen-renovations-cairns
 
-Status: APPROVED | v1, Brad, 13 October 2026
+Status: APPROVED | v1.1, Brad, 16 November 2026. v1 approved 13 October 2026
 
 ## Head
 
@@ -50,6 +50,8 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
     - Which cabinets sit under the sink or beside the dishwasher, and how is the material there protected?
 
 13. `p`: Each of these is a question, not a rule. A good answer names a material and a method, and a vague answer is worth noticing.
+
+13a. `p`: The Bureau of Meteorology's month-by-month figures for the city are on the wardrobes page: [Cairns humidity and rain by month](custom-wardrobes-cairns.html). Added in v1.1, 16 November 2026.
 
 14. `h2`: The parts of a cabinet
 
@@ -124,3 +126,4 @@ Live as `/* TODO (Brad) */` comments in `config.js`:
 
 - Enquiry-flow wording stays in the present tense. See PLAYBOOK.md Appendix A, R11.
 - No "free quote", no response-time promise, no "licensed" claim about the cabinet maker we pass an enquiry to, and no cost figure. Brad, 13 October 2026.
+- v1.1 adds one link to the wardrobes page's humidity table (block 13a), for the plan's link graph. Brad, 16 November 2026 ("Approve wardrobes").

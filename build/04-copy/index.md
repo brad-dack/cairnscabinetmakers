@@ -1,6 +1,6 @@
 # Home: /
 
-Status: APPROVED | v1.1, Brad, 13 October 2026. v1 approved the same day
+Status: APPROVED | v1.2, Brad, 16 November 2026. v1.1 approved 13 October 2026, v1 the same day
 
 ## Head
 
@@ -29,7 +29,7 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 
 5. `h3`: You want storage built to fit a room
 
-6. `p`: Built-in wardrobes, a laundry, shelving or an entertainment unit. These are made to the size of the space, so the cabinet maker will want to measure before quoting.
+6. `p`: Built-in wardrobes, a laundry, shelving or an entertainment unit. These are made to the size of the space, so the cabinet maker will want to measure before quoting. More on [built-in wardrobes in Cairns](custom-wardrobes-cairns.html).
 
 7. `h3`: You are not sure what you need yet
 
@@ -114,3 +114,4 @@ Live as `/* TODO (Brad) */` comments in `config.js`:
 
 - Enquiry-flow wording stays in the present tense: enquiries are passed to a local cabinet maker who can quote the job, and the cabinet maker pays for the enquiry. See PLAYBOOK.md Appendix A, R11. Do not soften it and do not reopen it.
 - No "free quote" and no response-time promise anywhere: the site does not quote, and nothing backs a promise. Brad, 13 October 2026.
+- v1.2 adds one link to the new wardrobes page at the end of block 6, for the plan's link graph. Wardrobes stay a short summary here (block 11 unchanged). Brad, 16 November 2026 ("Approve wardrobes").

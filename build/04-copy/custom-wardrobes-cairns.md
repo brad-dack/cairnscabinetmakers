@@ -1,6 +1,6 @@
 # Custom wardrobes: /custom-wardrobes-cairns
 
-Status: DRAFT v1 | written 16 November 2026, awaiting Brad's approval
+Status: APPROVED | v1, Brad, 16 November 2026
 
 ## Head
 
@@ -130,6 +130,10 @@ Both are needed for the plan's link graph (two in-copy links into this page). Ea
 - **Home, v1.2** (`build/04-copy/index.md`): block 6 gains a link at the end: "Built-in wardrobes, a laundry, shelving or an entertainment unit. These are made to the size of the space, so the cabinet maker will want to measure before quoting. More on [built-in wardrobes in Cairns](custom-wardrobes-cairns.html)." Block 11 is unchanged.
 - **Kitchens, v1.1** (`build/04-copy/kitchen-renovations-cairns.md`): one new `p` after the humidity questions: "The Bureau of Meteorology's month-by-month figures for the city are on the wardrobes page: [Cairns humidity and rain by month](custom-wardrobes-cairns.html)."
 
+## T25 transcription notes
+
+`presetService` is "Wardrobes and built-in storage", the `contact.jobTypes` option, rather than the service name: the kitchens page does the same ("Kitchens"), and the form's job picker only preselects a value it lists. 16 November 2026.
+
 ## Markers outstanding
 
 None on the page.
@@ -149,4 +153,5 @@ Live as `/* TODO (Brad) */` comments in `config.js`:
 ## Decisions locked on this page
 
 - Wardrobes get their own page, on an all-directory page 1 rather than a measured pass. Brad, 16 November 2026.
+- Copy approved as drafted, with the one-line link additions to Home (v1.2) and the kitchens page (v1.1). Brad, 16 November 2026 ("Approve wardrobes").
 - Enquiry-flow wording stays in the present tense (R11). No "free quote", no response time, no "licensed" claim about the cabinet maker, no cost figure. As on the other pages, Brad, 13 October 2026.
