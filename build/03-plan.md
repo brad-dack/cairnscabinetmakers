@@ -1,6 +1,6 @@
 # 03 Page plan
 
-Status: DRAFT | wardrobes page added 16 November 2026, awaiting Brad's re-sign (signed off 13 October 2026 for the first four pages)
+Status: SIGNED-OFF | Brad, 16 November 2026 (re-signed for the wardrobes page; first signed 13 October 2026)
 Evidence: CLEAR | 13 October 2026
 
 Written by T16a to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
@@ -155,7 +155,7 @@ response time (Positioning claim restrictions, R11).
 ## Nav
 
 T17. Ordered: Home, Kitchens, Wardrobes, About (Wardrobes added 16 November 2026,
-awaiting re-sign; the label is `services[1].name`). No Services item and no dropdown. The call
+signed off the same day; the label is `services[1].name`). No Services item and no dropdown. The call
 button sits beside them. Footer-only: Privacy. The footer mirrors the nav plus
 Privacy, and carries the s54 licence line only once a renter is signed (R14).
 
@@ -403,3 +403,5 @@ H1 or the nav needs this section re-signed.
 Image direction and claim register (rows 1, 2 page columns; rows 8 and 9 new); the
 Local data asset in place of Linkable asset. Brad: approve or change in this file, then
 set Status to SIGNED-OFF with the date.
+
+16 November 2026. Brad approved the re-plan in the Code session ("Approve the plan"): the wardrobes page in the Inventory, the Head row (title, meta and H1 as written), the nav (Home, Kitchens, Wardrobes, About), the one-page-per-search map, the link graph, the image direction, the Local data asset and claim rows 8 and 9. The corrected Winnability (6 jobs, the wardrobes page a judgement on all-directory page 1s) was in front of him.
