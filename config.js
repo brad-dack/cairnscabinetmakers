@@ -799,8 +799,8 @@ window.SITE_CONFIG = {
          sentence here: the QBCC page names kitchen fixtures, not wardrobes. The QBCC
          points rest on QBCC pages (rows 1 and 2), not the Act: re-check before launch.
          Re-read the BoM page by 16 Nov 2027. No cost figure until a Cairns source.
-         Hero image: images/custom-wardrobes-cairns.jpg is not made yet (T23, Gemini
-         prompt in build/03-plan.md); add the image entry at T24. */
+         Hero image made in Gemini by Brad, 16 Nov 2026; original kept in
+         build/source-images/wardrobes.jpeg. Illustrative only: no caption. */
       page: "custom-wardrobes-cairns.html",
       name: "Wardrobes",
       shortDescription: "Built-in and walk-in wardrobes made to fit Cairns bedrooms",
@@ -809,6 +809,19 @@ window.SITE_CONFIG = {
       headline: "Custom and Built-In Wardrobes in Cairns",
       subheadline: "The choices behind a built-in wardrobe, and what to tell a Cairns cabinet maker so the quote matches the room.",
       ctaText: "Get a wardrobe quote",
+      image: {
+        "src": "images/custom-wardrobes-cairns.jpg",
+        "alt": "An illustrated built-in bedroom wardrobe with timber-look doors, hanging rails, shelves and drawers.",
+        "width": 1200,
+        "height": 800,
+        "widths": [
+          400,
+          560,
+          720,
+          960
+        ],
+        "sizes": "(min-width: 900px) 450px, min(520px, calc(100vw - 40px))"
+      },
       blocks: [
         {
           "type": "lead",

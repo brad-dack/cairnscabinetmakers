@@ -206,7 +206,7 @@ Two kinds of image, approved by Brad on 13 October 2026:
 | index.html | images/home-hero-kitchen.jpg | a modern fitted kitchen with cabinetry and a benchtop, bright and warm, no people, no text | illustrative image (Gemini) | An illustrated modern kitchen with white cabinetry, a timber island and open shelving | 1200 | 800 | 122 | 400, 560, 720, 960 |
 | kitchen-renovations-cairns.html | images/kitchen-renovations-cairns.jpg | a different modern kitchen from a different angle: cabinetry, benchtop, island, no people, no text | illustrative image (Gemini) | An illustrated modern kitchen with timber and grey cabinetry and a stone-look island benchtop | 1200 | 800 | 146 | 400, 560, 720, 960 |
 | kitchen-renovations-cairns.html | images/kitchen-cabinet-parts.svg | the named parts of a kitchen base cabinet: carcass, door, edge, shelf, hinge, kickboard, benchtop. Labels only, no performance or moisture claim. Replaces the moisture-points diagram, which was tied to claim 3, now dropped | diagram | Diagram naming the parts of a kitchen base cabinet: benchtop, carcass, shelf, kickboard, hinge, door and edge | 1200 | 800 | 4 | none |
-| custom-wardrobes-cairns.html | images/custom-wardrobes-cairns.jpg | a built-in bedroom wardrobe with doors part open, showing hanging rails, shelves and drawers, bright and calm, no people, no text | illustrative image (Gemini) | An illustrated built-in bedroom wardrobe with timber-look doors, hanging rails, shelves and drawers | | | | |
+| custom-wardrobes-cairns.html | images/custom-wardrobes-cairns.jpg | a built-in bedroom wardrobe with doors part open, showing hanging rails, shelves and drawers, bright and calm, no people, no text | illustrative image (Gemini) | An illustrated built-in bedroom wardrobe with timber-look doors, hanging rails, shelves and drawers | 1200 | 800 | 100 | 400, 560, 720, 960 |
 
 T24, 13 October 2026. The two Gemini images arrived as `home.jpeg` and
 `kitchens.jpeg` (1264 by 848), were cropped to 3:2, resized to 1200 by 800 and
@@ -247,7 +247,7 @@ home kitchen rather than a showroom or a render.
 > signage. Realistic proportions: straight lines, matching handles, one sink,
 > one cooktop, no duplicated or floating objects.
 
-**custom-wardrobes-cairns.jpg** (Wardrobes page), added 16 November 2026
+**custom-wardrobes-cairns.jpg** (Wardrobes page), added 16 November 2026. T23 and T24 done the same day: Brad's Gemini image (1264 by 848) was checked against the list below, cropped to 3:2, resized to 1200 by 800 with `-400`, `-560`, `-720` and `-960` variants, and kept as `build/source-images/wardrobes.jpeg`.
 
 > A photorealistic photograph of a built-in floor-to-ceiling bedroom wardrobe in a
 > bright, airy Queensland home, soft natural daylight. Two of the doors are open,
