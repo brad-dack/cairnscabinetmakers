@@ -1,6 +1,6 @@
 # Kitchen renovations: /kitchen-renovations-cairns
 
-Status: APPROVED | v1.1, Brad, 16 November 2026. v1 approved 13 October 2026
+Status: APPROVED | v1.2, Brad, 17 November 2026 ("Approve them"). v1.1 16 November 2026. v1 approved 13 October 2026
 
 ## Head
 
@@ -83,7 +83,7 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
     - Whether the old kitchen needs removing, and whether appliances are staying
     - Anything unusual about access, timing or the state of the walls and floor
 
-26. `p`: You will not know all of it, and that is fine. A cabinet maker will want to see the room before pricing it properly.
+26. `p`: Gaps in what you know are normal at this stage. The cabinet maker will need to see the kitchen before giving a firm price.
 
 27. `h2`: Common questions
 
@@ -101,6 +101,7 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
 
 ## Changes from plan
 
+- v1.2, Brad, 17 November 2026: the sentence pair after the what-to-include list, shared word for word with Home and with Perth Tiling Specialists (which had it first), reworded with the same meaning (R15). No figure, claim or head change.
 - The plan's cannibalisation map gives this page "what holds up in tropical humidity" and "how a kitchen job runs and how long it takes (each only once sourced)". Neither was sourced at T20 (rows 3 and 5), so the humidity section is questions to ask, with no standard, no board class and no performance claim, and the page has no sequence of stages and no durations.
 - Titles, meta and H1 match `build/03-plan.md`. The meta still says "how cabinets cope with tropical humidity", which the page answers as questions to ask. If Brad prefers the meta to match the page more closely, a rewrite is a change that needs re-approval at T22 and a re-sign of the plan's Head table.
 - The diagram is `kitchen-cabinet-parts.svg`, which replaced the moisture-points diagram on 13 October 2026.

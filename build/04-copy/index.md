@@ -1,6 +1,6 @@
 # Home: /
 
-Status: APPROVED | v1.2, Brad, 16 November 2026. v1.1 approved 13 October 2026, v1 the same day
+Status: APPROVED | v1.3, Brad, 17 November 2026 ("Approve them"). v1.2 16 November 2026. v1.1 approved 13 October 2026, v1 the same day
 
 ## Head
 
@@ -43,7 +43,7 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 
 12. `p`: **Laundries and other joinery.** Laundry cabinets, shelving, entertainment units and other custom pieces.
 
-13. `p`: **Small jobs.** A replacement door, a drawer that no longer runs, a shelf that needs adding. Small jobs are harder to get quoted than large ones, so it helps to be specific about what you need.
+13. `p`: **Small jobs.** A replacement door, a drawer that no longer runs, a shelf that needs adding. Cabinet makers find small jobs harder to price from a description, so say exactly what needs doing.
 
 14. `h2`: What a good quote covers
 
@@ -64,7 +64,7 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 
 20. `h2`: What to include when you enquire
 
-21. `p`: The more specific you are, the more useful the quote. Worth including:
+21. `p`: A detailed enquiry gets you a quote you can actually use. Worth including:
 
 22. `ul`:
     - The room, and roughly how big it is
@@ -73,7 +73,7 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
     - What you want it made of, if you have a view
     - Anything unusual about access, timing or the state of the room
 
-23. `p`: You will not know all of it, and that is fine. A cabinet maker will want to see the room before pricing it properly.
+23. `p`: Leave out anything you are unsure of. A cabinet maker will want to see the room before pricing it properly.
 
 24. `h2`: Common questions
 
@@ -93,6 +93,7 @@ Collection notice above the form is `contact.reassurance`, held in `build/02-con
 
 ## Changes from plan
 
+- v1.3, Brad, 17 November 2026: Three sentences Perth Tiling Specialists had first (13 September 2026, against Cairns 13 October) reworded with the same meaning, so every sentence is written for this site (R15) : the Small jobs block, the line before the what-to-include list, and the first sentence after it. No figure, claim or head change.
 - H1 and hero sub-headline changed by Brad on 13 October 2026, after v1 was approved. H1 was "Find a Cabinet Maker in Cairns for Kitchens, Wardrobes and Joinery", now "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery" (plural, so it reads as a directory and not as a claim that we do the work). Sub-headline was "...we pass your enquiry to a local cabinet maker who can quote the job.", now "...we pass it to a cabinet maker who can quote the job." (present tense kept, R11). The plan's Head table is updated and re-signed to match.
 
 - The plan's cannibalisation map gives Home "a short outline of how a cabinet job runs". That outline is not written. Its source claim, the typical sequence and timing of a kitchen job (register row 5), was dropped at T20 because no peak body or government source exists. In its place Home carries "What a good quote covers", which is advice and states no sequence or duration. The kitchens page does the same.

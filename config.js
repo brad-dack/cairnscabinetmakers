@@ -222,7 +222,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "**Small jobs.** A replacement door, a drawer that no longer runs, a shelf that needs adding. Small jobs are harder to get quoted than large ones, so it helps to be specific about what you need."
+          "text": "**Small jobs.** A replacement door, a drawer that no longer runs, a shelf that needs adding. Cabinet makers find small jobs harder to price from a description, so say exactly what needs doing."
         },
         {
           "type": "h2",
@@ -260,7 +260,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "The more specific you are, the more useful the quote. Worth including:"
+          "text": "A detailed enquiry gets you a quote you can actually use. Worth including:"
         },
         {
           "type": "ul",
@@ -274,7 +274,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "You will not know all of it, and that is fine. A cabinet maker will want to see the room before pricing it properly."
+          "text": "Leave out anything you are unsure of. A cabinet maker will want to see the room before pricing it properly."
         },
         {
           "type": "h2",
@@ -746,7 +746,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "You will not know all of it, and that is fine. A cabinet maker will want to see the room before pricing it properly."
+          "text": "Gaps in what you know are normal at this stage. The cabinet maker will need to see the kitchen before giving a firm price."
         },
         {
           "type": "h2",
