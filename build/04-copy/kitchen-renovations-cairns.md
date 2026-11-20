@@ -1,14 +1,14 @@
 # Kitchen renovations: /kitchen-renovations-cairns
 
-Status: APPROVED | v1.2, Brad, 17 November 2026 ("Approve them"). v1.1 16 November 2026. v1 approved 13 October 2026
+Status: APPROVED | v1.3, Brad, 21 November 2026 ("Do rows 2-9"). v1.2 17 November 2026. v1.1 16 November 2026. v1 approved 13 October 2026
 
 ## Head
 
 | field | value |
 |---|---|
 | file | kitchen-renovations-cairns.html |
-| title | Kitchen Renovations Cairns \| Custom Kitchen Cabinets |
-| meta | Kitchen renovations in Cairns: what a custom kitchen involves, how cabinets cope with tropical humidity, and how to get a Cairns cabinet maker to quote. |
+| title | Kitchen Renovations Cairns \| Kitchens and Custom Cabinets |
+| meta | Kitchen renovations in Cairns: layout, custom or flat-pack, benchtops, what to ask about cabinets in the humidity, and how to get a quote. |
 | h1 | Kitchen Renovations in Cairns: Cabinets, Benchtops and Design |
 
 ## Blocks
@@ -21,7 +21,7 @@ What to decide, what to ask and what to check before you agree to a kitchen reno
 
 Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T24.
 
-1. `lead`: A kitchen renovation is mostly a set of decisions: the layout, what the cabinets are made of, what the benchtop is, and who does each part. This page sets out those decisions and the questions worth asking, so that the quotes you collect are quotes for the same job.
+1. `lead`: A kitchen renovation in Cairns is mostly a set of decisions: the layout, what the cabinets are made of, what the benchtop is, and who does each part. This page sets out those decisions and the questions worth asking, so that the quotes you collect are quotes for the same job.
 
 2. `h2`: Start with the layout
 
@@ -29,7 +29,7 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
 
 4. `p`: A drawing of the proposed kitchen is worth asking for before you agree to anything. It is much cheaper to change a line on paper than a cabinet that has been made.
 
-5. `h2`: Custom or flat-pack
+5. `h2`: Custom or flat-pack kitchens in Cairns
 
 6. `p`: Flat-pack kitchens arrive as standard-sized cabinets in cartons and are assembled and fitted from parts. Custom kitchens are made to the size of your room, so they fit awkward corners and unusual wall lengths without filler panels. Flat-pack can suit a room that works with standard sizes, and custom suits a room that does not.
 
@@ -38,6 +38,14 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
 8. `h2`: Benchtops
 
 9. `p`: The benchtop is a decision of its own: the material, the thickness, the edge, and the cut-outs for the sink and cooktop. Ask whether the quote includes the benchtop at all, and who is supplying and fitting it. Quotes that look different on price are sometimes the same job with the benchtop in one and out of the other.
+
+9a. `h2`: Refresh, renovate or replace
+
+9b. `p`: Not every kitchen needs replacing. A refresh can mean new doors and drawer fronts on cabinet boxes that are still sound, a new benchtop, or new hardware. A full renovation replaces the cabinets and often changes the layout. A kitchen makeover, refurbishment or upgrade can be any of these, so say which you want when you enquire. The cabinet maker can tell you from the room whether the existing cabinets are worth keeping.
+
+9c. `h2`: Keeping a kitchen renovation within budget
+
+9d. `p`: This page gives no figure, because a Cairns price depends on the room. The things that move the price are set out above: keeping the sink, cooktop and fridge where they are, flat-pack where the room suits standard sizes, the benchtop, and whether the existing cabinet boxes can stay. Ask each cabinet maker to price the cabinets, benchtop, removal and installation as separate lines, so you can see where the money goes and what you could change.
 
 10. `h2`: Cabinets in a humid climate
 
@@ -88,19 +96,21 @@ Hero image: `images/kitchen-renovations-cairns.jpg`, T23 and T24, alt text at T2
 27. `h2`: Common questions
 
 28. `faqs`:
-    - Q: What does a kitchen renovation cost in Cairns? A: This page does not give a figure. A Cairns price depends on the size of the room, the layout, the materials and the benchtop, and the figures published nationally disagree widely and are not for Cairns. A cabinet maker prices it once they have seen the room.
+    - Q: What does a kitchen renovation cost in Cairns, and what changes the price? A: This page does not give a figure. A Cairns price depends on the size of the room, the layout, the materials and the benchtop, and the figures published nationally disagree widely and are not for Cairns. What moves a kitchen quote is the layout (moving the sink, cooktop or fridge means more trades and more work behind the walls), what the cabinets are made of, the benchtop, and whether removing the old kitchen and supplying appliances are included. A cabinet maker prices it once they have seen the room.
     - Q: Does the quote include the benchtop and installation? A: Not always. Ask each cabinet maker to list what is included, and who supplies and fits the benchtop and any appliances.
-    - Q: Can I keep my existing cabinets and replace only the doors? A: Sometimes. It depends on the condition of the cabinet boxes and whether the layout still works. Say so in your enquiry and the cabinet maker can tell you whether it is worth doing.
     - Q: Should I pay a deposit? A: A deposit is normal, and the QBCC sets a limit on it, set out under "Before you sign" above. A deposit above the limit is not something you have to pay.
 
 29. `h2`: Get a kitchen quote
 
 30. `p`: Tell us the room, roughly how big it is, and what you want done. We will pass it to a local cabinet maker who can quote it.
 
+30a. `p`: Looking for wardrobes? See [built-in wardrobes in Cairns](custom-wardrobes-cairns.html). For a laundry or other joinery, see [cabinet makers in Cairns](index.html).
+
 31. `form`: `heading` Get a kitchen quote; `presetService` Kitchen Renovations. The collection notice is `contact.reassurance`.
 
 ## Changes from plan
 
+- v1.3, Brad, 21 November 2026 (fix table for the 20 November 2026 SEO audit, rows 5, 7, 8 and 9): new title and meta, re-signed in the plan's Head table the same day (the old meta promised "how cabinets cope with tropical humidity", which the page answers only as questions). New "Keeping a kitchen renovation within budget" section, with no figure (claim row 6 stays dropped). The doors-only FAQ is removed because "Refresh, renovate or replace" covers it. Block 30a now sends wardrobe readers to the wardrobes page. This file also now records the lead sentence, the flat-pack H2, the refresh section, the longer cost FAQ and block 30a's earlier version, which commit 4c9b610 (30 October 2026) put in `config.js` without adding them here.
 - v1.2, Brad, 17 November 2026: the sentence pair after the what-to-include list, shared word for word with Home and with Perth Tiling Specialists (which had it first), reworded with the same meaning (R15). No figure, claim or head change.
 - The plan's cannibalisation map gives this page "what holds up in tropical humidity" and "how a kitchen job runs and how long it takes (each only once sourced)". Neither was sourced at T20 (rows 3 and 5), so the humidity section is questions to ask, with no standard, no board class and no performance claim, and the page has no sequence of stages and no durations.
 - Titles, meta and H1 match `build/03-plan.md`. The meta still says "how cabinets cope with tropical humidity", which the page answers as questions to ask. If Brad prefers the meta to match the page more closely, a rewrite is a change that needs re-approval at T22 and a re-sign of the plan's Head table.

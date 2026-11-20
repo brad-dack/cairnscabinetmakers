@@ -1,6 +1,6 @@
 # Home: /
 
-Status: APPROVED | v1.3, Brad, 17 November 2026 ("Approve them"). v1.2 16 November 2026. v1.1 approved 13 October 2026, v1 the same day
+Status: APPROVED | v1.4, Brad, 21 November 2026 ("Do rows 2-9"). v1.3 17 November 2026. v1.2 16 November 2026. v1.1 approved 13 October 2026, v1 the same day
 
 ## Head
 
@@ -39,7 +39,7 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 
 10. `p`: **Kitchens.** New cabinets, a full renovation, or replacing doors and benchtops. More on [kitchen renovations in Cairns](kitchen-renovations-cairns.html).
 
-11. `p`: **Wardrobes and built-in storage.** Built-in robes, walk-in layouts and bedroom storage, made to fit the room.
+11. `p`: **Wardrobes and built-in storage.** Built-in robes, walk-in layouts and bedroom storage, made to fit the room. More on [custom wardrobes in Cairns](custom-wardrobes-cairns.html).
 
 12. `p`: **Laundries and other joinery.** Laundry cabinets, shelving, entertainment units and other custom pieces.
 
@@ -50,7 +50,7 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 15. `p`: Quotes for the same job can differ because they cover different things. Whoever you hear from, it is worth asking:
 
 16. `ul`:
-    - What is included: the cabinets, the benchtop, removal of the old kitchen, installation
+    - What is included: the cabinets, the benchtop, removal of what is there now, installation
     - What the cabinets are made of, and whether the edges are sealed
     - Who supplies and fits anything that is not the cabinets, such as the benchtop or appliances
     - What happens if the job changes once work has started
@@ -78,8 +78,8 @@ Hero image: `images/home-hero-kitchen.jpg`, T23 and T24. Alt text is written at 
 24. `h2`: Common questions
 
 25. `faqs`:
-    - Q: Is a custom kitchen different from a flat-pack kitchen? A: Flat-pack cabinets come in standard sizes and are assembled and fitted from parts. Custom cabinets are made to the size of your room. Which suits you depends on the room, the layout and the budget, and a cabinet maker can tell you where each makes sense. More on [kitchen renovations in Cairns](kitchen-renovations-cairns.html).
     - Q: Does the cabinet maker need a licence? A: In Queensland, building work valued over $3,300 needs a QBCC licence. Ask for the licence number before you agree to anything, and check it with the QBCC. The details are on the [kitchen renovations](kitchen-renovations-cairns.html) page.
+    - Q: What is the difference between a cabinet maker and a carpenter? A: A cabinet maker makes and fits cabinets and joinery such as kitchens, wardrobes and laundries. The QBCC has a Cabinet making licence class covering installing, refurbishing, restoring or repairing kitchen, bathroom, laundry and other fitted cabinets on site. Ask for the licence number before you agree to anything.
     - Q: Do you publish prices? A: No. What a job costs depends on the size of the room, the layout, the materials and the benchtop, so a figure here would not be your figure. The cabinet maker prices it after seeing the room.
     - Q: What happens when I send an enquiry? A: Your details go to a local cabinet maker who can quote the job, and they contact you directly. The cabinet maker pays for the enquiry and you do not. The [About page](about.html) has the full account.
 
@@ -93,6 +93,7 @@ Collection notice above the form is `contact.reassurance`, held in `build/02-con
 
 ## Changes from plan
 
+- v1.4, Brad, 21 November 2026 (fix table for the 20 November 2026 SEO audit, rows 3 and 6): the flat-pack FAQ is removed, because the kitchens page owns flat-pack and Search Console showed Home and the kitchens page splitting "kitchen renovations cairns". "Removal of the old kitchen" becomes "removal of what is there now", so the quote list is not kitchen-only. Block 11 links to the wardrobes page as "custom wardrobes in Cairns". This file also now records the carpenter FAQ, which commit 4c9b610 (30 October 2026) put in `config.js` without adding it here. No head change.
 - v1.3, Brad, 17 November 2026: Three sentences Perth Tiling Specialists had first (13 September 2026, against Cairns 13 October) reworded with the same meaning, so every sentence is written for this site (R15) : the Small jobs block, the line before the what-to-include list, and the first sentence after it. No figure, claim or head change.
 - H1 and hero sub-headline changed by Brad on 13 October 2026, after v1 was approved. H1 was "Find a Cabinet Maker in Cairns for Kitchens, Wardrobes and Joinery", now "Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery" (plural, so it reads as a directory and not as a claim that we do the work). Sub-headline was "...we pass your enquiry to a local cabinet maker who can quote the job.", now "...we pass it to a cabinet maker who can quote the job." (present tense kept, R11). The plan's Head table is updated and re-signed to match.
 

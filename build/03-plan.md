@@ -1,6 +1,6 @@
 # 03 Page plan
 
-Status: SIGNED-OFF | Brad, 16 November 2026 (re-signed for the wardrobes page; first signed 13 October 2026)
+Status: SIGNED-OFF | Brad, 21 November 2026 (re-signed for the kitchens page title and meta; before that 16 November 2026 for the wardrobes page; first signed 13 October 2026)
 Evidence: CLEAR | 13 October 2026
 
 Written by T16a to T20. Read by T21, T24 and T25. See PLAYBOOK.md.
@@ -147,7 +147,7 @@ response time (Positioning claim restrictions, R11).
 | file | title | chars | meta | chars | h1 |
 |---|---|---|---|---|---|
 | index.html | Cabinet Makers Cairns QLD \| Kitchens, Wardrobes, Joinery | 56 | Looking for a cabinet maker in Cairns? Tell us about your kitchen, wardrobe or joinery job and we will pass it to a local cabinet maker who can quote it. | 153 | Cabinet Makers in Cairns for Kitchens, Wardrobes and Joinery |
-| kitchen-renovations-cairns.html | Kitchen Renovations Cairns \| Custom Kitchen Cabinets | 52 | Kitchen renovations in Cairns: what a custom kitchen involves, how cabinets cope with tropical humidity, and how to get a Cairns cabinet maker to quote. | 152 | Kitchen Renovations in Cairns: Cabinets, Benchtops and Design |
+| kitchen-renovations-cairns.html | Kitchen Renovations Cairns \| Kitchens and Custom Cabinets | 57 | Kitchen renovations in Cairns: layout, custom or flat-pack, benchtops, what to ask about cabinets in the humidity, and how to get a quote. | 138 | Kitchen Renovations in Cairns: Cabinets, Benchtops and Design |
 | custom-wardrobes-cairns.html | Custom Wardrobes Cairns \| Built-In Wardrobes and Storage | 56 | Custom and built-in wardrobes in Cairns: doors, layout and internal fit-out, what to ask a cabinet maker, and how to get your wardrobe job quoted. | 146 | Custom and Built-In Wardrobes in Cairns |
 | about.html | About Cairns Cabinet Makers \| How This Site Works | 49 | What Cairns Cabinet Makers is, the area we cover, what happens when you enquire, how the service is paid for, and how to get in touch. | 134 | About Cairns Cabinet Makers |
 | privacy.html | Privacy Policy \| Cairns Cabinet Makers | 38 | What Cairns Cabinet Makers collects when you make an enquiry or call, who your details go to, how long they are kept, and how to have them removed. | 147 | Privacy Policy |
@@ -405,3 +405,5 @@ Local data asset in place of Linkable asset. Brad: approve or change in this fil
 set Status to SIGNED-OFF with the date.
 
 16 November 2026. Brad approved the re-plan in the Code session ("Approve the plan"): the wardrobes page in the Inventory, the Head row (title, meta and H1 as written), the nav (Home, Kitchens, Wardrobes, About), the one-page-per-search map, the link graph, the image direction, the Local data asset and claim rows 8 and 9. The corrected Winnability (6 jobs, the wardrobes page a judgement on all-directory page 1s) was in front of him.
+
+21 November 2026. Brad approved the kitchens page Head row change in the Code session ("Do rows 2-9", from the fix table for the 20 November 2026 SEO audit). Title was "Kitchen Renovations Cairns | Custom Kitchen Cabinets", now "Kitchen Renovations Cairns | Kitchens and Custom Cabinets", to carry "kitchens cairns" (the page's planned secondary keyword) and the audit's gap term "kitchen cairns". Meta was "...how cabinets cope with tropical humidity...", which promised more than the page gives (it lists questions, claim row 3 dropped); now it names the page's sections. H1 unchanged. Also approved the same day, no Head change: Home drops its flat-pack FAQ (the kitchens page owns flat-pack in the one-page-per-search map) and links to the wardrobes page from its Wardrobes paragraph; the kitchens page links to the wardrobes page by "built-in wardrobes in Cairns" and gains a budget section with no figure.

@@ -214,7 +214,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "**Wardrobes and built-in storage.** Built-in robes, walk-in layouts and bedroom storage, made to fit the room."
+          "text": "**Wardrobes and built-in storage.** Built-in robes, walk-in layouts and bedroom storage, made to fit the room. More on [custom wardrobes in Cairns](custom-wardrobes-cairns.html)."
         },
         {
           "type": "p",
@@ -235,7 +235,7 @@ window.SITE_CONFIG = {
         {
           "type": "ul",
           "items": [
-            "What is included: the cabinets, the benchtop, removal of the old kitchen, installation",
+            "What is included: the cabinets, the benchtop, removal of what is there now, installation",
             "What the cabinets are made of, and whether the edges are sealed",
             "Who supplies and fits anything that is not the cabinets, such as the benchtop or appliances",
             "What happens if the job changes once work has started",
@@ -283,10 +283,6 @@ window.SITE_CONFIG = {
         {
           "type": "faqs",
           "items": [
-            {
-              "q": "Is a custom kitchen different from a flat-pack kitchen?",
-              "a": "Flat-pack cabinets come in standard sizes and are assembled and fitted from parts. Custom cabinets are made to the size of your room. Which suits you depends on the room, the layout and the budget, and a cabinet maker can tell you where each makes sense. More on [kitchen renovations in Cairns](kitchen-renovations-cairns.html)."
-            },
             {
               "q": "Does the cabinet maker need a licence?",
               "a": "In Queensland, building work valued over $3,300 needs a QBCC licence. Ask for the licence number before you agree to anything, and check it with the QBCC. The details are on the [kitchen renovations](kitchen-renovations-cairns.html) page."
@@ -598,8 +594,8 @@ window.SITE_CONFIG = {
       page: "kitchen-renovations-cairns.html",
       name: "Kitchens",
       shortDescription: "New cabinets, benchtops and layouts for Cairns kitchens",
-      metaTitle: "Kitchen Renovations Cairns | Custom Kitchen Cabinets",
-      metaDescription: "Kitchen renovations in Cairns: what a custom kitchen involves, how cabinets cope with tropical humidity, and how to get a Cairns cabinet maker to quote.",
+      metaTitle: "Kitchen Renovations Cairns | Kitchens and Custom Cabinets",
+      metaDescription: "Kitchen renovations in Cairns: layout, custom or flat-pack, benchtops, what to ask about cabinets in the humidity, and how to get a quote.",
       headline: "Kitchen Renovations in Cairns: Cabinets, Benchtops and Design",
       subheadline: "What to decide, what to ask and what to check before you agree to a kitchen renovation in Cairns.",
       ctaText: "Get a kitchen quote",
@@ -660,6 +656,14 @@ window.SITE_CONFIG = {
         {
           "type": "p",
           "text": "Not every kitchen needs replacing. A refresh can mean new doors and drawer fronts on cabinet boxes that are still sound, a new benchtop, or new hardware. A full renovation replaces the cabinets and often changes the layout. A kitchen makeover, refurbishment or upgrade can be any of these, so say which you want when you enquire. The cabinet maker can tell you from the room whether the existing cabinets are worth keeping."
+        },
+        {
+          "type": "h2",
+          "text": "Keeping a kitchen renovation within budget"
+        },
+        {
+          "type": "p",
+          "text": "This page gives no figure, because a Cairns price depends on the room. The things that move the price are set out above: keeping the sink, cooktop and fridge where they are, flat-pack where the room suits standard sizes, the benchtop, and whether the existing cabinet boxes can stay. Ask each cabinet maker to price the cabinets, benchtop, removal and installation as separate lines, so you can see where the money goes and what you could change."
         },
         {
           "type": "h2",
@@ -764,10 +768,6 @@ window.SITE_CONFIG = {
               "a": "Not always. Ask each cabinet maker to list what is included, and who supplies and fits the benchtop and any appliances."
             },
             {
-              "q": "Can I keep my existing cabinets and replace only the doors?",
-              "a": "Sometimes. It depends on the condition of the cabinet boxes and whether the layout still works. Say so in your enquiry and the cabinet maker can tell you whether it is worth doing."
-            },
-            {
               "q": "Should I pay a deposit?",
               "a": "A deposit is normal, and the QBCC sets a limit on it, set out under \"Before you sign\" above. A deposit above the limit is not something you have to pay."
             }
@@ -783,7 +783,7 @@ window.SITE_CONFIG = {
         },
         {
           "type": "p",
-          "text": "Looking for wardrobes, a laundry or other joinery? See [cabinet makers in Cairns](index.html)."
+          "text": "Looking for wardrobes? See [built-in wardrobes in Cairns](custom-wardrobes-cairns.html). For a laundry or other joinery, see [cabinet makers in Cairns](index.html)."
         },
         {
           "type": "form",
